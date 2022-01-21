@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateUsuarioArgs } from "./args/AggregateUsuarioArgs";
+import { CreateManyUsuarioArgs } from "./args/CreateManyUsuarioArgs";
+import { CreateUsuarioArgs } from "./args/CreateUsuarioArgs";
+import { DeleteManyUsuarioArgs } from "./args/DeleteManyUsuarioArgs";
+import { DeleteUsuarioArgs } from "./args/DeleteUsuarioArgs";
+import { FindFirstUsuarioArgs } from "./args/FindFirstUsuarioArgs";
+import { FindManyUsuarioArgs } from "./args/FindManyUsuarioArgs";
+import { FindUniqueUsuarioArgs } from "./args/FindUniqueUsuarioArgs";
+import { GroupByUsuarioArgs } from "./args/GroupByUsuarioArgs";
+import { UpdateManyUsuarioArgs } from "./args/UpdateManyUsuarioArgs";
+import { UpdateUsuarioArgs } from "./args/UpdateUsuarioArgs";
+import { UpsertUsuarioArgs } from "./args/UpsertUsuarioArgs";
+import { Usuario } from "../../../models/Usuario";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateUsuario } from "../../outputs/AggregateUsuario";
+import { UsuarioGroupBy } from "../../outputs/UsuarioGroupBy";
+export declare class UsuarioCrudResolver {
+    usuario(ctx: any, info: GraphQLResolveInfo, args: FindUniqueUsuarioArgs): Promise<Usuario | null>;
+    findFirstUsuario(ctx: any, info: GraphQLResolveInfo, args: FindFirstUsuarioArgs): Promise<Usuario | null>;
+    usuarios(ctx: any, info: GraphQLResolveInfo, args: FindManyUsuarioArgs): Promise<Usuario[]>;
+    createUsuario(ctx: any, info: GraphQLResolveInfo, args: CreateUsuarioArgs): Promise<Usuario>;
+    createManyUsuario(ctx: any, info: GraphQLResolveInfo, args: CreateManyUsuarioArgs): Promise<AffectedRowsOutput>;
+    deleteUsuario(ctx: any, info: GraphQLResolveInfo, args: DeleteUsuarioArgs): Promise<Usuario | null>;
+    updateUsuario(ctx: any, info: GraphQLResolveInfo, args: UpdateUsuarioArgs): Promise<Usuario | null>;
+    deleteManyUsuario(ctx: any, info: GraphQLResolveInfo, args: DeleteManyUsuarioArgs): Promise<AffectedRowsOutput>;
+    updateManyUsuario(ctx: any, info: GraphQLResolveInfo, args: UpdateManyUsuarioArgs): Promise<AffectedRowsOutput>;
+    upsertUsuario(ctx: any, info: GraphQLResolveInfo, args: UpsertUsuarioArgs): Promise<Usuario>;
+    aggregateUsuario(ctx: any, info: GraphQLResolveInfo, args: AggregateUsuarioArgs): Promise<AggregateUsuario>;
+    groupByUsuario(ctx: any, info: GraphQLResolveInfo, args: GroupByUsuarioArgs): Promise<UsuarioGroupBy[]>;
+}

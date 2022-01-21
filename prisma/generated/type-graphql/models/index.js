@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Usuario = exports.Producto = exports.MovimientoInventario = exports.Inventario = void 0;
+var Inventario_1 = require("./Inventario");
+Object.defineProperty(exports, "Inventario", { enumerable: true, get: function () { return Inventario_1.Inventario; } });
+var MovimientoInventario_1 = require("./MovimientoInventario");
+Object.defineProperty(exports, "MovimientoInventario", { enumerable: true, get: function () { return MovimientoInventario_1.MovimientoInventario; } });
+var Producto_1 = require("./Producto");
+Object.defineProperty(exports, "Producto", { enumerable: true, get: function () { return Producto_1.Producto; } });
+var Usuario_1 = require("./Usuario");
+Object.defineProperty(exports, "Usuario", { enumerable: true, get: function () { return Usuario_1.Usuario; } });

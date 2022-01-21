@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateInventarioArgs } from "./args/AggregateInventarioArgs";
+import { CreateInventarioArgs } from "./args/CreateInventarioArgs";
+import { CreateManyInventarioArgs } from "./args/CreateManyInventarioArgs";
+import { DeleteInventarioArgs } from "./args/DeleteInventarioArgs";
+import { DeleteManyInventarioArgs } from "./args/DeleteManyInventarioArgs";
+import { FindFirstInventarioArgs } from "./args/FindFirstInventarioArgs";
+import { FindManyInventarioArgs } from "./args/FindManyInventarioArgs";
+import { FindUniqueInventarioArgs } from "./args/FindUniqueInventarioArgs";
+import { GroupByInventarioArgs } from "./args/GroupByInventarioArgs";
+import { UpdateInventarioArgs } from "./args/UpdateInventarioArgs";
+import { UpdateManyInventarioArgs } from "./args/UpdateManyInventarioArgs";
+import { UpsertInventarioArgs } from "./args/UpsertInventarioArgs";
+import { Inventario } from "../../../models/Inventario";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateInventario } from "../../outputs/AggregateInventario";
+import { InventarioGroupBy } from "../../outputs/InventarioGroupBy";
+export declare class InventarioCrudResolver {
+    inventario(ctx: any, info: GraphQLResolveInfo, args: FindUniqueInventarioArgs): Promise<Inventario | null>;
+    findFirstInventario(ctx: any, info: GraphQLResolveInfo, args: FindFirstInventarioArgs): Promise<Inventario | null>;
+    inventarios(ctx: any, info: GraphQLResolveInfo, args: FindManyInventarioArgs): Promise<Inventario[]>;
+    createInventario(ctx: any, info: GraphQLResolveInfo, args: CreateInventarioArgs): Promise<Inventario>;
+    createManyInventario(ctx: any, info: GraphQLResolveInfo, args: CreateManyInventarioArgs): Promise<AffectedRowsOutput>;
+    deleteInventario(ctx: any, info: GraphQLResolveInfo, args: DeleteInventarioArgs): Promise<Inventario | null>;
+    updateInventario(ctx: any, info: GraphQLResolveInfo, args: UpdateInventarioArgs): Promise<Inventario | null>;
+    deleteManyInventario(ctx: any, info: GraphQLResolveInfo, args: DeleteManyInventarioArgs): Promise<AffectedRowsOutput>;
+    updateManyInventario(ctx: any, info: GraphQLResolveInfo, args: UpdateManyInventarioArgs): Promise<AffectedRowsOutput>;
+    upsertInventario(ctx: any, info: GraphQLResolveInfo, args: UpsertInventarioArgs): Promise<Inventario>;
+    aggregateInventario(ctx: any, info: GraphQLResolveInfo, args: AggregateInventarioArgs): Promise<AggregateInventario>;
+    groupByInventario(ctx: any, info: GraphQLResolveInfo, args: GroupByInventarioArgs): Promise<InventarioGroupBy[]>;
+}

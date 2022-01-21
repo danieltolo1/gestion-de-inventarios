@@ -1,0 +1,12 @@
+export { AggregateMovimientoInventarioArgs } from "./AggregateMovimientoInventarioArgs";
+export { CreateManyMovimientoInventarioArgs } from "./CreateManyMovimientoInventarioArgs";
+export { CreateMovimientoInventarioArgs } from "./CreateMovimientoInventarioArgs";
+export { DeleteManyMovimientoInventarioArgs } from "./DeleteManyMovimientoInventarioArgs";
+export { DeleteMovimientoInventarioArgs } from "./DeleteMovimientoInventarioArgs";
+export { FindFirstMovimientoInventarioArgs } from "./FindFirstMovimientoInventarioArgs";
+export { FindManyMovimientoInventarioArgs } from "./FindManyMovimientoInventarioArgs";
+export { FindUniqueMovimientoInventarioArgs } from "./FindUniqueMovimientoInventarioArgs";
+export { GroupByMovimientoInventarioArgs } from "./GroupByMovimientoInventarioArgs";
+export { UpdateManyMovimientoInventarioArgs } from "./UpdateManyMovimientoInventarioArgs";
+export { UpdateMovimientoInventarioArgs } from "./UpdateMovimientoInventarioArgs";
+export { UpsertMovimientoInventarioArgs } from "./UpsertMovimientoInventarioArgs";
