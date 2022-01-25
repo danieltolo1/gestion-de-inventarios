@@ -4,7 +4,7 @@ import { IntFilter } from "../inputs/IntFilter";
 import { InventarioRelationFilter } from "../inputs/InventarioRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
-import { UsuarioRelationFilter } from "../inputs/UsuarioRelationFilter";
+import { UserRelationFilter } from "../inputs/UserRelationFilter";
 export declare class MovimientoInventarioWhereInput {
     AND?: MovimientoInventarioWhereInput[] | undefined;
     OR?: MovimientoInventarioWhereInput[] | undefined;
@@ -15,6 +15,6 @@ export declare class MovimientoInventarioWhereInput {
     cantidad?: IntFilter | undefined;
     tipoMovimiento?: EnumEnum_TipoMovimientoFilter | undefined;
     fecha?: DateTimeFilter | undefined;
-    usuario?: UsuarioRelationFilter | undefined;
+    usuario?: UserRelationFilter | undefined;
     usuarioId?: StringNullableFilter | undefined;
 }

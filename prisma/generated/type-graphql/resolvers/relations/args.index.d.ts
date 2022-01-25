@@ -1,2 +1,2 @@
 export * from "./Inventario/args";
-export * from "./Usuario/args";
+export * from "./User/args";

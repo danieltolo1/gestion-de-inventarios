@@ -5,7 +5,7 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
 const Inventario_1 = require("../../../models/Inventario");
 const MovimientoInventario_1 = require("../../../models/MovimientoInventario");
-const Usuario_1 = require("../../../models/Usuario");
+const User_1 = require("../../../models/User");
 const helpers_1 = require("../../../helpers");
 let MovimientoInventarioRelationsResolver = class MovimientoInventarioRelationsResolver {
     async inventario(movimientoInventario, ctx) {
@@ -34,7 +34,7 @@ let MovimientoInventarioRelationsResolver = class MovimientoInventarioRelationsR
     (0, tslib_1.__metadata)("design:returntype", Promise)
 ], MovimientoInventarioRelationsResolver.prototype, "inventario", null);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.FieldResolver(_type => Usuario_1.Usuario, {
+    TypeGraphQL.FieldResolver(_type => User_1.User, {
         nullable: true
     }),
     (0, tslib_1.__param)(0, TypeGraphQL.Root()),

@@ -8,7 +8,10 @@ declare const crudResolversMap: {
     Producto: typeof crudResolvers.ProductoCrudResolver;
     Inventario: typeof crudResolvers.InventarioCrudResolver;
     MovimientoInventario: typeof crudResolvers.MovimientoInventarioCrudResolver;
-    Usuario: typeof crudResolvers.UsuarioCrudResolver;
+    Account: typeof crudResolvers.AccountCrudResolver;
+    Session: typeof crudResolvers.SessionCrudResolver;
+    VerificationToken: typeof crudResolvers.VerificationTokenCrudResolver;
+    User: typeof crudResolvers.UserCrudResolver;
 };
 declare type ResolverModelNames = keyof typeof crudResolversMap;
 declare type ModelResolverActionNames<TModel extends ResolverModelNames> = keyof typeof crudResolversMap[TModel]["prototype"];
@@ -32,7 +35,9 @@ declare const relationResolversMap: {
     Producto: typeof relationResolvers.ProductoRelationsResolver;
     Inventario: typeof relationResolvers.InventarioRelationsResolver;
     MovimientoInventario: typeof relationResolvers.MovimientoInventarioRelationsResolver;
-    Usuario: typeof relationResolvers.UsuarioRelationsResolver;
+    Account: typeof relationResolvers.AccountRelationsResolver;
+    Session: typeof relationResolvers.SessionRelationsResolver;
+    User: typeof relationResolvers.UserRelationsResolver;
 };
 declare type RelationResolverModelNames = keyof typeof relationResolversMap;
 declare type RelationResolverActionNames<TModel extends RelationResolverModelNames> = keyof typeof relationResolversMap[TModel]["prototype"];

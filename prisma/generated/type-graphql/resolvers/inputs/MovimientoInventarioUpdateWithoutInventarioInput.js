@@ -7,7 +7,7 @@ const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpd
 const EnumEnum_TipoMovimientoFieldUpdateOperationsInput_1 = require("../inputs/EnumEnum_TipoMovimientoFieldUpdateOperationsInput");
 const IntFieldUpdateOperationsInput_1 = require("../inputs/IntFieldUpdateOperationsInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
-const UsuarioUpdateOneWithoutMovimientosInput_1 = require("../inputs/UsuarioUpdateOneWithoutMovimientosInput");
+const UserUpdateOneWithoutMovimientosInput_1 = require("../inputs/UserUpdateOneWithoutMovimientosInput");
 let MovimientoInventarioUpdateWithoutInventarioInput = class MovimientoInventarioUpdateWithoutInventarioInput {
 };
 (0, tslib_1.__decorate)([
@@ -35,10 +35,10 @@ let MovimientoInventarioUpdateWithoutInventarioInput = class MovimientoInventari
     (0, tslib_1.__metadata)("design:type", DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput)
 ], MovimientoInventarioUpdateWithoutInventarioInput.prototype, "fecha", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => UsuarioUpdateOneWithoutMovimientosInput_1.UsuarioUpdateOneWithoutMovimientosInput, {
+    TypeGraphQL.Field(_type => UserUpdateOneWithoutMovimientosInput_1.UserUpdateOneWithoutMovimientosInput, {
         nullable: true
     }),
-    (0, tslib_1.__metadata)("design:type", UsuarioUpdateOneWithoutMovimientosInput_1.UsuarioUpdateOneWithoutMovimientosInput)
+    (0, tslib_1.__metadata)("design:type", UserUpdateOneWithoutMovimientosInput_1.UserUpdateOneWithoutMovimientosInput)
 ], MovimientoInventarioUpdateWithoutInventarioInput.prototype, "usuario", void 0);
 MovimientoInventarioUpdateWithoutInventarioInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("MovimientoInventarioUpdateWithoutInventarioInput", {

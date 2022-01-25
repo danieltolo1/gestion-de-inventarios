@@ -3,12 +3,12 @@ import { EnumEnum_TipoMovimientoFieldUpdateOperationsInput } from "../inputs/Enu
 import { IntFieldUpdateOperationsInput } from "../inputs/IntFieldUpdateOperationsInput";
 import { InventarioUpdateOneRequiredWithoutMovimientoInventarioInput } from "../inputs/InventarioUpdateOneRequiredWithoutMovimientoInventarioInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
-import { UsuarioUpdateOneWithoutMovimientosInput } from "../inputs/UsuarioUpdateOneWithoutMovimientosInput";
+import { UserUpdateOneWithoutMovimientosInput } from "../inputs/UserUpdateOneWithoutMovimientosInput";
 export declare class MovimientoInventarioUpdateInput {
     id?: StringFieldUpdateOperationsInput | undefined;
     cantidad?: IntFieldUpdateOperationsInput | undefined;
     tipoMovimiento?: EnumEnum_TipoMovimientoFieldUpdateOperationsInput | undefined;
     fecha?: DateTimeFieldUpdateOperationsInput | undefined;
     inventario?: InventarioUpdateOneRequiredWithoutMovimientoInventarioInput | undefined;
-    usuario?: UsuarioUpdateOneWithoutMovimientosInput | undefined;
+    usuario?: UserUpdateOneWithoutMovimientosInput | undefined;
 }

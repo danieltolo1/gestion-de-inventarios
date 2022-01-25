@@ -4,7 +4,7 @@ exports.MovimientoInventarioCreateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
 const InventarioCreateNestedOneWithoutMovimientoInventarioInput_1 = require("../inputs/InventarioCreateNestedOneWithoutMovimientoInventarioInput");
-const UsuarioCreateNestedOneWithoutMovimientosInput_1 = require("../inputs/UsuarioCreateNestedOneWithoutMovimientosInput");
+const UserCreateNestedOneWithoutMovimientosInput_1 = require("../inputs/UserCreateNestedOneWithoutMovimientosInput");
 const Enum_TipoMovimiento_1 = require("../../enums/Enum_TipoMovimiento");
 let MovimientoInventarioCreateInput = class MovimientoInventarioCreateInput {
 };
@@ -39,10 +39,10 @@ let MovimientoInventarioCreateInput = class MovimientoInventarioCreateInput {
     (0, tslib_1.__metadata)("design:type", InventarioCreateNestedOneWithoutMovimientoInventarioInput_1.InventarioCreateNestedOneWithoutMovimientoInventarioInput)
 ], MovimientoInventarioCreateInput.prototype, "inventario", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => UsuarioCreateNestedOneWithoutMovimientosInput_1.UsuarioCreateNestedOneWithoutMovimientosInput, {
+    TypeGraphQL.Field(_type => UserCreateNestedOneWithoutMovimientosInput_1.UserCreateNestedOneWithoutMovimientosInput, {
         nullable: true
     }),
-    (0, tslib_1.__metadata)("design:type", UsuarioCreateNestedOneWithoutMovimientosInput_1.UsuarioCreateNestedOneWithoutMovimientosInput)
+    (0, tslib_1.__metadata)("design:type", UserCreateNestedOneWithoutMovimientosInput_1.UserCreateNestedOneWithoutMovimientosInput)
 ], MovimientoInventarioCreateInput.prototype, "usuario", void 0);
 MovimientoInventarioCreateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("MovimientoInventarioCreateInput", {

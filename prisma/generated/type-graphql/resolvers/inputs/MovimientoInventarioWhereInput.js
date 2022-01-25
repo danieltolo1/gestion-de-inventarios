@@ -10,7 +10,7 @@ const IntFilter_1 = require("../inputs/IntFilter");
 const InventarioRelationFilter_1 = require("../inputs/InventarioRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
-const UsuarioRelationFilter_1 = require("../inputs/UsuarioRelationFilter");
+const UserRelationFilter_1 = require("../inputs/UserRelationFilter");
 let MovimientoInventarioWhereInput = MovimientoInventarioWhereInput_1 = class MovimientoInventarioWhereInput {
 };
 (0, tslib_1.__decorate)([
@@ -68,10 +68,10 @@ let MovimientoInventarioWhereInput = MovimientoInventarioWhereInput_1 = class Mo
     (0, tslib_1.__metadata)("design:type", DateTimeFilter_1.DateTimeFilter)
 ], MovimientoInventarioWhereInput.prototype, "fecha", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => UsuarioRelationFilter_1.UsuarioRelationFilter, {
+    TypeGraphQL.Field(_type => UserRelationFilter_1.UserRelationFilter, {
         nullable: true
     }),
-    (0, tslib_1.__metadata)("design:type", UsuarioRelationFilter_1.UsuarioRelationFilter)
+    (0, tslib_1.__metadata)("design:type", UserRelationFilter_1.UserRelationFilter)
 ], MovimientoInventarioWhereInput.prototype, "usuario", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {

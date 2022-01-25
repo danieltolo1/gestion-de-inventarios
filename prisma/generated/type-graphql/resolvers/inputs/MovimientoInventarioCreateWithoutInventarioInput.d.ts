@@ -1,8 +1,8 @@
-import { UsuarioCreateNestedOneWithoutMovimientosInput } from "../inputs/UsuarioCreateNestedOneWithoutMovimientosInput";
+import { UserCreateNestedOneWithoutMovimientosInput } from "../inputs/UserCreateNestedOneWithoutMovimientosInput";
 export declare class MovimientoInventarioCreateWithoutInventarioInput {
     id?: string | undefined;
     cantidad: number;
     tipoMovimiento: "Entrada" | "Salida";
     fecha: Date;
-    usuario?: UsuarioCreateNestedOneWithoutMovimientosInput | undefined;
+    usuario?: UserCreateNestedOneWithoutMovimientosInput | undefined;
 }

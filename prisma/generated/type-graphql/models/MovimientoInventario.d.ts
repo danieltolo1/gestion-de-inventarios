@@ -1,5 +1,5 @@
 import { Inventario } from "../models/Inventario";
-import { Usuario } from "../models/Usuario";
+import { User } from "../models/User";
 export declare class MovimientoInventario {
     id: string;
     inventario?: Inventario;
@@ -7,6 +7,6 @@ export declare class MovimientoInventario {
     cantidad: number;
     tipoMovimiento: "Entrada" | "Salida";
     fecha: Date;
-    usuario?: Usuario | null;
+    usuario?: User | null;
     usuarioId?: string | null;
 }

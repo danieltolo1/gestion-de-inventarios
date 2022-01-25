@@ -4,7 +4,7 @@ exports.MovimientoInventarioOrderByWithRelationInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
 const InventarioOrderByWithRelationInput_1 = require("../inputs/InventarioOrderByWithRelationInput");
-const UsuarioOrderByWithRelationInput_1 = require("../inputs/UsuarioOrderByWithRelationInput");
+const UserOrderByWithRelationInput_1 = require("../inputs/UserOrderByWithRelationInput");
 const SortOrder_1 = require("../../enums/SortOrder");
 let MovimientoInventarioOrderByWithRelationInput = class MovimientoInventarioOrderByWithRelationInput {
 };
@@ -45,10 +45,10 @@ let MovimientoInventarioOrderByWithRelationInput = class MovimientoInventarioOrd
     (0, tslib_1.__metadata)("design:type", String)
 ], MovimientoInventarioOrderByWithRelationInput.prototype, "fecha", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => UsuarioOrderByWithRelationInput_1.UsuarioOrderByWithRelationInput, {
+    TypeGraphQL.Field(_type => UserOrderByWithRelationInput_1.UserOrderByWithRelationInput, {
         nullable: true
     }),
-    (0, tslib_1.__metadata)("design:type", UsuarioOrderByWithRelationInput_1.UsuarioOrderByWithRelationInput)
+    (0, tslib_1.__metadata)("design:type", UserOrderByWithRelationInput_1.UserOrderByWithRelationInput)
 ], MovimientoInventarioOrderByWithRelationInput.prototype, "usuario", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {

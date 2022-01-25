@@ -1,9 +1,17 @@
-import '../styles/globals.css';
+import PrivateLayout from '../layout/PrivateLayout';
 import type { AppProps } from 'next/app';
+import { SessionProvider } from 'next-auth/react';
+import '../styles/globals.css';
 
-
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
+  console.log('estoy en el app');
+  return (
+    <SessionProvider session={session}>
+      <PrivateLayout>
+        <Component {...pageProps} />
+      </PrivateLayout>
+    </SessionProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;

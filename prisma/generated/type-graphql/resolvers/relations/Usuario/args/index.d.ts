@@ -1,1 +1,0 @@
-export { UsuarioMovimientosArgs } from "./UsuarioMovimientosArgs";

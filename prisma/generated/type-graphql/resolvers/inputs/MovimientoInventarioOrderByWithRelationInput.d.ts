@@ -1,5 +1,5 @@
 import { InventarioOrderByWithRelationInput } from "../inputs/InventarioOrderByWithRelationInput";
-import { UsuarioOrderByWithRelationInput } from "../inputs/UsuarioOrderByWithRelationInput";
+import { UserOrderByWithRelationInput } from "../inputs/UserOrderByWithRelationInput";
 export declare class MovimientoInventarioOrderByWithRelationInput {
     id?: "asc" | "desc" | undefined;
     inventario?: InventarioOrderByWithRelationInput | undefined;
@@ -7,6 +7,6 @@ export declare class MovimientoInventarioOrderByWithRelationInput {
     cantidad?: "asc" | "desc" | undefined;
     tipoMovimiento?: "asc" | "desc" | undefined;
     fecha?: "asc" | "desc" | undefined;
-    usuario?: UsuarioOrderByWithRelationInput | undefined;
+    usuario?: UserOrderByWithRelationInput | undefined;
     usuarioId?: "asc" | "desc" | undefined;
 }
