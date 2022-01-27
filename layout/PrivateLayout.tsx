@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSession, signIn, signOut } from 'next-auth/react';
 
-const PrivateLayout = ({ children }) => {
+const PrivateLayout = ({ children }:any) => {
   const { data: session, status }: any = useSession();
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const PrivateLayout = ({ children }) => {
           }}
           className='w-32 bg-black text-white'
         >
-          Cerrar sesión
+          Cerrar sesión...
         </button>
         Esta es una ruta privada
         {children}

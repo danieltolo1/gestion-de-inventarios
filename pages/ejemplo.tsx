@@ -1,7 +1,9 @@
 import Link from "next/link";
 import React from "react";
+import '../styles/Home.module.css'
+import '../public/fondo.png'
 
-const test = () => {
+const test1 = () => {
    
     return( 
     <div>
@@ -13,4 +15,4 @@ const test = () => {
     );
 }; 
 
-export default test;
+export default test1;

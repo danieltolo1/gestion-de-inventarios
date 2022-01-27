@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#bodym{
+    border: none;
+    border-radius: 1px;
+    background: url('../public/fondo.png') no-repeat center center fixed ;
+    height: 850px;
+    width: 100%;
+    background-size: 100% 100%;
+
+  }
+
+
+  #fondo{
+    padding-left: 40em;
+    border: none;
+    border-radius: 8px;
+    background-color:dimgray;
+    height: 70%;
+    width: 70%;
+    background-size: 100% 100%;
+
+
+  }

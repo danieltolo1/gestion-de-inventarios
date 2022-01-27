@@ -1,16 +1,25 @@
 import type { NextPage } from 'next'
-import styles from '../styles/Home.module.css'
+import '../styles/Home.module.css'
 import Link from 'next/link'; 
+import '../public/fondo.png'
+import Image from 'next/image';
+
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-green-500'>
-       <p> Primera Pagina</p>
-       <Link href="/ejemplo">
-       <p className='cursor-pointer'> Click para segunda pagina</p>
-       </Link>
-
+  
+   <div>
+    
+      
+    
+    <Link href="/ejemplo">
+      <p className='cursor-pointer align=center '> Click para segunda pagina</p>
+    </Link>
+    <div>
+    <Image src='/fondo.png' layout='fill'/>
     </div>
+    </div>
+   
   )
 }
 
