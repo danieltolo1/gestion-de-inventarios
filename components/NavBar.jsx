@@ -4,6 +4,9 @@ import HomeIcon from "./HomeIcon"
 import PostIcon from "./PostIcon"
 import Link from 'next/link'; 
 import PruebaIcon from './PruebaIcon'
+import Corrective from './Corrective'
+import AboutIcon from './AboutIcon'
+import LogoutIcon from './LogoutIcon'
 import { signOut } from 'next-auth/react';
 
 
@@ -11,7 +14,7 @@ import { signOut } from 'next-auth/react';
 const NavBar = props=>{
     return(
         <div
-            className="bg-black/50 w-fit min-w-[200px] h-[90vh] absolute 
+            className="bg-black/50 w-fit sm:min-w-[200px] h-[90vh] absolute 
             top-[50%] translate-y-[-50%] left-[2px] backdrop-blur-[3px] backdrop-saturate-50 rounded-[5px]
             flex flex-col sm:px-0 px-1"
         >
@@ -71,16 +74,12 @@ const NavBar = props=>{
                     className= 'w-7 h-7 group-hover:text-white'
                 />
                 <span
-                    className="text-sm group-hover:text-white font-[600]"
+                    className="text-sm group-hover:text-white font-[600]" 
                 >
-                    <button
-          onClick={() => {
-            signOut();
-          }}
-          className='w-32 text-white'
-        >
-          Inicio
-                    </button>
+                    <Link href="/"  className='w-32 text-white'>
+               
+                        Inicio
+                    </Link>
                 </span>
                 {/*Heramienta para ver ev moviles*/}
                 <div
@@ -104,7 +103,7 @@ const NavBar = props=>{
                 >
                    <Link href="/ejemplo"  className='w-32 text-white'>
         
-                            Pagina2
+                            Inventario
                     </Link>
                 </span>
                 {/*Heramienta para ver en moviles*/}
@@ -112,7 +111,7 @@ const NavBar = props=>{
                     className="absolute group-hover:sm:hidden hidden group-hover:inline text-white/90 right-[-10%] top-1/2
                     translate-y-[-50%] translate-x-[100%]"
                 >
-                    Pagina2
+                    Inventario
                 </div>
 
     
@@ -129,7 +128,7 @@ const NavBar = props=>{
                 >
                    <Link href="/ejemplo"  className='w-32 text-white'>
         
-                            Pagina3
+                            Mantenimientos Preventivos
                     </Link>
                 </span>
                 {/*Heramienta para ver en moviles*/}
@@ -137,12 +136,87 @@ const NavBar = props=>{
                     className="absolute group-hover:sm:hidden hidden group-hover:inline text-white/90 right-[-10%] top-1/2
                     translate-y-[-50%] translate-x-[100%]"
                 >
-                    Pagina3
+                    Mantenimientos Preventivos
                 </div>
 
     
             </li>
+            <li
+                className="flex text-white/80 items-center space-x-2 hover:bg-white/10 hover:cursor-pointer w-[90%]
+                mx-auto rounded-[15px] p-2 group relative"
+            >
+                <Corrective
+                    className= 'w-7 h-7 group-hover:text-white'
+                />
+                <span
+                    className="text-sm group-hover:text-white font-[600]"
+                >
+                   <Link href="/ejemplo"  className='w-32 text-white'>
+        
+                            Mantenimientos Correctivos
+                    </Link>
+                </span>
+                {/*Heramienta para ver en moviles*/}
+                <div
+                    className="absolute group-hover:sm:hidden hidden group-hover:inline text-white/90 right-[-10%] top-1/2
+                    translate-y-[-50%] translate-x-[100%]"
+                >
+                    Mantenimientos Correctivos
+                </div>
 
+    
+            </li>
+            <li
+                className="flex text-white/80 items-center space-x-2 hover:bg-white/10 hover:cursor-pointer w-[90%]
+                mx-auto rounded-[15px] p-2 group relative"
+            >
+                <AboutIcon
+                    className= 'w-7 h-7 group-hover:text-white'
+                />
+                <span
+                    className="text-sm group-hover:text-white font-[600]"
+                >
+                   <Link href="/ejemplo"  className='w-32 text-white'>
+        
+                            Acerca de
+                    </Link>
+                </span>
+                {/*Heramienta para ver en moviles*/}
+                <div
+                    className="absolute group-hover:sm:hidden hidden group-hover:inline text-white/90 right-[-10%] top-1/2
+                    translate-y-[-50%] translate-x-[100%]"
+                >
+                    Acerca de
+                </div>
+
+    
+            </li>
+            <li
+                className="flex text-white/80 items-center space-x-2 hover:bg-white/10 hover:cursor-pointer w-[90%]
+                mx-auto rounded-[15px] p-2 group relative mt-auto"
+            >
+                <LogoutIcon
+                    className= 'w-7 h-7 group-hover:text-white'
+                />
+                <span
+                    className="text-sm group-hover:text-white font-[600]" onClick={() => {
+                        signOut();
+                      }}
+                >
+        
+                            Salir
+                    
+                </span>
+                {/*Heramienta para ver en moviles*/}
+                <div
+                    className="absolute group-hover:sm:hidden hidden group-hover:inline text-white/90 right-[-10%] top-1/2
+                    translate-y-[-50%] translate-x-[100%]"
+                >
+                    Salir
+                </div>
+
+    
+            </li>
         </ul>
 
 
