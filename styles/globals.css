@@ -2,14 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-#bodym{
-    border: none;
-    border-radius: 1px;
-    background: url('../public/fondo.png') no-repeat center center fixed ;
-    height: 850px;
-    width: 100%;
-    background-size: 100% 100%;
-
+body{
+    background-image: url('../public/fondo4.jpg');
+    width: 100% ; 
+    height: 100% ;
+    background-size: 100%;
   }
 
 

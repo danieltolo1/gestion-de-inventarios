@@ -7,38 +7,53 @@ import PruebaIcon from './PruebaIcon'
 import Corrective from './Corrective'
 import AboutIcon from './AboutIcon'
 import LogoutIcon from './LogoutIcon'
-import { signOut } from 'next-auth/react';
+import ReportIcon from './ReportIcon'
+import { useSession, signIn, signOut } from 'next-auth/react';
 
 
 
-const NavBar = props=>{
+
+
+
+
+ export default function NavBar() {                                                                   //const NavBar = props =>{
+    const {data: session, status} = useSession()
+    
+        console.log(session);
+      
+    
+     if (status === 'loading') return <div>Loading...</div>;
+    if (session) {
+
     return(
+        
+
         <div
             className="bg-black/50 w-fit sm:min-w-[200px] h-[90vh] absolute 
             top-[50%] translate-y-[-50%] left-[2px] backdrop-blur-[3px] backdrop-saturate-50 rounded-[5px]
-            flex flex-col sm:px-0 px-1"
+            flex flex-col sm:px-0 px-1 "
         >
             {/*Informacion del Usuario*/}
          <div
             className="flex w-[90%] mx-auto items-center space-x-3 py-2 "
          >   
             <div
-            className="w-[70px] h-[70px] rounded-[50%] relative"
+            className="w-[40px] h-[40px] rounded-[50%] relative"
             >
-                <Image
-                    src='/ares1.png'
-                    className='absolute rounded-[50%]'
-                    layout="fill"
+                <img src={session.user.image}
+                className="absolute rounded-[50%]"
                 />
 
             </div>
 
             <div className="sm:flex hidden flex-col text-white/80 space-y-0 ">
                 <div className="tex-lg font-[700]">
-                    Nombre de Personaje
+                    
+                      {session.user.name}
+
                 </div>
                 <div className="text-[0.7em] text-white/90">
-                    correo@gmail.com
+                      {session.user.email}
                 </div>
 
             </div>
@@ -64,7 +79,7 @@ const NavBar = props=>{
 
         {/*Seguimos con los Links*/ }
         <ul
-            className="flex flex-col h-[100%] pb-2 mt-2"
+            className="flex flex-col h-[100%] pb-2 mt-2 overflow-y-auto"
         >
             <li
                 className="flex text-white/80 items-center space-x-2 hover:bg-white/10 hover:cursor-pointer w-[90%]
@@ -74,9 +89,9 @@ const NavBar = props=>{
                     className= 'w-7 h-7 group-hover:text-white'
                 />
                 <span
-                    className="text-sm group-hover:text-white font-[600]" 
+                    className="sm:flex hidden text-sm group-hover:text-white font-[600]" 
                 >
-                    <Link href="/"  className='w-32 text-white'>
+                    <Link href="/"  className='sm:hidden w-32 text-white'>
                
                         Inicio
                     </Link>
@@ -99,9 +114,9 @@ const NavBar = props=>{
                     className= 'w-7 h-7 group-hover:text-white'
                 />
                 <span
-                    className="text-sm group-hover:text-white font-[600]"
+                    className="sm:flex hidden text-sm group-hover:text-white font-[600]"
                 >
-                   <Link href="/ejemplo"  className='w-32 text-white'>
+                   <Link href="/inventario"  className='w-32 text-white'>
         
                             Inventario
                     </Link>
@@ -124,9 +139,9 @@ const NavBar = props=>{
                     className= 'w-7 h-7 group-hover:text-white'
                 />
                 <span
-                    className="text-sm group-hover:text-white font-[600]"
+                    className="sm:flex hidden text-sm group-hover:text-white font-[600]"
                 >
-                   <Link href="/ejemplo"  className='w-32 text-white'>
+                   <Link href="/manPreventivo"  className='w-32 text-white'>
         
                             Mantenimientos Preventivos
                     </Link>
@@ -149,9 +164,9 @@ const NavBar = props=>{
                     className= 'w-7 h-7 group-hover:text-white'
                 />
                 <span
-                    className="text-sm group-hover:text-white font-[600]"
+                    className="sm:flex hidden text-sm group-hover:text-white font-[600]"
                 >
-                   <Link href="/ejemplo"  className='w-32 text-white'>
+                   <Link href="/manCorrectivo"  className='w-32 text-white sm:flex hidden flex-col'>
         
                             Mantenimientos Correctivos
                     </Link>
@@ -170,13 +185,38 @@ const NavBar = props=>{
                 className="flex text-white/80 items-center space-x-2 hover:bg-white/10 hover:cursor-pointer w-[90%]
                 mx-auto rounded-[15px] p-2 group relative"
             >
+                <ReportIcon
+                    className= 'w-7 h-7 group-hover:text-white'
+                />
+                <span
+                    className="sm:flex hidden text-sm group-hover:text-white font-[600]"
+                >
+                   <Link href="/manCorrectivo"  className='w-32 text-white sm:flex'>
+        
+                            Reportes
+                    </Link>
+                </span>
+                {/*Heramienta para ver en moviles*/}
+                <div
+                    className="absolute group-hover:sm:hidden hidden group-hover:inline text-white/90 right-[-10%] top-1/2
+                    translate-y-[-50%] translate-x-[100%]"
+                >
+                    Reportes
+                </div>
+
+    
+            </li>
+            <li
+                className="flex text-white/80 items-center space-x-2 hover:bg-white/10 hover:cursor-pointer w-[90%]
+                mx-auto rounded-[15px] p-2 group relative"
+            >
                 <AboutIcon
                     className= 'w-7 h-7 group-hover:text-white'
                 />
                 <span
-                    className="text-sm group-hover:text-white font-[600]"
+                    className="sm:flex hidden text-sm group-hover:text-white font-[600]"
                 >
-                   <Link href="/ejemplo"  className='w-32 text-white'>
+                   <Link href="/"  className='w-32 text-white'>
         
                             Acerca de
                     </Link>
@@ -199,7 +239,7 @@ const NavBar = props=>{
                     className= 'w-7 h-7 group-hover:text-white'
                 />
                 <span
-                    className="text-sm group-hover:text-white font-[600]" onClick={() => {
+                    className="sm:flex hidden text-sm group-hover:text-white font-[600]" onClick={() => {
                         signOut();
                       }}
                 >
@@ -224,7 +264,11 @@ const NavBar = props=>{
 
 
     )
+                    }      
+                    return (
+                        signIn('auth0')
+                      )          
 }
 
 
-export default NavBar;
+//export default NavBar;
