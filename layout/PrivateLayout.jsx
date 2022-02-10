@@ -1,32 +1,29 @@
 import React, { useEffect } from 'react';
 import { useSession, signIn, signOut } from 'next-auth/react';
+import { prisma } from '@prisma/client';
+
+
 
 const PrivateLayout = ({ children }) => {
   const { data: session, status } = useSession();
 
   useEffect(() => {
     console.log(session);
+    console.log('status', status);
   }, [session]);
 
   if (status === 'loading') return <div>Loading...</div>;
 
   if (!session) {
     signIn('auth0');
+    
+   
   } else {
-    if (session.user.estado === 'Pendiente') {
+    if (session.user.status === 'Pendiente') {
       return <div>Usted no ha sido autorizado para ingresar aun</div>;
     }
     return (
       <div className='flex flex-col'>
-        <button
-          onClick={() => {
-            signOut();
-          }}
-          className='w-32 bg-black text-white'
-        >
-          Cerrar sesión
-        </button>
-        Esta es una ruta privada
         {children}
       </div>
     );
@@ -34,3 +31,4 @@ const PrivateLayout = ({ children }) => {
 };
 
 export default PrivateLayout;
+
