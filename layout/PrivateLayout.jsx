@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSession, signIn, signOut } from 'next-auth/react';
 
 const PrivateLayout = ({ children }) => {
-  const { data: session, status }: any = useSession();
+  const { data: session, status } = useSession();
 
   useEffect(() => {
     console.log(session);
