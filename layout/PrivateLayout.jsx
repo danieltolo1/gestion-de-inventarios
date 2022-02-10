@@ -7,7 +7,6 @@ import { prisma } from '@prisma/client';
 const PrivateLayout = ({ children }) => {
   const { data: session, status } = useSession();
 
-
   useEffect(() => {
     console.log(session);
     console.log('status', status);
