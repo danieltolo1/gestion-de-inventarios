@@ -6,7 +6,11 @@ import { resolvers } from '../../prisma/generated/type-graphql';
 import { PrismaClient } from '@prisma/client';
 import prisma from '../../config/prisma';
 import Cors from 'micro-cors';
-import type { NextApiRequest, NextApiResponse } from "next";
+//import type { NextApiRequest, NextApiResponse } from "next";
+import { ServerResponse } from 'http';
+
+
+
 
 const cors = Cors({
   allowMethods: ['POST', 'OPTIONS', 'GET', 'HEAD'],
@@ -22,7 +26,7 @@ export const config = {
   },
 };
 
-const functionHandler = async (req:NextApiRequest, res:NextApiResponse) => {
+const functionHandler = async (req:any, res:any) => {
   const schema = await buildSchema({
     resolvers,
     validate: false,
@@ -46,5 +50,5 @@ export default cors((req, res) => {
     return false;
   }
 
-  return functionHandler(req, res);
+  return functionHandler (req,res);
 });
