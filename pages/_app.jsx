@@ -1,9 +1,9 @@
 import PrivateLayout from '../layout/PrivateLayout';
-import type { AppProps } from 'next/app';
+import { AppProps } from 'next/app';
 import { SessionProvider } from 'next-auth/react';
 import '../styles/globals.css';
 
-function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }){
   console.log('estoy en el app');
   return (
     <SessionProvider session={session}>
