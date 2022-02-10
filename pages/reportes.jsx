@@ -4,7 +4,7 @@ import '../styles/Home.module.css'
 import '../public/ares1.png'
 import Image from "next/image";
 
-const manPreventivo = () => {
+const reportes = () => {
    
     return( 
         <div id='bodym' className='w-full max-w-screen-xl mx-auto px-4 sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto 2xl:mx-auto' >
@@ -41,14 +41,13 @@ const manPreventivo = () => {
                   <div
                          className="flex w-[90%] mx-auto text-center sm:flex flex-col text-lg text-white/80 space-y-0 
                          font-bold relative ml-1" > 
-                         MANTENIMIENTO PREVENTIVO
+                         REPORTES
                   </div>
               </div>
-        
         </div>
         
    
     );
 }; 
 
-export default manPreventivo;
+export default reportes;

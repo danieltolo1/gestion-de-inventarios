@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SearchIcon from "./SearchIcon";
 import HomeIcon from "./HomeIcon"
 import PostIcon from "./PostIcon"
@@ -81,6 +80,7 @@ import { useSession, signIn, signOut } from 'next-auth/react';
         <ul
             className="flex flex-col h-[100%] pb-2 mt-2 overflow-y-auto"
         >
+            <Link href="/"  className='sm:hidden w-32 text-white'>
             <li
                 className="flex text-white/80 items-center space-x-2 hover:bg-white/10 hover:cursor-pointer w-[90%]
                 mx-auto rounded-[15px] p-2 group relative"
@@ -91,10 +91,7 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                 <span
                     className="sm:flex hidden text-sm group-hover:text-white font-[600]" 
                 >
-                    <Link href="/"  className='sm:hidden w-32 text-white'>
-               
-                        Inicio
-                    </Link>
+                        Inicio   
                 </span>
                 {/*Heramienta para ver ev moviles*/}
                 <div
@@ -103,9 +100,9 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                 >
                     Inicio
                 </div>
-
-    
             </li>
+            </Link>
+            <Link href="/inventario"  className='w-32 text-white'>
             <li
                 className="flex text-white/80 items-center space-x-2 hover:bg-white/10 hover:cursor-pointer w-[90%]
                 mx-auto rounded-[15px] p-2 group relative"
@@ -116,10 +113,10 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                 <span
                     className="sm:flex hidden text-sm group-hover:text-white font-[600]"
                 >
-                   <Link href="/inventario"  className='w-32 text-white'>
+                   
         
                             Inventario
-                    </Link>
+                    
                 </span>
                 {/*Heramienta para ver en moviles*/}
                 <div
@@ -129,8 +126,9 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                     Inventario
                 </div>
 
-    
             </li>
+            </Link>
+            <Link href="/manPreventivo"  className='w-32 text-white'>
             <li
                 className="flex text-white/80 items-center space-x-2 hover:bg-white/10 hover:cursor-pointer w-[90%]
                 mx-auto rounded-[15px] p-2 group relative"
@@ -141,10 +139,10 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                 <span
                     className="sm:flex hidden text-sm group-hover:text-white font-[600]"
                 >
-                   <Link href="/manPreventivo"  className='w-32 text-white'>
+                   
         
                             Mantenimientos Preventivos
-                    </Link>
+                    
                 </span>
                 {/*Heramienta para ver en moviles*/}
                 <div
@@ -156,6 +154,8 @@ import { useSession, signIn, signOut } from 'next-auth/react';
 
     
             </li>
+            </Link>
+            <Link href="/manCorrectivo"  className='w-32 text-white sm:flex hidden flex-col'>
             <li
                 className="flex text-white/80 items-center space-x-2 hover:bg-white/10 hover:cursor-pointer w-[90%]
                 mx-auto rounded-[15px] p-2 group relative"
@@ -166,10 +166,10 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                 <span
                     className="sm:flex hidden text-sm group-hover:text-white font-[600]"
                 >
-                   <Link href="/manCorrectivo"  className='w-32 text-white sm:flex hidden flex-col'>
+                   
         
                             Mantenimientos Correctivos
-                    </Link>
+                    
                 </span>
                 {/*Heramienta para ver en moviles*/}
                 <div
@@ -178,9 +178,9 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                 >
                     Mantenimientos Correctivos
                 </div>
-
-    
             </li>
+            </Link>
+            <Link href="/reportes"  className='w-32 text-white sm:flex'>
             <li
                 className="flex text-white/80 items-center space-x-2 hover:bg-white/10 hover:cursor-pointer w-[90%]
                 mx-auto rounded-[15px] p-2 group relative"
@@ -191,10 +191,9 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                 <span
                     className="sm:flex hidden text-sm group-hover:text-white font-[600]"
                 >
-                   <Link href="/manCorrectivo"  className='w-32 text-white sm:flex'>
-        
+
                             Reportes
-                    </Link>
+                    
                 </span>
                 {/*Heramienta para ver en moviles*/}
                 <div
@@ -204,8 +203,9 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                     Reportes
                 </div>
 
-    
             </li>
+            </Link>
+            <Link href="/"  className='w-32 text-white'>
             <li
                 className="flex text-white/80 items-center space-x-2 hover:bg-white/10 hover:cursor-pointer w-[90%]
                 mx-auto rounded-[15px] p-2 group relative"
@@ -216,10 +216,8 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                 <span
                     className="sm:flex hidden text-sm group-hover:text-white font-[600]"
                 >
-                   <Link href="/"  className='w-32 text-white'>
         
-                            Acerca de
-                    </Link>
+                            Acerca de  
                 </span>
                 {/*Heramienta para ver en moviles*/}
                 <div
@@ -228,9 +226,8 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                 >
                     Acerca de
                 </div>
-
-    
             </li>
+            </Link>
             <li
                 className="flex text-white/80 items-center space-x-2 hover:bg-white/10 hover:cursor-pointer w-[90%]
                 mx-auto rounded-[15px] p-2 group relative mt-auto"
