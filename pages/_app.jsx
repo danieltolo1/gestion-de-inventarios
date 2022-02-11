@@ -1,5 +1,4 @@
 
-
 import PrivateLayout from '../layout/PrivateLayout';
 import { AppProps } from 'next/app';
 import { SessionProvider } from 'next-auth/react';
@@ -21,7 +20,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
       <Component {...pageProps} />
       
     </SessionProvider>
-    
+  
 
   </div>
   

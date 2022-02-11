@@ -31,3 +31,4 @@ const PrivateLayout = ({ children }) => {
 };
 
 export default PrivateLayout;
+
