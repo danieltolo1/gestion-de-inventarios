@@ -4,7 +4,7 @@ exports.UserCreateWithoutSessionsInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
 const AccountCreateNestedManyWithoutUserInput_1 = require("../inputs/AccountCreateNestedManyWithoutUserInput");
-const MovimientoInventarioCreateNestedManyWithoutUsuarioInput_1 = require("../inputs/MovimientoInventarioCreateNestedManyWithoutUsuarioInput");
+const MaintenanceCreateNestedManyWithoutUserInput_1 = require("../inputs/MaintenanceCreateNestedManyWithoutUserInput");
 let UserCreateWithoutSessionsInput = class UserCreateWithoutSessionsInput {
 };
 (0, tslib_1.__decorate)([
@@ -44,11 +44,11 @@ let UserCreateWithoutSessionsInput = class UserCreateWithoutSessionsInput {
     (0, tslib_1.__metadata)("design:type", AccountCreateNestedManyWithoutUserInput_1.AccountCreateNestedManyWithoutUserInput)
 ], UserCreateWithoutSessionsInput.prototype, "accounts", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => MovimientoInventarioCreateNestedManyWithoutUsuarioInput_1.MovimientoInventarioCreateNestedManyWithoutUsuarioInput, {
+    TypeGraphQL.Field(_type => MaintenanceCreateNestedManyWithoutUserInput_1.MaintenanceCreateNestedManyWithoutUserInput, {
         nullable: true
     }),
-    (0, tslib_1.__metadata)("design:type", MovimientoInventarioCreateNestedManyWithoutUsuarioInput_1.MovimientoInventarioCreateNestedManyWithoutUsuarioInput)
-], UserCreateWithoutSessionsInput.prototype, "movimientos", void 0);
+    (0, tslib_1.__metadata)("design:type", MaintenanceCreateNestedManyWithoutUserInput_1.MaintenanceCreateNestedManyWithoutUserInput)
+], UserCreateWithoutSessionsInput.prototype, "mantenance", void 0);
 UserCreateWithoutSessionsInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("UserCreateWithoutSessionsInput", {
         isAbstract: true

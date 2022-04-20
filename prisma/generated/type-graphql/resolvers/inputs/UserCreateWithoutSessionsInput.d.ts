@@ -1,5 +1,5 @@
 import { AccountCreateNestedManyWithoutUserInput } from "../inputs/AccountCreateNestedManyWithoutUserInput";
-import { MovimientoInventarioCreateNestedManyWithoutUsuarioInput } from "../inputs/MovimientoInventarioCreateNestedManyWithoutUsuarioInput";
+import { MaintenanceCreateNestedManyWithoutUserInput } from "../inputs/MaintenanceCreateNestedManyWithoutUserInput";
 export declare class UserCreateWithoutSessionsInput {
     id?: string | undefined;
     name?: string | undefined;
@@ -7,5 +7,5 @@ export declare class UserCreateWithoutSessionsInput {
     emailVerified?: Date | undefined;
     image?: string | undefined;
     accounts?: AccountCreateNestedManyWithoutUserInput | undefined;
-    movimientos?: MovimientoInventarioCreateNestedManyWithoutUsuarioInput | undefined;
+    mantenance?: MaintenanceCreateNestedManyWithoutUserInput | undefined;
 }

@@ -1,6 +1,6 @@
 import { AccountListRelationFilter } from "../inputs/AccountListRelationFilter";
 import { DateTimeNullableFilter } from "../inputs/DateTimeNullableFilter";
-import { MovimientoInventarioListRelationFilter } from "../inputs/MovimientoInventarioListRelationFilter";
+import { MaintenanceListRelationFilter } from "../inputs/MaintenanceListRelationFilter";
 import { SessionListRelationFilter } from "../inputs/SessionListRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
@@ -15,5 +15,5 @@ export declare class UserWhereInput {
     image?: StringNullableFilter | undefined;
     accounts?: AccountListRelationFilter | undefined;
     sessions?: SessionListRelationFilter | undefined;
-    movimientos?: MovimientoInventarioListRelationFilter | undefined;
+    mantenance?: MaintenanceListRelationFilter | undefined;
 }

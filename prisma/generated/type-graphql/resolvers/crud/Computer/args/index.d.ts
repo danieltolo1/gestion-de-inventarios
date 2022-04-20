@@ -1,0 +1,12 @@
+export { AggregateComputerArgs } from "./AggregateComputerArgs";
+export { CreateComputerArgs } from "./CreateComputerArgs";
+export { CreateManyComputerArgs } from "./CreateManyComputerArgs";
+export { DeleteComputerArgs } from "./DeleteComputerArgs";
+export { DeleteManyComputerArgs } from "./DeleteManyComputerArgs";
+export { FindFirstComputerArgs } from "./FindFirstComputerArgs";
+export { FindManyComputerArgs } from "./FindManyComputerArgs";
+export { FindUniqueComputerArgs } from "./FindUniqueComputerArgs";
+export { GroupByComputerArgs } from "./GroupByComputerArgs";
+export { UpdateComputerArgs } from "./UpdateComputerArgs";
+export { UpdateManyComputerArgs } from "./UpdateManyComputerArgs";
+export { UpsertComputerArgs } from "./UpsertComputerArgs";

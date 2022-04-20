@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserUpdateWithoutAccountsInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
-const MovimientoInventarioUpdateManyWithoutUsuarioInput_1 = require("../inputs/MovimientoInventarioUpdateManyWithoutUsuarioInput");
+const MaintenanceUpdateManyWithoutUserInput_1 = require("../inputs/MaintenanceUpdateManyWithoutUserInput");
 const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/NullableDateTimeFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const SessionUpdateManyWithoutUserInput_1 = require("../inputs/SessionUpdateManyWithoutUserInput");
@@ -47,11 +47,11 @@ let UserUpdateWithoutAccountsInput = class UserUpdateWithoutAccountsInput {
     (0, tslib_1.__metadata)("design:type", SessionUpdateManyWithoutUserInput_1.SessionUpdateManyWithoutUserInput)
 ], UserUpdateWithoutAccountsInput.prototype, "sessions", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => MovimientoInventarioUpdateManyWithoutUsuarioInput_1.MovimientoInventarioUpdateManyWithoutUsuarioInput, {
+    TypeGraphQL.Field(_type => MaintenanceUpdateManyWithoutUserInput_1.MaintenanceUpdateManyWithoutUserInput, {
         nullable: true
     }),
-    (0, tslib_1.__metadata)("design:type", MovimientoInventarioUpdateManyWithoutUsuarioInput_1.MovimientoInventarioUpdateManyWithoutUsuarioInput)
-], UserUpdateWithoutAccountsInput.prototype, "movimientos", void 0);
+    (0, tslib_1.__metadata)("design:type", MaintenanceUpdateManyWithoutUserInput_1.MaintenanceUpdateManyWithoutUserInput)
+], UserUpdateWithoutAccountsInput.prototype, "mantenance", void 0);
 UserUpdateWithoutAccountsInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("UserUpdateWithoutAccountsInput", {
         isAbstract: true

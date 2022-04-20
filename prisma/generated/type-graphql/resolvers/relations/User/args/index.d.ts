@@ -1,3 +1,3 @@
 export { UserAccountsArgs } from "./UserAccountsArgs";
-export { UserMovimientosArgs } from "./UserMovimientosArgs";
+export { UserMantenanceArgs } from "./UserMantenanceArgs";
 export { UserSessionsArgs } from "./UserSessionsArgs";

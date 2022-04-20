@@ -1,5 +1,5 @@
 import { Account } from "../models/Account";
-import { MovimientoInventario } from "../models/MovimientoInventario";
+import { Maintenance } from "../models/Maintenance";
 import { Session } from "../models/Session";
 import { UserCount } from "../resolvers/outputs/UserCount";
 export declare class User {
@@ -10,6 +10,6 @@ export declare class User {
     image?: string | null;
     accounts?: Account[];
     sessions?: Session[];
-    movimientos?: MovimientoInventario[];
+    mantenance?: Maintenance[];
     _count?: UserCount | null;
 }

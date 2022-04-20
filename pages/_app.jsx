@@ -3,9 +3,23 @@ import PrivateLayout from '../layout/PrivateLayout';
 import { AppProps } from 'next/app';
 import { SessionProvider } from 'next-auth/react';
 import '../styles/globals.css';
+import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import Navbar from  '../components/NavBar'
 import Image from 'next/image';
 import test1 from './manPreventivo'
+
+
+
+const httplink = createHttpLink({
+  uri:"http://localhost:3000/api/graphql/"
+
+})
+
+const client = new ApolloClient({
+  uri: httplink,
+  cache:new InMemoryCache()
+
+})
 
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
@@ -14,13 +28,13 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   
   return (
    <div> 
-     
+    <ApolloProvider client={client}>
     <SessionProvider session={session}>
       <Navbar/>  
       <Component {...pageProps} />
       
     </SessionProvider>
-  
+    </ApolloProvider> 
 
   </div>
   

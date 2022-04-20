@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateSoftwareComputerArgs } from "./args/AggregateSoftwareComputerArgs";
+import { CreateManySoftwareComputerArgs } from "./args/CreateManySoftwareComputerArgs";
+import { CreateSoftwareComputerArgs } from "./args/CreateSoftwareComputerArgs";
+import { DeleteManySoftwareComputerArgs } from "./args/DeleteManySoftwareComputerArgs";
+import { DeleteSoftwareComputerArgs } from "./args/DeleteSoftwareComputerArgs";
+import { FindFirstSoftwareComputerArgs } from "./args/FindFirstSoftwareComputerArgs";
+import { FindManySoftwareComputerArgs } from "./args/FindManySoftwareComputerArgs";
+import { FindUniqueSoftwareComputerArgs } from "./args/FindUniqueSoftwareComputerArgs";
+import { GroupBySoftwareComputerArgs } from "./args/GroupBySoftwareComputerArgs";
+import { UpdateManySoftwareComputerArgs } from "./args/UpdateManySoftwareComputerArgs";
+import { UpdateSoftwareComputerArgs } from "./args/UpdateSoftwareComputerArgs";
+import { UpsertSoftwareComputerArgs } from "./args/UpsertSoftwareComputerArgs";
+import { SoftwareComputer } from "../../../models/SoftwareComputer";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateSoftwareComputer } from "../../outputs/AggregateSoftwareComputer";
+import { SoftwareComputerGroupBy } from "../../outputs/SoftwareComputerGroupBy";
+export declare class SoftwareComputerCrudResolver {
+    softwareComputer(ctx: any, info: GraphQLResolveInfo, args: FindUniqueSoftwareComputerArgs): Promise<SoftwareComputer | null>;
+    findFirstSoftwareComputer(ctx: any, info: GraphQLResolveInfo, args: FindFirstSoftwareComputerArgs): Promise<SoftwareComputer | null>;
+    softwareComputers(ctx: any, info: GraphQLResolveInfo, args: FindManySoftwareComputerArgs): Promise<SoftwareComputer[]>;
+    createSoftwareComputer(ctx: any, info: GraphQLResolveInfo, args: CreateSoftwareComputerArgs): Promise<SoftwareComputer>;
+    createManySoftwareComputer(ctx: any, info: GraphQLResolveInfo, args: CreateManySoftwareComputerArgs): Promise<AffectedRowsOutput>;
+    deleteSoftwareComputer(ctx: any, info: GraphQLResolveInfo, args: DeleteSoftwareComputerArgs): Promise<SoftwareComputer | null>;
+    updateSoftwareComputer(ctx: any, info: GraphQLResolveInfo, args: UpdateSoftwareComputerArgs): Promise<SoftwareComputer | null>;
+    deleteManySoftwareComputer(ctx: any, info: GraphQLResolveInfo, args: DeleteManySoftwareComputerArgs): Promise<AffectedRowsOutput>;
+    updateManySoftwareComputer(ctx: any, info: GraphQLResolveInfo, args: UpdateManySoftwareComputerArgs): Promise<AffectedRowsOutput>;
+    upsertSoftwareComputer(ctx: any, info: GraphQLResolveInfo, args: UpsertSoftwareComputerArgs): Promise<SoftwareComputer>;
+    aggregateSoftwareComputer(ctx: any, info: GraphQLResolveInfo, args: AggregateSoftwareComputerArgs): Promise<AggregateSoftwareComputer>;
+    groupBySoftwareComputer(ctx: any, info: GraphQLResolveInfo, args: GroupBySoftwareComputerArgs): Promise<SoftwareComputerGroupBy[]>;
+}

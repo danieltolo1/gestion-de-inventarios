@@ -5,9 +5,15 @@ import * as models from "./models";
 import * as outputTypes from "./resolvers/outputs";
 import * as inputTypes from "./resolvers/inputs";
 declare const crudResolversMap: {
-    Producto: typeof crudResolvers.ProductoCrudResolver;
-    Inventario: typeof crudResolvers.InventarioCrudResolver;
-    MovimientoInventario: typeof crudResolvers.MovimientoInventarioCrudResolver;
+    Product: typeof crudResolvers.ProductCrudResolver;
+    Product_Type: typeof crudResolvers.Product_TypeCrudResolver;
+    State: typeof crudResolvers.StateCrudResolver;
+    Computer: typeof crudResolvers.ComputerCrudResolver;
+    SoftwareComputer: typeof crudResolvers.SoftwareComputerCrudResolver;
+    Program: typeof crudResolvers.ProgramCrudResolver;
+    PartComputer: typeof crudResolvers.PartComputerCrudResolver;
+    Location: typeof crudResolvers.LocationCrudResolver;
+    Maintenance: typeof crudResolvers.MaintenanceCrudResolver;
     Account: typeof crudResolvers.AccountCrudResolver;
     Session: typeof crudResolvers.SessionCrudResolver;
     VerificationToken: typeof crudResolvers.VerificationTokenCrudResolver;
@@ -32,9 +38,15 @@ export declare type ArgsTypesEnhanceMap = {
 };
 export declare function applyArgsTypesEnhanceMap(argsTypesEnhanceMap: ArgsTypesEnhanceMap): void;
 declare const relationResolversMap: {
-    Producto: typeof relationResolvers.ProductoRelationsResolver;
-    Inventario: typeof relationResolvers.InventarioRelationsResolver;
-    MovimientoInventario: typeof relationResolvers.MovimientoInventarioRelationsResolver;
+    Product: typeof relationResolvers.ProductRelationsResolver;
+    Product_Type: typeof relationResolvers.Product_TypeRelationsResolver;
+    State: typeof relationResolvers.StateRelationsResolver;
+    Computer: typeof relationResolvers.ComputerRelationsResolver;
+    SoftwareComputer: typeof relationResolvers.SoftwareComputerRelationsResolver;
+    Program: typeof relationResolvers.ProgramRelationsResolver;
+    PartComputer: typeof relationResolvers.PartComputerRelationsResolver;
+    Location: typeof relationResolvers.LocationRelationsResolver;
+    Maintenance: typeof relationResolvers.MaintenanceRelationsResolver;
     Account: typeof relationResolvers.AccountRelationsResolver;
     Session: typeof relationResolvers.SessionRelationsResolver;
     User: typeof relationResolvers.UserRelationsResolver;

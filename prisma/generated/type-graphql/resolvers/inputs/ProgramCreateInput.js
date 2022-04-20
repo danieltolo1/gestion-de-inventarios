@@ -1,0 +1,38 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProgramCreateInput = void 0;
+const tslib_1 = require("tslib");
+const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
+const SoftwareComputerCreateNestedOneWithoutProgramInput_1 = require("../inputs/SoftwareComputerCreateNestedOneWithoutProgramInput");
+let ProgramCreateInput = class ProgramCreateInput {
+};
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ProgramCreateInput.prototype, "name_program", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ProgramCreateInput.prototype, "version_program", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ProgramCreateInput.prototype, "license_program", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SoftwareComputerCreateNestedOneWithoutProgramInput_1.SoftwareComputerCreateNestedOneWithoutProgramInput, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", SoftwareComputerCreateNestedOneWithoutProgramInput_1.SoftwareComputerCreateNestedOneWithoutProgramInput)
+], ProgramCreateInput.prototype, "softwarecomputer", void 0);
+ProgramCreateInput = (0, tslib_1.__decorate)([
+    TypeGraphQL.InputType("ProgramCreateInput", {
+        isAbstract: true
+    })
+], ProgramCreateInput);
+exports.ProgramCreateInput = ProgramCreateInput;

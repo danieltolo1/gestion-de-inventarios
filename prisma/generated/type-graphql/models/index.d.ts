@@ -1,7 +1,13 @@
 export { Account } from "./Account";
-export { Inventario } from "./Inventario";
-export { MovimientoInventario } from "./MovimientoInventario";
-export { Producto } from "./Producto";
+export { Computer } from "./Computer";
+export { Location } from "./Location";
+export { Maintenance } from "./Maintenance";
+export { PartComputer } from "./PartComputer";
+export { Product } from "./Product";
+export { Product_Type } from "./Product_Type";
+export { Program } from "./Program";
 export { Session } from "./Session";
+export { SoftwareComputer } from "./SoftwareComputer";
+export { State } from "./State";
 export { User } from "./User";
 export { VerificationToken } from "./VerificationToken";

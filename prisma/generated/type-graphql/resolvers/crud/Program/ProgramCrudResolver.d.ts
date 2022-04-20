@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateProgramArgs } from "./args/AggregateProgramArgs";
+import { CreateManyProgramArgs } from "./args/CreateManyProgramArgs";
+import { CreateProgramArgs } from "./args/CreateProgramArgs";
+import { DeleteManyProgramArgs } from "./args/DeleteManyProgramArgs";
+import { DeleteProgramArgs } from "./args/DeleteProgramArgs";
+import { FindFirstProgramArgs } from "./args/FindFirstProgramArgs";
+import { FindManyProgramArgs } from "./args/FindManyProgramArgs";
+import { FindUniqueProgramArgs } from "./args/FindUniqueProgramArgs";
+import { GroupByProgramArgs } from "./args/GroupByProgramArgs";
+import { UpdateManyProgramArgs } from "./args/UpdateManyProgramArgs";
+import { UpdateProgramArgs } from "./args/UpdateProgramArgs";
+import { UpsertProgramArgs } from "./args/UpsertProgramArgs";
+import { Program } from "../../../models/Program";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateProgram } from "../../outputs/AggregateProgram";
+import { ProgramGroupBy } from "../../outputs/ProgramGroupBy";
+export declare class ProgramCrudResolver {
+    program(ctx: any, info: GraphQLResolveInfo, args: FindUniqueProgramArgs): Promise<Program | null>;
+    findFirstProgram(ctx: any, info: GraphQLResolveInfo, args: FindFirstProgramArgs): Promise<Program | null>;
+    programs(ctx: any, info: GraphQLResolveInfo, args: FindManyProgramArgs): Promise<Program[]>;
+    createProgram(ctx: any, info: GraphQLResolveInfo, args: CreateProgramArgs): Promise<Program>;
+    createManyProgram(ctx: any, info: GraphQLResolveInfo, args: CreateManyProgramArgs): Promise<AffectedRowsOutput>;
+    deleteProgram(ctx: any, info: GraphQLResolveInfo, args: DeleteProgramArgs): Promise<Program | null>;
+    updateProgram(ctx: any, info: GraphQLResolveInfo, args: UpdateProgramArgs): Promise<Program | null>;
+    deleteManyProgram(ctx: any, info: GraphQLResolveInfo, args: DeleteManyProgramArgs): Promise<AffectedRowsOutput>;
+    updateManyProgram(ctx: any, info: GraphQLResolveInfo, args: UpdateManyProgramArgs): Promise<AffectedRowsOutput>;
+    upsertProgram(ctx: any, info: GraphQLResolveInfo, args: UpsertProgramArgs): Promise<Program>;
+    aggregateProgram(ctx: any, info: GraphQLResolveInfo, args: AggregateProgramArgs): Promise<AggregateProgram>;
+    groupByProgram(ctx: any, info: GraphQLResolveInfo, args: GroupByProgramArgs): Promise<ProgramGroupBy[]>;
+}

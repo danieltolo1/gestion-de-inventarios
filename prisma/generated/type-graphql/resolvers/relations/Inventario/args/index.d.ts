@@ -1,1 +1,0 @@
-export { InventarioMovimientoInventarioArgs } from "./InventarioMovimientoInventarioArgs";

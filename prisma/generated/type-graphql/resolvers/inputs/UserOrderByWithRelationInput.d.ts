@@ -1,5 +1,5 @@
 import { AccountOrderByRelationAggregateInput } from "../inputs/AccountOrderByRelationAggregateInput";
-import { MovimientoInventarioOrderByRelationAggregateInput } from "../inputs/MovimientoInventarioOrderByRelationAggregateInput";
+import { MaintenanceOrderByRelationAggregateInput } from "../inputs/MaintenanceOrderByRelationAggregateInput";
 import { SessionOrderByRelationAggregateInput } from "../inputs/SessionOrderByRelationAggregateInput";
 export declare class UserOrderByWithRelationInput {
     id?: "asc" | "desc" | undefined;
@@ -9,5 +9,5 @@ export declare class UserOrderByWithRelationInput {
     image?: "asc" | "desc" | undefined;
     accounts?: AccountOrderByRelationAggregateInput | undefined;
     sessions?: SessionOrderByRelationAggregateInput | undefined;
-    movimientos?: MovimientoInventarioOrderByRelationAggregateInput | undefined;
+    mantenance?: MaintenanceOrderByRelationAggregateInput | undefined;
 }

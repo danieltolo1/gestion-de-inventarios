@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregatePartComputerArgs } from "./args/AggregatePartComputerArgs";
+import { CreateManyPartComputerArgs } from "./args/CreateManyPartComputerArgs";
+import { CreatePartComputerArgs } from "./args/CreatePartComputerArgs";
+import { DeleteManyPartComputerArgs } from "./args/DeleteManyPartComputerArgs";
+import { DeletePartComputerArgs } from "./args/DeletePartComputerArgs";
+import { FindFirstPartComputerArgs } from "./args/FindFirstPartComputerArgs";
+import { FindManyPartComputerArgs } from "./args/FindManyPartComputerArgs";
+import { FindUniquePartComputerArgs } from "./args/FindUniquePartComputerArgs";
+import { GroupByPartComputerArgs } from "./args/GroupByPartComputerArgs";
+import { UpdateManyPartComputerArgs } from "./args/UpdateManyPartComputerArgs";
+import { UpdatePartComputerArgs } from "./args/UpdatePartComputerArgs";
+import { UpsertPartComputerArgs } from "./args/UpsertPartComputerArgs";
+import { PartComputer } from "../../../models/PartComputer";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregatePartComputer } from "../../outputs/AggregatePartComputer";
+import { PartComputerGroupBy } from "../../outputs/PartComputerGroupBy";
+export declare class PartComputerCrudResolver {
+    partComputer(ctx: any, info: GraphQLResolveInfo, args: FindUniquePartComputerArgs): Promise<PartComputer | null>;
+    findFirstPartComputer(ctx: any, info: GraphQLResolveInfo, args: FindFirstPartComputerArgs): Promise<PartComputer | null>;
+    partComputers(ctx: any, info: GraphQLResolveInfo, args: FindManyPartComputerArgs): Promise<PartComputer[]>;
+    createPartComputer(ctx: any, info: GraphQLResolveInfo, args: CreatePartComputerArgs): Promise<PartComputer>;
+    createManyPartComputer(ctx: any, info: GraphQLResolveInfo, args: CreateManyPartComputerArgs): Promise<AffectedRowsOutput>;
+    deletePartComputer(ctx: any, info: GraphQLResolveInfo, args: DeletePartComputerArgs): Promise<PartComputer | null>;
+    updatePartComputer(ctx: any, info: GraphQLResolveInfo, args: UpdatePartComputerArgs): Promise<PartComputer | null>;
+    deleteManyPartComputer(ctx: any, info: GraphQLResolveInfo, args: DeleteManyPartComputerArgs): Promise<AffectedRowsOutput>;
+    updateManyPartComputer(ctx: any, info: GraphQLResolveInfo, args: UpdateManyPartComputerArgs): Promise<AffectedRowsOutput>;
+    upsertPartComputer(ctx: any, info: GraphQLResolveInfo, args: UpsertPartComputerArgs): Promise<PartComputer>;
+    aggregatePartComputer(ctx: any, info: GraphQLResolveInfo, args: AggregatePartComputerArgs): Promise<AggregatePartComputer>;
+    groupByPartComputer(ctx: any, info: GraphQLResolveInfo, args: GroupByPartComputerArgs): Promise<PartComputerGroupBy[]>;
+}

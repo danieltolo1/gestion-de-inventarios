@@ -94,12 +94,7 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                         Inicio   
                 </span>
                 {/*Heramienta para ver ev moviles*/}
-                <div
-                    className="absolute group-hover:sm:hidden hidden group-hover:inline text-white/90 right-[-10%] top-1/2
-                    translate-y-[-50%] translate-x-[100%]"
-                >
-                    Inicio
-                </div>
+                
             </li>
             </Link>
             <Link href="/inventario"  className='w-32 text-white'>
@@ -119,12 +114,7 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                     
                 </span>
                 {/*Heramienta para ver en moviles*/}
-                <div
-                    className="absolute group-hover:sm:hidden hidden group-hover:inline text-white/90 right-[-10%] top-1/2
-                    translate-y-[-50%] translate-x-[100%]"
-                >
-                    Inventario
-                </div>
+                
 
             </li>
             </Link>
@@ -145,12 +135,7 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                     
                 </span>
                 {/*Heramienta para ver en moviles*/}
-                <div
-                    className="absolute group-hover:sm:hidden hidden group-hover:inline text-white/90 right-[-10%] top-1/2
-                    translate-y-[-50%] translate-x-[100%]"
-                >
-                    Mantenimientos Preventivos
-                </div>
+               
 
     
             </li>
@@ -172,12 +157,7 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                     
                 </span>
                 {/*Heramienta para ver en moviles*/}
-                <div
-                    className="absolute group-hover:sm:hidden hidden group-hover:inline text-white/90 right-[-10%] top-1/2
-                    translate-y-[-50%] translate-x-[100%]"
-                >
-                    Mantenimientos Correctivos
-                </div>
+                
             </li>
             </Link>
             <Link href="/reportes"  className='w-32 text-white sm:flex'>
@@ -196,12 +176,7 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                     
                 </span>
                 {/*Heramienta para ver en moviles*/}
-                <div
-                    className="absolute group-hover:sm:hidden hidden group-hover:inline text-white/90 right-[-10%] top-1/2
-                    translate-y-[-50%] translate-x-[100%]"
-                >
-                    Reportes
-                </div>
+                
 
             </li>
             </Link>
@@ -220,12 +195,7 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                             Acerca de  
                 </span>
                 {/*Heramienta para ver en moviles*/}
-                <div
-                    className="absolute group-hover:sm:hidden hidden group-hover:inline text-white/90 right-[-10%] top-1/2
-                    translate-y-[-50%] translate-x-[100%]"
-                >
-                    Acerca de
-                </div>
+               
             </li>
             </Link>
             <li
@@ -245,12 +215,7 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                     
                 </span>
                 {/*Heramienta para ver en moviles*/}
-                <div
-                    className="absolute group-hover:sm:hidden hidden group-hover:inline text-white/90 right-[-10%] top-1/2
-                    translate-y-[-50%] translate-x-[100%]"
-                >
-                    Salir
-                </div>
+               
 
     
             </li>

@@ -1,0 +1,19 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Product_TypeCreateWithoutProductInput = void 0;
+const tslib_1 = require("tslib");
+const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
+let Product_TypeCreateWithoutProductInput = class Product_TypeCreateWithoutProductInput {
+};
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], Product_TypeCreateWithoutProductInput.prototype, "description", void 0);
+Product_TypeCreateWithoutProductInput = (0, tslib_1.__decorate)([
+    TypeGraphQL.InputType("Product_TypeCreateWithoutProductInput", {
+        isAbstract: true
+    })
+], Product_TypeCreateWithoutProductInput);
+exports.Product_TypeCreateWithoutProductInput = Product_TypeCreateWithoutProductInput;

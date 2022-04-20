@@ -26,6 +26,9 @@ export const config = {
   },
 };
 
+
+
+
 const functionHandler = async (req:any, res:any) => {
   const schema = await buildSchema({
     resolvers,

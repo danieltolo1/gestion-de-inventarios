@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateComputerArgs } from "./args/AggregateComputerArgs";
+import { CreateComputerArgs } from "./args/CreateComputerArgs";
+import { CreateManyComputerArgs } from "./args/CreateManyComputerArgs";
+import { DeleteComputerArgs } from "./args/DeleteComputerArgs";
+import { DeleteManyComputerArgs } from "./args/DeleteManyComputerArgs";
+import { FindFirstComputerArgs } from "./args/FindFirstComputerArgs";
+import { FindManyComputerArgs } from "./args/FindManyComputerArgs";
+import { FindUniqueComputerArgs } from "./args/FindUniqueComputerArgs";
+import { GroupByComputerArgs } from "./args/GroupByComputerArgs";
+import { UpdateComputerArgs } from "./args/UpdateComputerArgs";
+import { UpdateManyComputerArgs } from "./args/UpdateManyComputerArgs";
+import { UpsertComputerArgs } from "./args/UpsertComputerArgs";
+import { Computer } from "../../../models/Computer";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateComputer } from "../../outputs/AggregateComputer";
+import { ComputerGroupBy } from "../../outputs/ComputerGroupBy";
+export declare class ComputerCrudResolver {
+    computer(ctx: any, info: GraphQLResolveInfo, args: FindUniqueComputerArgs): Promise<Computer | null>;
+    findFirstComputer(ctx: any, info: GraphQLResolveInfo, args: FindFirstComputerArgs): Promise<Computer | null>;
+    computers(ctx: any, info: GraphQLResolveInfo, args: FindManyComputerArgs): Promise<Computer[]>;
+    createComputer(ctx: any, info: GraphQLResolveInfo, args: CreateComputerArgs): Promise<Computer>;
+    createManyComputer(ctx: any, info: GraphQLResolveInfo, args: CreateManyComputerArgs): Promise<AffectedRowsOutput>;
+    deleteComputer(ctx: any, info: GraphQLResolveInfo, args: DeleteComputerArgs): Promise<Computer | null>;
+    updateComputer(ctx: any, info: GraphQLResolveInfo, args: UpdateComputerArgs): Promise<Computer | null>;
+    deleteManyComputer(ctx: any, info: GraphQLResolveInfo, args: DeleteManyComputerArgs): Promise<AffectedRowsOutput>;
+    updateManyComputer(ctx: any, info: GraphQLResolveInfo, args: UpdateManyComputerArgs): Promise<AffectedRowsOutput>;
+    upsertComputer(ctx: any, info: GraphQLResolveInfo, args: UpsertComputerArgs): Promise<Computer>;
+    aggregateComputer(ctx: any, info: GraphQLResolveInfo, args: AggregateComputerArgs): Promise<AggregateComputer>;
+    groupByComputer(ctx: any, info: GraphQLResolveInfo, args: GroupByComputerArgs): Promise<ComputerGroupBy[]>;
+}

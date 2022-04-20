@@ -1,0 +1,31 @@
+import { BoolNullableFilter } from "../inputs/BoolNullableFilter";
+import { DateTimeNullableFilter } from "../inputs/DateTimeNullableFilter";
+import { FloatNullableFilter } from "../inputs/FloatNullableFilter";
+import { IntFilter } from "../inputs/IntFilter";
+import { PartComputerListRelationFilter } from "../inputs/PartComputerListRelationFilter";
+import { SoftwareComputerRelationFilter } from "../inputs/SoftwareComputerRelationFilter";
+import { StateRelationFilter } from "../inputs/StateRelationFilter";
+import { StringFilter } from "../inputs/StringFilter";
+import { StringNullableFilter } from "../inputs/StringNullableFilter";
+export declare class ComputerWhereInput {
+    AND?: ComputerWhereInput[] | undefined;
+    OR?: ComputerWhereInput[] | undefined;
+    NOT?: ComputerWhereInput[] | undefined;
+    id_computer?: IntFilter | undefined;
+    buy_date?: DateTimeNullableFilter | undefined;
+    price?: FloatNullableFilter | undefined;
+    internal_code?: StringFilter | undefined;
+    serial_number?: StringFilter | undefined;
+    memory?: StringFilter | undefined;
+    hard_disk?: StringFilter | undefined;
+    processor?: StringFilter | undefined;
+    optical_unit?: BoolNullableFilter | undefined;
+    model?: StringFilter | undefined;
+    state?: StateRelationFilter | undefined;
+    stateId?: IntFilter | undefined;
+    softwarecomputer?: SoftwareComputerRelationFilter | undefined;
+    softwarecomputerId?: IntFilter | undefined;
+    partComputer?: PartComputerListRelationFilter | undefined;
+    observation?: StringNullableFilter | undefined;
+    historial?: StringNullableFilter | undefined;
+}

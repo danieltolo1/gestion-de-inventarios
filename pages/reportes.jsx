@@ -18,24 +18,22 @@ const reportes = () => {
     
                   {/* Maquetacion del Titulo de la pagina*/}
                   <div
-                  className="flex w-[100%] space-x-2 py-2 mr-10 sm:text-center h-20"
-                  >
-    
-                        
-                         <div
-                         className="flex sm:tex-sm  md:text-xl lg:text-2x1 xl:text-2x1 text-cyan-50 lg:pr-20 xl:pr-20" > 
-                         ARES GESTION DE MANTENIMIENTO E INVENTARIO 
-                          </div>
-                          <div
-                         className=" sm: md:w-[30%] lg:w-[10%]  xl:w-[10%] h-[100%] xl:ml-7 2xl:ml-10 relative  items-right   "
-                         >
-                             <Image
-                             className='absolute rounded-[20%] xl:ml-7  items-right  '
-                             src='/ares1.png'
-                             layout='fill'
-                            />
-    
-                         </div>
+              className="flex w-[100%] 2xl:w-[100%] space-x-2 py-2 mr-10 sm:text-center h-20"
+              >
+                     <div
+                     className="flex sm:tex-sm  sm:text-center  md:text-base lg:text-lg xl:text-2xl 2xl:text-3xl text-cyan-50 lg:pr-20 xl:pr-20 2xl:pl-20" > 
+                     ARES GESTION DE MANTENIMIENTO E INVENTARIO
+                      </div>
+                      <div
+                     className=" sm:w-[0%] md:w-[30%] lg:w-[10%]  xl:w-[10%] 2xl:w-[10%] h-[100%] xl:ml-7 2xl:ml-20 relative  items-right   "
+                     >
+                         <Image
+                         className='absolute rounded-[20%] xl:ml-7 2xl:ml-20 items-right  '
+                         src='/ares1.png'
+                         layout='fill'
+                        />
+
+                     </div>
                          
                   </div>
                   <div

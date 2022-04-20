@@ -22,7 +22,7 @@ let UserCount = class UserCount {
         nullable: false
     }),
     (0, tslib_1.__metadata)("design:type", Number)
-], UserCount.prototype, "movimientos", void 0);
+], UserCount.prototype, "mantenance", void 0);
 UserCount = (0, tslib_1.__decorate)([
     TypeGraphQL.ObjectType("UserCount", {
         isAbstract: true

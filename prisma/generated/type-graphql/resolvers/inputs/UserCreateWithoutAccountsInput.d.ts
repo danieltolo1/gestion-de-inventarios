@@ -1,4 +1,4 @@
-import { MovimientoInventarioCreateNestedManyWithoutUsuarioInput } from "../inputs/MovimientoInventarioCreateNestedManyWithoutUsuarioInput";
+import { MaintenanceCreateNestedManyWithoutUserInput } from "../inputs/MaintenanceCreateNestedManyWithoutUserInput";
 import { SessionCreateNestedManyWithoutUserInput } from "../inputs/SessionCreateNestedManyWithoutUserInput";
 export declare class UserCreateWithoutAccountsInput {
     id?: string | undefined;
@@ -7,5 +7,5 @@ export declare class UserCreateWithoutAccountsInput {
     emailVerified?: Date | undefined;
     image?: string | undefined;
     sessions?: SessionCreateNestedManyWithoutUserInput | undefined;
-    movimientos?: MovimientoInventarioCreateNestedManyWithoutUsuarioInput | undefined;
+    mantenance?: MaintenanceCreateNestedManyWithoutUserInput | undefined;
 }

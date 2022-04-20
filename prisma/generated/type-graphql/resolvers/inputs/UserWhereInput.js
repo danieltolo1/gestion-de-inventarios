@@ -6,7 +6,7 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
 const AccountListRelationFilter_1 = require("../inputs/AccountListRelationFilter");
 const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
-const MovimientoInventarioListRelationFilter_1 = require("../inputs/MovimientoInventarioListRelationFilter");
+const MaintenanceListRelationFilter_1 = require("../inputs/MaintenanceListRelationFilter");
 const SessionListRelationFilter_1 = require("../inputs/SessionListRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
@@ -73,11 +73,11 @@ let UserWhereInput = UserWhereInput_1 = class UserWhereInput {
     (0, tslib_1.__metadata)("design:type", SessionListRelationFilter_1.SessionListRelationFilter)
 ], UserWhereInput.prototype, "sessions", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => MovimientoInventarioListRelationFilter_1.MovimientoInventarioListRelationFilter, {
+    TypeGraphQL.Field(_type => MaintenanceListRelationFilter_1.MaintenanceListRelationFilter, {
         nullable: true
     }),
-    (0, tslib_1.__metadata)("design:type", MovimientoInventarioListRelationFilter_1.MovimientoInventarioListRelationFilter)
-], UserWhereInput.prototype, "movimientos", void 0);
+    (0, tslib_1.__metadata)("design:type", MaintenanceListRelationFilter_1.MaintenanceListRelationFilter)
+], UserWhereInput.prototype, "mantenance", void 0);
 UserWhereInput = UserWhereInput_1 = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("UserWhereInput", {
         isAbstract: true

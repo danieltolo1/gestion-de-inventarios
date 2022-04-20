@@ -16,39 +16,134 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Producto{
-  id      String @id @default(cuid())
-  nombre  String
-  foto    String
-  inventario Inventario?
+model Product{
+  id_product        Int           @id @default(autoincrement())
+  internal_code     String        @unique
+  serial_number     String?
+  imei              String?
+  observation       String?
+  picture           String?
+  model             String?
+  product_type      Product_Type  @relation(fields: [product_typeId], references: [id_product_type])
+  product_typeId    Int           @unique
+  size              String?
+  tecnology         String?
+  conectivity       String?
+  state             State          @relation(fields: [stateId], references: [id_state])
+  stateId           Int            @unique
+  partcomputer      PartComputer?  
+  historial         String
+ 
 }
 
-model Inventario{
-  id                    String @id @default(cuid())
-  cantidad              Int
-  producto              Producto @relation(fields: [productoId], references: [id])
-  productoId            String @unique
-  movimientoInventario  MovimientoInventario[]
 
+model Product_Type{
+  id_product_type   Int        @id @default(autoincrement())
+  product           Product[]
+  description       String
 }
 
 
-enum Enum_TipoMovimiento{
-  Entrada
-  Salida
+model State{
+  id_state          Int        @id @default(autoincrement())   
+  description       String
+  product           Product[]
+  computer          Computer[]
+}
+
+model Computer{
+   id_computer          Int            @id @default(autoincrement())  
+   buy_date             DateTime?
+   price                Float?
+   internal_code        String
+   serial_number        String
+   memory               String
+   hard_disk            String
+   processor            String
+   optical_unit         Boolean?
+   model                String
+   state                State             @relation(fields: [stateId], references: [id_state]) 
+   stateId              Int               @unique
+   softwarecomputer     SoftwareComputer  @relation(fields: [softwarecomputerId], references: [id_softwarecomputer]) 
+   softwarecomputerId   Int               @unique
+   partComputer         PartComputer[]
+   observation          String? 
+   historial            String?
+}
+
+enum Enum_Operatigsystem {
+  Windows_7
+  Windows_8
+  Windows_10
+  Windows_11
+}
+
+enum Enum_Architecture {
+  bits_32
+  bits_64
 }
 
 
-model MovimientoInventario{
-  id              String        @id @default(cuid())
-  inventario      Inventario    @relation(fields: [inventarioId], references: [id])
-  inventarioId    String
-  cantidad        Int
-  tipoMovimiento  Enum_TipoMovimiento
-  fecha           DateTime
-  usuario         User?      @relation(fields: [usuarioId], references: [id])
-  usuarioId       String?
+model SoftwareComputer{
+id_softwarecomputer          Int            @id @default(autoincrement())
+computer                     Computer[]
+operatingsystem              Enum_Operatigsystem
+license_so                   String
+user_anydesk                 String?
+pass_anydesk                 String?
+ip                           String
+user_domain                  String?
+pass_domain                  String?
+user_admin                   String?
+pass_admin                   String?
+user_local                   String?
+pass_local                   String?
+architecture                 Enum_Architecture
+program                      Program[]
+}
 
+
+model Program{
+  id_program          Int                @id @default(autoincrement())
+  name_program        String
+  version_program     String?
+  license_program     String?  
+  softwarecomputer    SoftwareComputer  @relation(fields: [softwarecomputerId], references: [id_softwarecomputer])
+  softwarecomputerId  Int               @unique
+}
+
+
+
+model PartComputer{
+  id_partComputer       Int         @id @default(autoincrement()) 
+  product               Product     @relation(fields: [productId], references: [id_product])
+  productId             Int         @unique
+  computer              Computer    @relation(fields: [computerId], references: [id_computer])
+  computerId            Int         @unique
+  location              Location    @relation(fields: [locationId], references: [id_location])
+  locationId            Int         @unique
+  maintenance           Maintenance @relation(fields: [maintenanceId], references: [id_maintenance])
+  maintenanceId         Int         @unique
+  name_part             String?
+  
+}
+
+
+model Location {
+  id_location       Int         @id @default(autoincrement())
+  city              String
+  job_name          String
+  partComputer      PartComputer[]
+}
+
+
+model Maintenance{
+  id_maintenance       Int            @id @default(autoincrement())
+  date_maintenance     DateTime?
+  jworkerNameFirm      String?
+  user                 User           @relation(fields: [userId], references: [id])
+  userId               String         @unique
+  partComputer         PartComputer[]
 }
 
 
@@ -83,12 +178,11 @@ model Session {
 
 model VerificationToken {
   identifier String
-  token      String   @unique
+  token      String    @unique
   expires    DateTime
 
   @@unique([identifier, token])
 }
-
 
 
 model User{
@@ -99,5 +193,5 @@ model User{
   image         String?
   accounts      Account[]
   sessions      Session[]
-  movimientos   MovimientoInventario[]
+  mantenance    Maintenance[]
 }

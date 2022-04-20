@@ -1,4 +1,4 @@
-import { MovimientoInventarioUpdateManyWithoutUsuarioInput } from "../inputs/MovimientoInventarioUpdateManyWithoutUsuarioInput";
+import { MaintenanceUpdateManyWithoutUserInput } from "../inputs/MaintenanceUpdateManyWithoutUserInput";
 import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDateTimeFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { SessionUpdateManyWithoutUserInput } from "../inputs/SessionUpdateManyWithoutUserInput";
@@ -10,5 +10,5 @@ export declare class UserUpdateWithoutAccountsInput {
     emailVerified?: NullableDateTimeFieldUpdateOperationsInput | undefined;
     image?: NullableStringFieldUpdateOperationsInput | undefined;
     sessions?: SessionUpdateManyWithoutUserInput | undefined;
-    movimientos?: MovimientoInventarioUpdateManyWithoutUsuarioInput | undefined;
+    mantenance?: MaintenanceUpdateManyWithoutUserInput | undefined;
 }

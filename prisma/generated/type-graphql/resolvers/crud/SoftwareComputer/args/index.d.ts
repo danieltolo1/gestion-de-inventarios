@@ -1,0 +1,12 @@
+export { AggregateSoftwareComputerArgs } from "./AggregateSoftwareComputerArgs";
+export { CreateManySoftwareComputerArgs } from "./CreateManySoftwareComputerArgs";
+export { CreateSoftwareComputerArgs } from "./CreateSoftwareComputerArgs";
+export { DeleteManySoftwareComputerArgs } from "./DeleteManySoftwareComputerArgs";
+export { DeleteSoftwareComputerArgs } from "./DeleteSoftwareComputerArgs";
+export { FindFirstSoftwareComputerArgs } from "./FindFirstSoftwareComputerArgs";
+export { FindManySoftwareComputerArgs } from "./FindManySoftwareComputerArgs";
+export { FindUniqueSoftwareComputerArgs } from "./FindUniqueSoftwareComputerArgs";
+export { GroupBySoftwareComputerArgs } from "./GroupBySoftwareComputerArgs";
+export { UpdateManySoftwareComputerArgs } from "./UpdateManySoftwareComputerArgs";
+export { UpdateSoftwareComputerArgs } from "./UpdateSoftwareComputerArgs";
+export { UpsertSoftwareComputerArgs } from "./UpsertSoftwareComputerArgs";

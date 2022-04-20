@@ -1,7 +1,13 @@
 export { AccountCrudResolver } from "./Account/AccountCrudResolver";
-export { InventarioCrudResolver } from "./Inventario/InventarioCrudResolver";
-export { MovimientoInventarioCrudResolver } from "./MovimientoInventario/MovimientoInventarioCrudResolver";
-export { ProductoCrudResolver } from "./Producto/ProductoCrudResolver";
+export { ComputerCrudResolver } from "./Computer/ComputerCrudResolver";
+export { LocationCrudResolver } from "./Location/LocationCrudResolver";
+export { MaintenanceCrudResolver } from "./Maintenance/MaintenanceCrudResolver";
+export { PartComputerCrudResolver } from "./PartComputer/PartComputerCrudResolver";
+export { ProductCrudResolver } from "./Product/ProductCrudResolver";
+export { Product_TypeCrudResolver } from "./Product_Type/Product_TypeCrudResolver";
+export { ProgramCrudResolver } from "./Program/ProgramCrudResolver";
 export { SessionCrudResolver } from "./Session/SessionCrudResolver";
+export { SoftwareComputerCrudResolver } from "./SoftwareComputer/SoftwareComputerCrudResolver";
+export { StateCrudResolver } from "./State/StateCrudResolver";
 export { UserCrudResolver } from "./User/UserCrudResolver";
 export { VerificationTokenCrudResolver } from "./VerificationToken/VerificationTokenCrudResolver";

@@ -1,0 +1,12 @@
+export { AggregateProgramArgs } from "./AggregateProgramArgs";
+export { CreateManyProgramArgs } from "./CreateManyProgramArgs";
+export { CreateProgramArgs } from "./CreateProgramArgs";
+export { DeleteManyProgramArgs } from "./DeleteManyProgramArgs";
+export { DeleteProgramArgs } from "./DeleteProgramArgs";
+export { FindFirstProgramArgs } from "./FindFirstProgramArgs";
+export { FindManyProgramArgs } from "./FindManyProgramArgs";
+export { FindUniqueProgramArgs } from "./FindUniqueProgramArgs";
+export { GroupByProgramArgs } from "./GroupByProgramArgs";
+export { UpdateManyProgramArgs } from "./UpdateManyProgramArgs";
+export { UpdateProgramArgs } from "./UpdateProgramArgs";
+export { UpsertProgramArgs } from "./UpsertProgramArgs";

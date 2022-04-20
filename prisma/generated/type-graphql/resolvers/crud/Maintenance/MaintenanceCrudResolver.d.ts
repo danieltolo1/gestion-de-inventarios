@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateMaintenanceArgs } from "./args/AggregateMaintenanceArgs";
+import { CreateMaintenanceArgs } from "./args/CreateMaintenanceArgs";
+import { CreateManyMaintenanceArgs } from "./args/CreateManyMaintenanceArgs";
+import { DeleteMaintenanceArgs } from "./args/DeleteMaintenanceArgs";
+import { DeleteManyMaintenanceArgs } from "./args/DeleteManyMaintenanceArgs";
+import { FindFirstMaintenanceArgs } from "./args/FindFirstMaintenanceArgs";
+import { FindManyMaintenanceArgs } from "./args/FindManyMaintenanceArgs";
+import { FindUniqueMaintenanceArgs } from "./args/FindUniqueMaintenanceArgs";
+import { GroupByMaintenanceArgs } from "./args/GroupByMaintenanceArgs";
+import { UpdateMaintenanceArgs } from "./args/UpdateMaintenanceArgs";
+import { UpdateManyMaintenanceArgs } from "./args/UpdateManyMaintenanceArgs";
+import { UpsertMaintenanceArgs } from "./args/UpsertMaintenanceArgs";
+import { Maintenance } from "../../../models/Maintenance";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateMaintenance } from "../../outputs/AggregateMaintenance";
+import { MaintenanceGroupBy } from "../../outputs/MaintenanceGroupBy";
+export declare class MaintenanceCrudResolver {
+    maintenance(ctx: any, info: GraphQLResolveInfo, args: FindUniqueMaintenanceArgs): Promise<Maintenance | null>;
+    findFirstMaintenance(ctx: any, info: GraphQLResolveInfo, args: FindFirstMaintenanceArgs): Promise<Maintenance | null>;
+    maintenances(ctx: any, info: GraphQLResolveInfo, args: FindManyMaintenanceArgs): Promise<Maintenance[]>;
+    createMaintenance(ctx: any, info: GraphQLResolveInfo, args: CreateMaintenanceArgs): Promise<Maintenance>;
+    createManyMaintenance(ctx: any, info: GraphQLResolveInfo, args: CreateManyMaintenanceArgs): Promise<AffectedRowsOutput>;
+    deleteMaintenance(ctx: any, info: GraphQLResolveInfo, args: DeleteMaintenanceArgs): Promise<Maintenance | null>;
+    updateMaintenance(ctx: any, info: GraphQLResolveInfo, args: UpdateMaintenanceArgs): Promise<Maintenance | null>;
+    deleteManyMaintenance(ctx: any, info: GraphQLResolveInfo, args: DeleteManyMaintenanceArgs): Promise<AffectedRowsOutput>;
+    updateManyMaintenance(ctx: any, info: GraphQLResolveInfo, args: UpdateManyMaintenanceArgs): Promise<AffectedRowsOutput>;
+    upsertMaintenance(ctx: any, info: GraphQLResolveInfo, args: UpsertMaintenanceArgs): Promise<Maintenance>;
+    aggregateMaintenance(ctx: any, info: GraphQLResolveInfo, args: AggregateMaintenanceArgs): Promise<AggregateMaintenance>;
+    groupByMaintenance(ctx: any, info: GraphQLResolveInfo, args: GroupByMaintenanceArgs): Promise<MaintenanceGroupBy[]>;
+}
