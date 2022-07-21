@@ -4,7 +4,7 @@ import { ProductWhereInput } from "../../../inputs/ProductWhereInput";
 export declare class GroupByProductArgs {
     where?: ProductWhereInput | undefined;
     orderBy?: ProductOrderByWithAggregationInput[] | undefined;
-    by: Array<"id_product" | "internal_code" | "serial_number" | "imei" | "observation" | "picture" | "model" | "product_typeId" | "size" | "tecnology" | "conectivity" | "stateId" | "historial">;
+    by: Array<"id_product" | "internal_code" | "serial_number" | "imei" | "observation" | "picture" | "model" | "product_typeId" | "size" | "tecnology" | "conectivity" | "stateId" | "locationId" | "historial">;
     having?: ProductScalarWhereWithAggregatesInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;

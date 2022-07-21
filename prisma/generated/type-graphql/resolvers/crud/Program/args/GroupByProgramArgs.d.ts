@@ -4,7 +4,7 @@ import { ProgramWhereInput } from "../../../inputs/ProgramWhereInput";
 export declare class GroupByProgramArgs {
     where?: ProgramWhereInput | undefined;
     orderBy?: ProgramOrderByWithAggregationInput[] | undefined;
-    by: Array<"id_program" | "name_program" | "version_program" | "license_program" | "softwarecomputerId">;
+    by: Array<"id_program" | "name_program" | "version_program" | "license_program">;
     having?: ProgramScalarWhereWithAggregatesInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;

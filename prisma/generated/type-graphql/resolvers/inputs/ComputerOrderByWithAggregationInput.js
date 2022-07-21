@@ -82,7 +82,19 @@ let ComputerOrderByWithAggregationInput = class ComputerOrderByWithAggregationIn
         nullable: true
     }),
     (0, tslib_1.__metadata)("design:type", String)
+], ComputerOrderByWithAggregationInput.prototype, "ip", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
 ], ComputerOrderByWithAggregationInput.prototype, "softwarecomputerId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerOrderByWithAggregationInput.prototype, "locationId", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
@@ -95,6 +107,54 @@ let ComputerOrderByWithAggregationInput = class ComputerOrderByWithAggregationIn
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], ComputerOrderByWithAggregationInput.prototype, "historial", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerOrderByWithAggregationInput.prototype, "user_domain", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerOrderByWithAggregationInput.prototype, "pass_domain", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerOrderByWithAggregationInput.prototype, "user_admin", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerOrderByWithAggregationInput.prototype, "pass_admin", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerOrderByWithAggregationInput.prototype, "user_local", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerOrderByWithAggregationInput.prototype, "pass_local", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerOrderByWithAggregationInput.prototype, "user_anydesk", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerOrderByWithAggregationInput.prototype, "pass_anydesk", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => ComputerCountOrderByAggregateInput_1.ComputerCountOrderByAggregateInput, {
         nullable: true

@@ -6,6 +6,7 @@ const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
 var LocationScalarFieldEnum;
 (function (LocationScalarFieldEnum) {
     LocationScalarFieldEnum["id_location"] = "id_location";
+    LocationScalarFieldEnum["internal_code"] = "internal_code";
     LocationScalarFieldEnum["city"] = "city";
     LocationScalarFieldEnum["job_name"] = "job_name";
 })(LocationScalarFieldEnum = exports.LocationScalarFieldEnum || (exports.LocationScalarFieldEnum = {}));

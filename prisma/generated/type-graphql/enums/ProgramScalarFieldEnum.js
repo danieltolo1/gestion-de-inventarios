@@ -9,7 +9,6 @@ var ProgramScalarFieldEnum;
     ProgramScalarFieldEnum["name_program"] = "name_program";
     ProgramScalarFieldEnum["version_program"] = "version_program";
     ProgramScalarFieldEnum["license_program"] = "license_program";
-    ProgramScalarFieldEnum["softwarecomputerId"] = "softwarecomputerId";
 })(ProgramScalarFieldEnum = exports.ProgramScalarFieldEnum || (exports.ProgramScalarFieldEnum = {}));
 TypeGraphQL.registerEnumType(ProgramScalarFieldEnum, {
     name: "ProgramScalarFieldEnum",

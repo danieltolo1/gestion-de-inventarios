@@ -51,12 +51,6 @@ let ProgramScalarWhereWithAggregatesInput = ProgramScalarWhereWithAggregatesInpu
     }),
     (0, tslib_1.__metadata)("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
 ], ProgramScalarWhereWithAggregatesInput.prototype, "license_program", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => IntWithAggregatesFilter_1.IntWithAggregatesFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", IntWithAggregatesFilter_1.IntWithAggregatesFilter)
-], ProgramScalarWhereWithAggregatesInput.prototype, "softwarecomputerId", void 0);
 ProgramScalarWhereWithAggregatesInput = ProgramScalarWhereWithAggregatesInput_1 = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ProgramScalarWhereWithAggregatesInput", {
         isAbstract: true

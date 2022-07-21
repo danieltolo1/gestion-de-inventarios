@@ -76,7 +76,19 @@ let ComputerCountAggregate = class ComputerCountAggregate {
         nullable: false
     }),
     (0, tslib_1.__metadata)("design:type", Number)
+], ComputerCountAggregate.prototype, "ip", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
 ], ComputerCountAggregate.prototype, "softwarecomputerId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ComputerCountAggregate.prototype, "locationId", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false
@@ -89,6 +101,54 @@ let ComputerCountAggregate = class ComputerCountAggregate {
     }),
     (0, tslib_1.__metadata)("design:type", Number)
 ], ComputerCountAggregate.prototype, "historial", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ComputerCountAggregate.prototype, "user_domain", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ComputerCountAggregate.prototype, "pass_domain", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ComputerCountAggregate.prototype, "user_admin", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ComputerCountAggregate.prototype, "pass_admin", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ComputerCountAggregate.prototype, "user_local", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ComputerCountAggregate.prototype, "pass_local", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ComputerCountAggregate.prototype, "user_anydesk", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ComputerCountAggregate.prototype, "pass_anydesk", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false

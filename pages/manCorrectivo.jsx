@@ -1,10 +1,31 @@
 import Link from "next/link";
 import React from "react";
+import { useEffect, useState } from "react";
 import '../styles/Home.module.css'
 import '../public/ares1.png'
 import Image from "next/image";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { useQuery } from '@apollo/client';
+import { GET_PRODUCTOS } from './graphql/queries';
+
 
 const manCoorectivo = () => {
+
+    const [usuarios, setUsuarios] = useState([]);
+    const [tablaUsuarios, setTablaUsuarios] = useState([]);
+    const [busqueda, setBusqueda] = useState("");
+
+    const{data,error,loading} = useQuery(GET_PRODUCTOS)
+    
+        useEffect(() => {
+            console.log(data);
+            if (error) {
+              //error('Error consultando los usuarios');
+            }
+          }, [data]);
+            if (loading) return <div>Cargando....</div>;
+
+
    
     return( 
         <div id='bodym' className='w-full max-w-screen-xl mx-auto px-4 sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto 2xl:mx-auto' >
@@ -40,9 +61,13 @@ const manCoorectivo = () => {
                          className="flex w-[90%] mx-auto text-center sm:flex flex-col text-lg text-white/80 space-y-0 
                          font-bold relative ml-1" > 
                          MANTENIMIENTO CORRECTIVO
+
+                       
+
                   </div>
+
               </div>
-        
+       
         </div>
         
    

@@ -23,61 +23,7 @@ let SoftwareComputerCountOrderByAggregateInput = class SoftwareComputerCountOrde
         nullable: true
     }),
     (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCountOrderByAggregateInput.prototype, "license_so", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCountOrderByAggregateInput.prototype, "user_anydesk", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCountOrderByAggregateInput.prototype, "pass_anydesk", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCountOrderByAggregateInput.prototype, "ip", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCountOrderByAggregateInput.prototype, "user_domain", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCountOrderByAggregateInput.prototype, "pass_domain", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCountOrderByAggregateInput.prototype, "user_admin", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCountOrderByAggregateInput.prototype, "pass_admin", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCountOrderByAggregateInput.prototype, "user_local", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCountOrderByAggregateInput.prototype, "pass_local", void 0);
+], SoftwareComputerCountOrderByAggregateInput.prototype, "license_soA", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true

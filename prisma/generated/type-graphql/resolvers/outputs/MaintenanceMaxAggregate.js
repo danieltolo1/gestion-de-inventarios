@@ -29,6 +29,18 @@ let MaintenanceMaxAggregate = class MaintenanceMaxAggregate {
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], MaintenanceMaxAggregate.prototype, "userId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], MaintenanceMaxAggregate.prototype, "computerId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], MaintenanceMaxAggregate.prototype, "observation", void 0);
 MaintenanceMaxAggregate = (0, tslib_1.__decorate)([
     TypeGraphQL.ObjectType("MaintenanceMaxAggregate", {
         isAbstract: true

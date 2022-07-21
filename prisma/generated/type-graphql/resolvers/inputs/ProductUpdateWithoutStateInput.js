@@ -3,8 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductUpdateWithoutStateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
+const LocationUpdateOneRequiredWithoutPorductInput_1 = require("../inputs/LocationUpdateOneRequiredWithoutPorductInput");
+const MaintenanceUpdateManyWithoutProductInput_1 = require("../inputs/MaintenanceUpdateManyWithoutProductInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
-const PartComputerUpdateOneWithoutProductInput_1 = require("../inputs/PartComputerUpdateOneWithoutProductInput");
 const Product_TypeUpdateOneRequiredWithoutProductInput_1 = require("../inputs/Product_TypeUpdateOneRequiredWithoutProductInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
 let ProductUpdateWithoutStateInput = class ProductUpdateWithoutStateInput {
@@ -70,17 +71,23 @@ let ProductUpdateWithoutStateInput = class ProductUpdateWithoutStateInput {
     (0, tslib_1.__metadata)("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
 ], ProductUpdateWithoutStateInput.prototype, "conectivity", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => PartComputerUpdateOneWithoutProductInput_1.PartComputerUpdateOneWithoutProductInput, {
+    TypeGraphQL.Field(_type => LocationUpdateOneRequiredWithoutPorductInput_1.LocationUpdateOneRequiredWithoutPorductInput, {
         nullable: true
     }),
-    (0, tslib_1.__metadata)("design:type", PartComputerUpdateOneWithoutProductInput_1.PartComputerUpdateOneWithoutProductInput)
-], ProductUpdateWithoutStateInput.prototype, "partcomputer", void 0);
+    (0, tslib_1.__metadata)("design:type", LocationUpdateOneRequiredWithoutPorductInput_1.LocationUpdateOneRequiredWithoutPorductInput)
+], ProductUpdateWithoutStateInput.prototype, "location", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput, {
         nullable: true
     }),
     (0, tslib_1.__metadata)("design:type", StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput)
 ], ProductUpdateWithoutStateInput.prototype, "historial", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => MaintenanceUpdateManyWithoutProductInput_1.MaintenanceUpdateManyWithoutProductInput, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", MaintenanceUpdateManyWithoutProductInput_1.MaintenanceUpdateManyWithoutProductInput)
+], ProductUpdateWithoutStateInput.prototype, "maintenance", void 0);
 ProductUpdateWithoutStateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ProductUpdateWithoutStateInput", {
         isAbstract: true

@@ -12,6 +12,12 @@ let LocationMinAggregate = class LocationMinAggregate {
     (0, tslib_1.__metadata)("design:type", Number)
 ], LocationMinAggregate.prototype, "id_location", void 0);
 (0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], LocationMinAggregate.prototype, "internal_code", void 0);
+(0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => String, {
         nullable: true
     }),

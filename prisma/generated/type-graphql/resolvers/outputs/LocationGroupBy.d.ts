@@ -5,6 +5,7 @@ import { LocationMinAggregate } from "../outputs/LocationMinAggregate";
 import { LocationSumAggregate } from "../outputs/LocationSumAggregate";
 export declare class LocationGroupBy {
     id_location: number;
+    internal_code: number;
     city: string;
     job_name: string;
     _count: LocationCountAggregate | null;

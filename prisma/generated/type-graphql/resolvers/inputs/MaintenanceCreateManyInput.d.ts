@@ -3,4 +3,6 @@ export declare class MaintenanceCreateManyInput {
     date_maintenance?: Date | undefined;
     jworkerNameFirm?: string | undefined;
     userId: string;
+    computerId: number;
+    observation?: string | undefined;
 }

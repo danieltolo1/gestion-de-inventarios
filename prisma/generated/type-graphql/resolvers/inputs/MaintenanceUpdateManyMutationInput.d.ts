@@ -3,4 +3,5 @@ import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStri
 export declare class MaintenanceUpdateManyMutationInput {
     date_maintenance?: NullableDateTimeFieldUpdateOperationsInput | undefined;
     jworkerNameFirm?: NullableStringFieldUpdateOperationsInput | undefined;
+    observation?: NullableStringFieldUpdateOperationsInput | undefined;
 }

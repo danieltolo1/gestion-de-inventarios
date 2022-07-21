@@ -25,14 +25,16 @@ model Product{
   picture           String?
   model             String?
   product_type      Product_Type  @relation(fields: [product_typeId], references: [id_product_type])
-  product_typeId    Int           @unique
+  product_typeId    Int           
   size              String?
   tecnology         String?
   conectivity       String?
   state             State          @relation(fields: [stateId], references: [id_state])
-  stateId           Int            @unique
-  partcomputer      PartComputer?  
+  stateId           Int            
+  location          Location       @relation(fields: [locationId], references: [id_location])
+  locationId        Int
   historial         String
+  maintenance       Maintenance[]
  
 }
 
@@ -55,7 +57,7 @@ model Computer{
    id_computer          Int            @id @default(autoincrement())  
    buy_date             DateTime?
    price                Float?
-   internal_code        String
+   internal_code        String          @unique
    serial_number        String
    memory               String
    hard_disk            String
@@ -63,12 +65,24 @@ model Computer{
    optical_unit         Boolean?
    model                String
    state                State             @relation(fields: [stateId], references: [id_state]) 
-   stateId              Int               @unique
+   stateId              Int 
+   ip                   String?              
    softwarecomputer     SoftwareComputer  @relation(fields: [softwarecomputerId], references: [id_softwarecomputer]) 
-   softwarecomputerId   Int               @unique
-   partComputer         PartComputer[]
+   softwarecomputerId   Int               
+   location             Location          @relation(fields: [locationId], references: [id_location]) 
+   locationId           Int
    observation          String? 
    historial            String?
+   user_domain          String?
+   pass_domain          String?
+   user_admin           String?
+   pass_admin           String?
+   user_local           String?
+   pass_local           String?
+   user_anydesk         String?
+   pass_anydesk         String?
+   maintenance          Maintenance[]
+   program              Program[]
 }
 
 enum Enum_Operatigsystem {
@@ -88,18 +102,8 @@ model SoftwareComputer{
 id_softwarecomputer          Int            @id @default(autoincrement())
 computer                     Computer[]
 operatingsystem              Enum_Operatigsystem
-license_so                   String
-user_anydesk                 String?
-pass_anydesk                 String?
-ip                           String
-user_domain                  String?
-pass_domain                  String?
-user_admin                   String?
-pass_admin                   String?
-user_local                   String?
-pass_local                   String?
+license_soA                  String
 architecture                 Enum_Architecture
-program                      Program[]
 }
 
 
@@ -108,32 +112,22 @@ model Program{
   name_program        String
   version_program     String?
   license_program     String?  
-  softwarecomputer    SoftwareComputer  @relation(fields: [softwarecomputerId], references: [id_softwarecomputer])
-  softwarecomputerId  Int               @unique
+  computer            Computer[]
+                
 }
 
 
 
-model PartComputer{
-  id_partComputer       Int         @id @default(autoincrement()) 
-  product               Product     @relation(fields: [productId], references: [id_product])
-  productId             Int         @unique
-  computer              Computer    @relation(fields: [computerId], references: [id_computer])
-  computerId            Int         @unique
-  location              Location    @relation(fields: [locationId], references: [id_location])
-  locationId            Int         @unique
-  maintenance           Maintenance @relation(fields: [maintenanceId], references: [id_maintenance])
-  maintenanceId         Int         @unique
-  name_part             String?
-  
-}
 
 
 model Location {
   id_location       Int         @id @default(autoincrement())
+  internal_code     Int         
   city              String
-  job_name          String
-  partComputer      PartComputer[]
+  job_name          String          
+  computer          Computer[]
+  porduct           Product[]   
+  
 }
 
 
@@ -142,8 +136,12 @@ model Maintenance{
   date_maintenance     DateTime?
   jworkerNameFirm      String?
   user                 User           @relation(fields: [userId], references: [id])
-  userId               String         @unique
-  partComputer         PartComputer[]
+  userId               String         
+  computer             Computer       @relation(fields: [computerId], references: [id_computer])
+  computerId           Int
+  product              Product[]
+  observation          String?
+  
 }
 
 

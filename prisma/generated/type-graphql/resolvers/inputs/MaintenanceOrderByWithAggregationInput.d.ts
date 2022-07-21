@@ -8,6 +8,8 @@ export declare class MaintenanceOrderByWithAggregationInput {
     date_maintenance?: "asc" | "desc" | undefined;
     jworkerNameFirm?: "asc" | "desc" | undefined;
     userId?: "asc" | "desc" | undefined;
+    computerId?: "asc" | "desc" | undefined;
+    observation?: "asc" | "desc" | undefined;
     _count?: MaintenanceCountOrderByAggregateInput | undefined;
     _avg?: MaintenanceAvgOrderByAggregateInput | undefined;
     _max?: MaintenanceMaxOrderByAggregateInput | undefined;

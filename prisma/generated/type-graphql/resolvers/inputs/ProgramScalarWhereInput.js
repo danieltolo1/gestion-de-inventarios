@@ -51,12 +51,6 @@ let ProgramScalarWhereInput = ProgramScalarWhereInput_1 = class ProgramScalarWhe
     }),
     (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ProgramScalarWhereInput.prototype, "license_program", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", IntFilter_1.IntFilter)
-], ProgramScalarWhereInput.prototype, "softwarecomputerId", void 0);
 ProgramScalarWhereInput = ProgramScalarWhereInput_1 = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ProgramScalarWhereInput", {
         isAbstract: true

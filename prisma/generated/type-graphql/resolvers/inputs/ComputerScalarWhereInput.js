@@ -97,11 +97,23 @@ let ComputerScalarWhereInput = ComputerScalarWhereInput_1 = class ComputerScalar
     (0, tslib_1.__metadata)("design:type", IntFilter_1.IntFilter)
 ], ComputerScalarWhereInput.prototype, "stateId", void 0);
 (0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
+], ComputerScalarWhereInput.prototype, "ip", void 0);
+(0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
         nullable: true
     }),
     (0, tslib_1.__metadata)("design:type", IntFilter_1.IntFilter)
 ], ComputerScalarWhereInput.prototype, "softwarecomputerId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", IntFilter_1.IntFilter)
+], ComputerScalarWhereInput.prototype, "locationId", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
@@ -114,6 +126,54 @@ let ComputerScalarWhereInput = ComputerScalarWhereInput_1 = class ComputerScalar
     }),
     (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ComputerScalarWhereInput.prototype, "historial", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
+], ComputerScalarWhereInput.prototype, "user_domain", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
+], ComputerScalarWhereInput.prototype, "pass_domain", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
+], ComputerScalarWhereInput.prototype, "user_admin", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
+], ComputerScalarWhereInput.prototype, "pass_admin", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
+], ComputerScalarWhereInput.prototype, "user_local", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
+], ComputerScalarWhereInput.prototype, "pass_local", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
+], ComputerScalarWhereInput.prototype, "user_anydesk", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
+], ComputerScalarWhereInput.prototype, "pass_anydesk", void 0);
 ComputerScalarWhereInput = ComputerScalarWhereInput_1 = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ComputerScalarWhereInput", {
         isAbstract: true

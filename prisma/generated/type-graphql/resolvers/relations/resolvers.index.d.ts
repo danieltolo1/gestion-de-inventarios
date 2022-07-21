@@ -2,7 +2,6 @@ export { AccountRelationsResolver } from "./Account/AccountRelationsResolver";
 export { ComputerRelationsResolver } from "./Computer/ComputerRelationsResolver";
 export { LocationRelationsResolver } from "./Location/LocationRelationsResolver";
 export { MaintenanceRelationsResolver } from "./Maintenance/MaintenanceRelationsResolver";
-export { PartComputerRelationsResolver } from "./PartComputer/PartComputerRelationsResolver";
 export { ProductRelationsResolver } from "./Product/ProductRelationsResolver";
 export { Product_TypeRelationsResolver } from "./Product_Type/Product_TypeRelationsResolver";
 export { ProgramRelationsResolver } from "./Program/ProgramRelationsResolver";

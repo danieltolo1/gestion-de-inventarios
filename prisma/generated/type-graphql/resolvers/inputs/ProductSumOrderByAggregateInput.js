@@ -24,6 +24,12 @@ let ProductSumOrderByAggregateInput = class ProductSumOrderByAggregateInput {
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], ProductSumOrderByAggregateInput.prototype, "stateId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ProductSumOrderByAggregateInput.prototype, "locationId", void 0);
 ProductSumOrderByAggregateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ProductSumOrderByAggregateInput", {
         isAbstract: true

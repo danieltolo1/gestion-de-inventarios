@@ -12,6 +12,12 @@ let MaintenanceAvgOrderByAggregateInput = class MaintenanceAvgOrderByAggregateIn
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], MaintenanceAvgOrderByAggregateInput.prototype, "id_maintenance", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], MaintenanceAvgOrderByAggregateInput.prototype, "computerId", void 0);
 MaintenanceAvgOrderByAggregateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("MaintenanceAvgOrderByAggregateInput", {
         isAbstract: true

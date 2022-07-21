@@ -1,6 +1,9 @@
-import { PartComputerCreateNestedManyWithoutMaintenanceInput } from "../inputs/PartComputerCreateNestedManyWithoutMaintenanceInput";
+import { ComputerCreateNestedOneWithoutMaintenanceInput } from "../inputs/ComputerCreateNestedOneWithoutMaintenanceInput";
+import { ProductCreateNestedManyWithoutMaintenanceInput } from "../inputs/ProductCreateNestedManyWithoutMaintenanceInput";
 export declare class MaintenanceCreateWithoutUserInput {
     date_maintenance?: Date | undefined;
     jworkerNameFirm?: string | undefined;
-    partComputer?: PartComputerCreateNestedManyWithoutMaintenanceInput | undefined;
+    computer: ComputerCreateNestedOneWithoutMaintenanceInput;
+    product?: ProductCreateNestedManyWithoutMaintenanceInput | undefined;
+    observation?: string | undefined;
 }

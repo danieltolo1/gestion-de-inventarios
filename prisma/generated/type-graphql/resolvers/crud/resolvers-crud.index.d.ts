@@ -2,7 +2,6 @@ export { AccountCrudResolver } from "./Account/AccountCrudResolver";
 export { ComputerCrudResolver } from "./Computer/ComputerCrudResolver";
 export { LocationCrudResolver } from "./Location/LocationCrudResolver";
 export { MaintenanceCrudResolver } from "./Maintenance/MaintenanceCrudResolver";
-export { PartComputerCrudResolver } from "./PartComputer/PartComputerCrudResolver";
 export { ProductCrudResolver } from "./Product/ProductCrudResolver";
 export { Product_TypeCrudResolver } from "./Product_Type/Product_TypeCrudResolver";
 export { ProgramCrudResolver } from "./Program/ProgramCrudResolver";

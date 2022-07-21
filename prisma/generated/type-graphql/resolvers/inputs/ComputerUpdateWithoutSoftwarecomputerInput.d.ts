@@ -1,8 +1,10 @@
+import { LocationUpdateOneRequiredWithoutComputerInput } from "../inputs/LocationUpdateOneRequiredWithoutComputerInput";
+import { MaintenanceUpdateManyWithoutComputerInput } from "../inputs/MaintenanceUpdateManyWithoutComputerInput";
 import { NullableBoolFieldUpdateOperationsInput } from "../inputs/NullableBoolFieldUpdateOperationsInput";
 import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDateTimeFieldUpdateOperationsInput";
 import { NullableFloatFieldUpdateOperationsInput } from "../inputs/NullableFloatFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
-import { PartComputerUpdateManyWithoutComputerInput } from "../inputs/PartComputerUpdateManyWithoutComputerInput";
+import { ProgramUpdateManyWithoutComputerInput } from "../inputs/ProgramUpdateManyWithoutComputerInput";
 import { StateUpdateOneRequiredWithoutComputerInput } from "../inputs/StateUpdateOneRequiredWithoutComputerInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 export declare class ComputerUpdateWithoutSoftwarecomputerInput {
@@ -16,7 +18,18 @@ export declare class ComputerUpdateWithoutSoftwarecomputerInput {
     optical_unit?: NullableBoolFieldUpdateOperationsInput | undefined;
     model?: StringFieldUpdateOperationsInput | undefined;
     state?: StateUpdateOneRequiredWithoutComputerInput | undefined;
-    partComputer?: PartComputerUpdateManyWithoutComputerInput | undefined;
+    ip?: NullableStringFieldUpdateOperationsInput | undefined;
+    location?: LocationUpdateOneRequiredWithoutComputerInput | undefined;
     observation?: NullableStringFieldUpdateOperationsInput | undefined;
     historial?: NullableStringFieldUpdateOperationsInput | undefined;
+    user_domain?: NullableStringFieldUpdateOperationsInput | undefined;
+    pass_domain?: NullableStringFieldUpdateOperationsInput | undefined;
+    user_admin?: NullableStringFieldUpdateOperationsInput | undefined;
+    pass_admin?: NullableStringFieldUpdateOperationsInput | undefined;
+    user_local?: NullableStringFieldUpdateOperationsInput | undefined;
+    pass_local?: NullableStringFieldUpdateOperationsInput | undefined;
+    user_anydesk?: NullableStringFieldUpdateOperationsInput | undefined;
+    pass_anydesk?: NullableStringFieldUpdateOperationsInput | undefined;
+    maintenance?: MaintenanceUpdateManyWithoutComputerInput | undefined;
+    program?: ProgramUpdateManyWithoutComputerInput | undefined;
 }

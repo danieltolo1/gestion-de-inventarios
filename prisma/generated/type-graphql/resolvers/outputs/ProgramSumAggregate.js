@@ -11,12 +11,6 @@ let ProgramSumAggregate = class ProgramSumAggregate {
     }),
     (0, tslib_1.__metadata)("design:type", Number)
 ], ProgramSumAggregate.prototype, "id_program", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], ProgramSumAggregate.prototype, "softwarecomputerId", void 0);
 ProgramSumAggregate = (0, tslib_1.__decorate)([
     TypeGraphQL.ObjectType("ProgramSumAggregate", {
         isAbstract: true

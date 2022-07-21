@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.VerificationToken = exports.User = exports.State = exports.SoftwareComputer = exports.Session = exports.Program = exports.Product_Type = exports.Product = exports.PartComputer = exports.Maintenance = exports.Location = exports.Computer = exports.Account = void 0;
+exports.VerificationToken = exports.User = exports.State = exports.SoftwareComputer = exports.Session = exports.Program = exports.Product_Type = exports.Product = exports.Maintenance = exports.Location = exports.Computer = exports.Account = void 0;
 var Account_1 = require("./Account");
 Object.defineProperty(exports, "Account", { enumerable: true, get: function () { return Account_1.Account; } });
 var Computer_1 = require("./Computer");
@@ -9,8 +9,6 @@ var Location_1 = require("./Location");
 Object.defineProperty(exports, "Location", { enumerable: true, get: function () { return Location_1.Location; } });
 var Maintenance_1 = require("./Maintenance");
 Object.defineProperty(exports, "Maintenance", { enumerable: true, get: function () { return Maintenance_1.Maintenance; } });
-var PartComputer_1 = require("./PartComputer");
-Object.defineProperty(exports, "PartComputer", { enumerable: true, get: function () { return PartComputer_1.PartComputer; } });
 var Product_1 = require("./Product");
 Object.defineProperty(exports, "Product", { enumerable: true, get: function () { return Product_1.Product; } });
 var Product_Type_1 = require("./Product_Type");

@@ -1,4 +1,5 @@
-import { PartComputerCreateNestedOneWithoutProductInput } from "../inputs/PartComputerCreateNestedOneWithoutProductInput";
+import { LocationCreateNestedOneWithoutPorductInput } from "../inputs/LocationCreateNestedOneWithoutPorductInput";
+import { MaintenanceCreateNestedManyWithoutProductInput } from "../inputs/MaintenanceCreateNestedManyWithoutProductInput";
 import { Product_TypeCreateNestedOneWithoutProductInput } from "../inputs/Product_TypeCreateNestedOneWithoutProductInput";
 import { StateCreateNestedOneWithoutProductInput } from "../inputs/StateCreateNestedOneWithoutProductInput";
 export declare class ProductCreateInput {
@@ -13,6 +14,7 @@ export declare class ProductCreateInput {
     tecnology?: string | undefined;
     conectivity?: string | undefined;
     state: StateCreateNestedOneWithoutProductInput;
-    partcomputer?: PartComputerCreateNestedOneWithoutProductInput | undefined;
+    location: LocationCreateNestedOneWithoutPorductInput;
     historial: string;
+    maintenance?: MaintenanceCreateNestedManyWithoutProductInput | undefined;
 }

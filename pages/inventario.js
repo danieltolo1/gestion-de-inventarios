@@ -1,14 +1,27 @@
 
 import '../styles/Home.module.css'
+import React, { useEffect } from 'react';
 import Link from 'next/link'; 
 import '../public/ares1.png'
 import Image from "next/image";
 import { useQuery } from '@apollo/client';
-
+import { GET_PRODUCTOS } from './graphql/queries';
+//import { toast } from 'react-toastify';
 
 const inventario = () => {
    
-    const{data,error,loading} = useQuery()
+    const{data,error,loading} = useQuery(GET_PRODUCTOS)
+
+    useEffect(() => {
+        console.log(data);
+
+        if (error) {
+          //error('Error consultando los usuarios');
+        }
+      }, [data]);
+    
+        if (loading) return <div>Cargando....</div>;
+
 
 
     return( 
@@ -45,10 +58,19 @@ const inventario = () => {
                   <div
                          className="flex w-[90%] mx-auto text-center sm:flex flex-col text-lg text-white/80 space-y-0 
                          font-bold relative ml-1" > 
-                         INVENTARIO DE EQUIPOS
+                         INVENTARIO DE EQUIPOS<br></br>
+                         _______________________________________________
                   </div>
+
+
                   <div>
-                      hola
+
+                  
+
+                    <form>
+                   
+                    
+                    </form>
                   </div>
                        
               </div>

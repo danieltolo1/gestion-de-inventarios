@@ -24,61 +24,7 @@ let SoftwareComputerMaxAggregate = class SoftwareComputerMaxAggregate {
         nullable: true
     }),
     (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerMaxAggregate.prototype, "license_so", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerMaxAggregate.prototype, "user_anydesk", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerMaxAggregate.prototype, "pass_anydesk", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerMaxAggregate.prototype, "ip", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerMaxAggregate.prototype, "user_domain", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerMaxAggregate.prototype, "pass_domain", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerMaxAggregate.prototype, "user_admin", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerMaxAggregate.prototype, "pass_admin", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerMaxAggregate.prototype, "user_local", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerMaxAggregate.prototype, "pass_local", void 0);
+], SoftwareComputerMaxAggregate.prototype, "license_soA", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => Enum_Architecture_1.Enum_Architecture, {
         nullable: true

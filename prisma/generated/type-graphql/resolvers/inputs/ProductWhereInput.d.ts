@@ -1,5 +1,6 @@
 import { IntFilter } from "../inputs/IntFilter";
-import { PartComputerRelationFilter } from "../inputs/PartComputerRelationFilter";
+import { LocationRelationFilter } from "../inputs/LocationRelationFilter";
+import { MaintenanceListRelationFilter } from "../inputs/MaintenanceListRelationFilter";
 import { Product_TypeRelationFilter } from "../inputs/Product_TypeRelationFilter";
 import { StateRelationFilter } from "../inputs/StateRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
@@ -22,6 +23,8 @@ export declare class ProductWhereInput {
     conectivity?: StringNullableFilter | undefined;
     state?: StateRelationFilter | undefined;
     stateId?: IntFilter | undefined;
-    partcomputer?: PartComputerRelationFilter | undefined;
+    location?: LocationRelationFilter | undefined;
+    locationId?: IntFilter | undefined;
     historial?: StringFilter | undefined;
+    maintenance?: MaintenanceListRelationFilter | undefined;
 }

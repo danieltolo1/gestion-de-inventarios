@@ -10,4 +10,6 @@ export declare class MaintenanceScalarWhereInput {
     date_maintenance?: DateTimeNullableFilter | undefined;
     jworkerNameFirm?: StringNullableFilter | undefined;
     userId?: StringFilter | undefined;
+    computerId?: IntFilter | undefined;
+    observation?: StringNullableFilter | undefined;
 }

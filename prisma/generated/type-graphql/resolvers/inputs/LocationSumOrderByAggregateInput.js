@@ -12,6 +12,12 @@ let LocationSumOrderByAggregateInput = class LocationSumOrderByAggregateInput {
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], LocationSumOrderByAggregateInput.prototype, "id_location", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], LocationSumOrderByAggregateInput.prototype, "internal_code", void 0);
 LocationSumOrderByAggregateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("LocationSumOrderByAggregateInput", {
         isAbstract: true

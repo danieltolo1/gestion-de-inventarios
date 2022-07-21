@@ -72,11 +72,23 @@ let ComputerMaxAggregate = class ComputerMaxAggregate {
     (0, tslib_1.__metadata)("design:type", Number)
 ], ComputerMaxAggregate.prototype, "stateId", void 0);
 (0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMaxAggregate.prototype, "ip", void 0);
+(0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: true
     }),
     (0, tslib_1.__metadata)("design:type", Number)
 ], ComputerMaxAggregate.prototype, "softwarecomputerId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ComputerMaxAggregate.prototype, "locationId", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => String, {
         nullable: true
@@ -89,6 +101,54 @@ let ComputerMaxAggregate = class ComputerMaxAggregate {
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], ComputerMaxAggregate.prototype, "historial", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMaxAggregate.prototype, "user_domain", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMaxAggregate.prototype, "pass_domain", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMaxAggregate.prototype, "user_admin", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMaxAggregate.prototype, "pass_admin", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMaxAggregate.prototype, "user_local", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMaxAggregate.prototype, "pass_local", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMaxAggregate.prototype, "user_anydesk", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMaxAggregate.prototype, "pass_anydesk", void 0);
 ComputerMaxAggregate = (0, tslib_1.__decorate)([
     TypeGraphQL.ObjectType("ComputerMaxAggregate", {
         isAbstract: true

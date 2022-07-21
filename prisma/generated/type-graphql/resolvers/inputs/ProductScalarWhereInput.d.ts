@@ -17,5 +17,6 @@ export declare class ProductScalarWhereInput {
     tecnology?: StringNullableFilter | undefined;
     conectivity?: StringNullableFilter | undefined;
     stateId?: IntFilter | undefined;
+    locationId?: IntFilter | undefined;
     historial?: StringFilter | undefined;
 }

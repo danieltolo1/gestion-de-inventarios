@@ -12,17 +12,11 @@ let ComputerWhereUniqueInput = class ComputerWhereUniqueInput {
     (0, tslib_1.__metadata)("design:type", Number)
 ], ComputerWhereUniqueInput.prototype, "id_computer", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+    TypeGraphQL.Field(_type => String, {
         nullable: true
     }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], ComputerWhereUniqueInput.prototype, "stateId", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], ComputerWhereUniqueInput.prototype, "softwarecomputerId", void 0);
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerWhereUniqueInput.prototype, "internal_code", void 0);
 ComputerWhereUniqueInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ComputerWhereUniqueInput", {
         isAbstract: true

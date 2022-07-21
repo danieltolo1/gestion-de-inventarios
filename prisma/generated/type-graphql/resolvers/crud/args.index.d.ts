@@ -2,7 +2,6 @@ export * from "./Account/args";
 export * from "./Computer/args";
 export * from "./Location/args";
 export * from "./Maintenance/args";
-export * from "./PartComputer/args";
 export * from "./Product/args";
 export * from "./Product_Type/args";
 export * from "./Program/args";

@@ -11,5 +11,6 @@ export declare class ProductCreateManyInput {
     tecnology?: string | undefined;
     conectivity?: string | undefined;
     stateId: number;
+    locationId: number;
     historial: string;
 }

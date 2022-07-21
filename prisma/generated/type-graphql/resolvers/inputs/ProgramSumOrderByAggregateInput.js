@@ -12,12 +12,6 @@ let ProgramSumOrderByAggregateInput = class ProgramSumOrderByAggregateInput {
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], ProgramSumOrderByAggregateInput.prototype, "id_program", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], ProgramSumOrderByAggregateInput.prototype, "softwarecomputerId", void 0);
 ProgramSumOrderByAggregateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ProgramSumOrderByAggregateInput", {
         isAbstract: true

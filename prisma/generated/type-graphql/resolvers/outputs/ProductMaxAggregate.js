@@ -78,6 +78,12 @@ let ProductMaxAggregate = class ProductMaxAggregate {
     (0, tslib_1.__metadata)("design:type", Number)
 ], ProductMaxAggregate.prototype, "stateId", void 0);
 (0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ProductMaxAggregate.prototype, "locationId", void 0);
+(0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => String, {
         nullable: true
     }),

@@ -35,12 +35,6 @@ let ProgramGroupBy = class ProgramGroupBy {
     (0, tslib_1.__metadata)("design:type", String)
 ], ProgramGroupBy.prototype, "license_program", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], ProgramGroupBy.prototype, "softwarecomputerId", void 0);
-(0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => ProgramCountAggregate_1.ProgramCountAggregate, {
         nullable: true
     }),

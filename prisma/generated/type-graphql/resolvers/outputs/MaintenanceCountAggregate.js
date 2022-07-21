@@ -34,6 +34,18 @@ let MaintenanceCountAggregate = class MaintenanceCountAggregate {
         nullable: false
     }),
     (0, tslib_1.__metadata)("design:type", Number)
+], MaintenanceCountAggregate.prototype, "computerId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], MaintenanceCountAggregate.prototype, "observation", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
 ], MaintenanceCountAggregate.prototype, "_all", void 0);
 MaintenanceCountAggregate = (0, tslib_1.__decorate)([
     TypeGraphQL.ObjectType("MaintenanceCountAggregate", {

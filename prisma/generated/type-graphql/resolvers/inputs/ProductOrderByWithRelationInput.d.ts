@@ -1,4 +1,5 @@
-import { PartComputerOrderByWithRelationInput } from "../inputs/PartComputerOrderByWithRelationInput";
+import { LocationOrderByWithRelationInput } from "../inputs/LocationOrderByWithRelationInput";
+import { MaintenanceOrderByRelationAggregateInput } from "../inputs/MaintenanceOrderByRelationAggregateInput";
 import { Product_TypeOrderByWithRelationInput } from "../inputs/Product_TypeOrderByWithRelationInput";
 import { StateOrderByWithRelationInput } from "../inputs/StateOrderByWithRelationInput";
 export declare class ProductOrderByWithRelationInput {
@@ -16,6 +17,8 @@ export declare class ProductOrderByWithRelationInput {
     conectivity?: "asc" | "desc" | undefined;
     state?: StateOrderByWithRelationInput | undefined;
     stateId?: "asc" | "desc" | undefined;
-    partcomputer?: PartComputerOrderByWithRelationInput | undefined;
+    location?: LocationOrderByWithRelationInput | undefined;
+    locationId?: "asc" | "desc" | undefined;
     historial?: "asc" | "desc" | undefined;
+    maintenance?: MaintenanceOrderByRelationAggregateInput | undefined;
 }

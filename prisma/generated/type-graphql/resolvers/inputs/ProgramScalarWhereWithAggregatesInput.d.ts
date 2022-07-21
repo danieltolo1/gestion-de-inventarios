@@ -9,5 +9,4 @@ export declare class ProgramScalarWhereWithAggregatesInput {
     name_program?: StringWithAggregatesFilter | undefined;
     version_program?: StringNullableWithAggregatesFilter | undefined;
     license_program?: StringNullableWithAggregatesFilter | undefined;
-    softwarecomputerId?: IntWithAggregatesFilter | undefined;
 }

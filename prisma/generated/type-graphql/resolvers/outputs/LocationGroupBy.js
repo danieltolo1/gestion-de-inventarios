@@ -17,6 +17,12 @@ let LocationGroupBy = class LocationGroupBy {
     (0, tslib_1.__metadata)("design:type", Number)
 ], LocationGroupBy.prototype, "id_location", void 0);
 (0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], LocationGroupBy.prototype, "internal_code", void 0);
+(0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => String, {
         nullable: false
     }),

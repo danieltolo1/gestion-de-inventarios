@@ -1,5 +1,6 @@
+import { LocationUpdateOneRequiredWithoutPorductInput } from "../inputs/LocationUpdateOneRequiredWithoutPorductInput";
+import { MaintenanceUpdateManyWithoutProductInput } from "../inputs/MaintenanceUpdateManyWithoutProductInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
-import { PartComputerUpdateOneWithoutProductInput } from "../inputs/PartComputerUpdateOneWithoutProductInput";
 import { StateUpdateOneRequiredWithoutProductInput } from "../inputs/StateUpdateOneRequiredWithoutProductInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 export declare class ProductUpdateWithoutProduct_typeInput {
@@ -13,6 +14,7 @@ export declare class ProductUpdateWithoutProduct_typeInput {
     tecnology?: NullableStringFieldUpdateOperationsInput | undefined;
     conectivity?: NullableStringFieldUpdateOperationsInput | undefined;
     state?: StateUpdateOneRequiredWithoutProductInput | undefined;
-    partcomputer?: PartComputerUpdateOneWithoutProductInput | undefined;
+    location?: LocationUpdateOneRequiredWithoutPorductInput | undefined;
     historial?: StringFieldUpdateOperationsInput | undefined;
+    maintenance?: MaintenanceUpdateManyWithoutProductInput | undefined;
 }

@@ -9,7 +9,17 @@ export declare class ComputerCreateManyStateInput {
     processor: string;
     optical_unit?: boolean | undefined;
     model: string;
+    ip?: string | undefined;
     softwarecomputerId: number;
+    locationId: number;
     observation?: string | undefined;
     historial?: string | undefined;
+    user_domain?: string | undefined;
+    pass_domain?: string | undefined;
+    user_admin?: string | undefined;
+    pass_admin?: string | undefined;
+    user_local?: string | undefined;
+    pass_local?: string | undefined;
+    user_anydesk?: string | undefined;
+    pass_anydesk?: string | undefined;
 }

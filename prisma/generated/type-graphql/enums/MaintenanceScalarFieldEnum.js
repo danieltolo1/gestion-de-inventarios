@@ -9,6 +9,8 @@ var MaintenanceScalarFieldEnum;
     MaintenanceScalarFieldEnum["date_maintenance"] = "date_maintenance";
     MaintenanceScalarFieldEnum["jworkerNameFirm"] = "jworkerNameFirm";
     MaintenanceScalarFieldEnum["userId"] = "userId";
+    MaintenanceScalarFieldEnum["computerId"] = "computerId";
+    MaintenanceScalarFieldEnum["observation"] = "observation";
 })(MaintenanceScalarFieldEnum = exports.MaintenanceScalarFieldEnum || (exports.MaintenanceScalarFieldEnum = {}));
 TypeGraphQL.registerEnumType(MaintenanceScalarFieldEnum, {
     name: "MaintenanceScalarFieldEnum",

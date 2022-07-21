@@ -66,11 +66,23 @@ let ComputerCreateManyStateInput = class ComputerCreateManyStateInput {
     (0, tslib_1.__metadata)("design:type", String)
 ], ComputerCreateManyStateInput.prototype, "model", void 0);
 (0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerCreateManyStateInput.prototype, "ip", void 0);
+(0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false
     }),
     (0, tslib_1.__metadata)("design:type", Number)
 ], ComputerCreateManyStateInput.prototype, "softwarecomputerId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ComputerCreateManyStateInput.prototype, "locationId", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => String, {
         nullable: true
@@ -83,6 +95,54 @@ let ComputerCreateManyStateInput = class ComputerCreateManyStateInput {
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], ComputerCreateManyStateInput.prototype, "historial", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerCreateManyStateInput.prototype, "user_domain", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerCreateManyStateInput.prototype, "pass_domain", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerCreateManyStateInput.prototype, "user_admin", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerCreateManyStateInput.prototype, "pass_admin", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerCreateManyStateInput.prototype, "user_local", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerCreateManyStateInput.prototype, "pass_local", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerCreateManyStateInput.prototype, "user_anydesk", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerCreateManyStateInput.prototype, "pass_anydesk", void 0);
 ComputerCreateManyStateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ComputerCreateManyStateInput", {
         isAbstract: true

@@ -8,9 +8,7 @@ const ComputerListRelationFilter_1 = require("../inputs/ComputerListRelationFilt
 const EnumEnum_ArchitectureFilter_1 = require("../inputs/EnumEnum_ArchitectureFilter");
 const EnumEnum_OperatigsystemFilter_1 = require("../inputs/EnumEnum_OperatigsystemFilter");
 const IntFilter_1 = require("../inputs/IntFilter");
-const ProgramListRelationFilter_1 = require("../inputs/ProgramListRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
-const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 let SoftwareComputerWhereInput = SoftwareComputerWhereInput_1 = class SoftwareComputerWhereInput {
 };
 (0, tslib_1.__decorate)([
@@ -54,73 +52,13 @@ let SoftwareComputerWhereInput = SoftwareComputerWhereInput_1 = class SoftwareCo
         nullable: true
     }),
     (0, tslib_1.__metadata)("design:type", StringFilter_1.StringFilter)
-], SoftwareComputerWhereInput.prototype, "license_so", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
-], SoftwareComputerWhereInput.prototype, "user_anydesk", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
-], SoftwareComputerWhereInput.prototype, "pass_anydesk", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringFilter_1.StringFilter)
-], SoftwareComputerWhereInput.prototype, "ip", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
-], SoftwareComputerWhereInput.prototype, "user_domain", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
-], SoftwareComputerWhereInput.prototype, "pass_domain", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
-], SoftwareComputerWhereInput.prototype, "user_admin", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
-], SoftwareComputerWhereInput.prototype, "pass_admin", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
-], SoftwareComputerWhereInput.prototype, "user_local", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
-], SoftwareComputerWhereInput.prototype, "pass_local", void 0);
+], SoftwareComputerWhereInput.prototype, "license_soA", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => EnumEnum_ArchitectureFilter_1.EnumEnum_ArchitectureFilter, {
         nullable: true
     }),
     (0, tslib_1.__metadata)("design:type", EnumEnum_ArchitectureFilter_1.EnumEnum_ArchitectureFilter)
 ], SoftwareComputerWhereInput.prototype, "architecture", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => ProgramListRelationFilter_1.ProgramListRelationFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", ProgramListRelationFilter_1.ProgramListRelationFilter)
-], SoftwareComputerWhereInput.prototype, "program", void 0);
 SoftwareComputerWhereInput = SoftwareComputerWhereInput_1 = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("SoftwareComputerWhereInput", {
         isAbstract: true

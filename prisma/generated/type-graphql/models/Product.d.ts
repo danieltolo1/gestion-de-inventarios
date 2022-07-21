@@ -1,6 +1,8 @@
-import { PartComputer } from "../models/PartComputer";
+import { Location } from "../models/Location";
+import { Maintenance } from "../models/Maintenance";
 import { Product_Type } from "../models/Product_Type";
 import { State } from "../models/State";
+import { ProductCount } from "../resolvers/outputs/ProductCount";
 export declare class Product {
     id_product: number;
     internal_code: string;
@@ -16,6 +18,9 @@ export declare class Product {
     conectivity?: string | null;
     state?: State;
     stateId: number;
-    partcomputer?: PartComputer | null;
+    location?: Location;
+    locationId: number;
     historial: string;
+    maintenance?: Maintenance[];
+    _count?: ProductCount | null;
 }

@@ -10,4 +10,6 @@ export declare class MaintenanceScalarWhereWithAggregatesInput {
     date_maintenance?: DateTimeNullableWithAggregatesFilter | undefined;
     jworkerNameFirm?: StringNullableWithAggregatesFilter | undefined;
     userId?: StringWithAggregatesFilter | undefined;
+    computerId?: IntWithAggregatesFilter | undefined;
+    observation?: StringNullableWithAggregatesFilter | undefined;
 }

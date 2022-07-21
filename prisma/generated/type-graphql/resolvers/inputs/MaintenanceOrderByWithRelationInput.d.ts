@@ -1,4 +1,5 @@
-import { PartComputerOrderByRelationAggregateInput } from "../inputs/PartComputerOrderByRelationAggregateInput";
+import { ComputerOrderByWithRelationInput } from "../inputs/ComputerOrderByWithRelationInput";
+import { ProductOrderByRelationAggregateInput } from "../inputs/ProductOrderByRelationAggregateInput";
 import { UserOrderByWithRelationInput } from "../inputs/UserOrderByWithRelationInput";
 export declare class MaintenanceOrderByWithRelationInput {
     id_maintenance?: "asc" | "desc" | undefined;
@@ -6,5 +7,8 @@ export declare class MaintenanceOrderByWithRelationInput {
     jworkerNameFirm?: "asc" | "desc" | undefined;
     user?: UserOrderByWithRelationInput | undefined;
     userId?: "asc" | "desc" | undefined;
-    partComputer?: PartComputerOrderByRelationAggregateInput | undefined;
+    computer?: ComputerOrderByWithRelationInput | undefined;
+    computerId?: "asc" | "desc" | undefined;
+    product?: ProductOrderByRelationAggregateInput | undefined;
+    observation?: "asc" | "desc" | undefined;
 }

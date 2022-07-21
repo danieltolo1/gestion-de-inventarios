@@ -4,8 +4,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProgramWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
+const ComputerListRelationFilter_1 = require("../inputs/ComputerListRelationFilter");
 const IntFilter_1 = require("../inputs/IntFilter");
-const SoftwareComputerRelationFilter_1 = require("../inputs/SoftwareComputerRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 let ProgramWhereInput = ProgramWhereInput_1 = class ProgramWhereInput {
@@ -53,17 +53,11 @@ let ProgramWhereInput = ProgramWhereInput_1 = class ProgramWhereInput {
     (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ProgramWhereInput.prototype, "license_program", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => SoftwareComputerRelationFilter_1.SoftwareComputerRelationFilter, {
+    TypeGraphQL.Field(_type => ComputerListRelationFilter_1.ComputerListRelationFilter, {
         nullable: true
     }),
-    (0, tslib_1.__metadata)("design:type", SoftwareComputerRelationFilter_1.SoftwareComputerRelationFilter)
-], ProgramWhereInput.prototype, "softwarecomputer", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", IntFilter_1.IntFilter)
-], ProgramWhereInput.prototype, "softwarecomputerId", void 0);
+    (0, tslib_1.__metadata)("design:type", ComputerListRelationFilter_1.ComputerListRelationFilter)
+], ProgramWhereInput.prototype, "computer", void 0);
 ProgramWhereInput = ProgramWhereInput_1 = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ProgramWhereInput", {
         isAbstract: true

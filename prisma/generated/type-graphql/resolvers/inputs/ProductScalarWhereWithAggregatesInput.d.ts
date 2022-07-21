@@ -17,5 +17,6 @@ export declare class ProductScalarWhereWithAggregatesInput {
     tecnology?: StringNullableWithAggregatesFilter | undefined;
     conectivity?: StringNullableWithAggregatesFilter | undefined;
     stateId?: IntWithAggregatesFilter | undefined;
+    locationId?: IntWithAggregatesFilter | undefined;
     historial?: StringWithAggregatesFilter | undefined;
 }

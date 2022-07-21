@@ -77,7 +77,19 @@ let ComputerMinOrderByAggregateInput = class ComputerMinOrderByAggregateInput {
         nullable: true
     }),
     (0, tslib_1.__metadata)("design:type", String)
+], ComputerMinOrderByAggregateInput.prototype, "ip", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
 ], ComputerMinOrderByAggregateInput.prototype, "softwarecomputerId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMinOrderByAggregateInput.prototype, "locationId", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
@@ -90,6 +102,54 @@ let ComputerMinOrderByAggregateInput = class ComputerMinOrderByAggregateInput {
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], ComputerMinOrderByAggregateInput.prototype, "historial", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMinOrderByAggregateInput.prototype, "user_domain", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMinOrderByAggregateInput.prototype, "pass_domain", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMinOrderByAggregateInput.prototype, "user_admin", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMinOrderByAggregateInput.prototype, "pass_admin", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMinOrderByAggregateInput.prototype, "user_local", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMinOrderByAggregateInput.prototype, "pass_local", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMinOrderByAggregateInput.prototype, "user_anydesk", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ComputerMinOrderByAggregateInput.prototype, "pass_anydesk", void 0);
 ComputerMinOrderByAggregateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ComputerMinOrderByAggregateInput", {
         isAbstract: true

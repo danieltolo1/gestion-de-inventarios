@@ -23,6 +23,12 @@ let ProductSumAggregate = class ProductSumAggregate {
     }),
     (0, tslib_1.__metadata)("design:type", Number)
 ], ProductSumAggregate.prototype, "stateId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ProductSumAggregate.prototype, "locationId", void 0);
 ProductSumAggregate = (0, tslib_1.__decorate)([
     TypeGraphQL.ObjectType("ProductSumAggregate", {
         isAbstract: true

@@ -12,6 +12,12 @@ let MaintenanceSumOrderByAggregateInput = class MaintenanceSumOrderByAggregateIn
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], MaintenanceSumOrderByAggregateInput.prototype, "id_maintenance", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], MaintenanceSumOrderByAggregateInput.prototype, "computerId", void 0);
 MaintenanceSumOrderByAggregateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("MaintenanceSumOrderByAggregateInput", {
         isAbstract: true

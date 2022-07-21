@@ -13,6 +13,12 @@ let Location = class Location {
     (0, tslib_1.__metadata)("design:type", Number)
 ], Location.prototype, "id_location", void 0);
 (0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], Location.prototype, "internal_code", void 0);
+(0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => String, {
         nullable: false
     }),

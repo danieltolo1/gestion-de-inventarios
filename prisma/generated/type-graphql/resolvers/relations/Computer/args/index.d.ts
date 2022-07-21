@@ -1,1 +1,2 @@
-export { ComputerPartComputerArgs } from "./ComputerPartComputerArgs";
+export { ComputerMaintenanceArgs } from "./ComputerMaintenanceArgs";
+export { ComputerProgramArgs } from "./ComputerProgramArgs";

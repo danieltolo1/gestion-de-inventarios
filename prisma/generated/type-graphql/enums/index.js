@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.VerificationTokenScalarFieldEnum = exports.UserScalarFieldEnum = exports.StateScalarFieldEnum = exports.SortOrder = exports.SoftwareComputerScalarFieldEnum = exports.SessionScalarFieldEnum = exports.QueryMode = exports.ProgramScalarFieldEnum = exports.Product_TypeScalarFieldEnum = exports.ProductScalarFieldEnum = exports.PartComputerScalarFieldEnum = exports.MaintenanceScalarFieldEnum = exports.LocationScalarFieldEnum = exports.Enum_Operatigsystem = exports.Enum_Architecture = exports.ComputerScalarFieldEnum = exports.AccountScalarFieldEnum = void 0;
+exports.VerificationTokenScalarFieldEnum = exports.UserScalarFieldEnum = exports.StateScalarFieldEnum = exports.SortOrder = exports.SoftwareComputerScalarFieldEnum = exports.SessionScalarFieldEnum = exports.QueryMode = exports.ProgramScalarFieldEnum = exports.Product_TypeScalarFieldEnum = exports.ProductScalarFieldEnum = exports.MaintenanceScalarFieldEnum = exports.LocationScalarFieldEnum = exports.Enum_Operatigsystem = exports.Enum_Architecture = exports.ComputerScalarFieldEnum = exports.AccountScalarFieldEnum = void 0;
 var AccountScalarFieldEnum_1 = require("./AccountScalarFieldEnum");
 Object.defineProperty(exports, "AccountScalarFieldEnum", { enumerable: true, get: function () { return AccountScalarFieldEnum_1.AccountScalarFieldEnum; } });
 var ComputerScalarFieldEnum_1 = require("./ComputerScalarFieldEnum");
@@ -13,8 +13,6 @@ var LocationScalarFieldEnum_1 = require("./LocationScalarFieldEnum");
 Object.defineProperty(exports, "LocationScalarFieldEnum", { enumerable: true, get: function () { return LocationScalarFieldEnum_1.LocationScalarFieldEnum; } });
 var MaintenanceScalarFieldEnum_1 = require("./MaintenanceScalarFieldEnum");
 Object.defineProperty(exports, "MaintenanceScalarFieldEnum", { enumerable: true, get: function () { return MaintenanceScalarFieldEnum_1.MaintenanceScalarFieldEnum; } });
-var PartComputerScalarFieldEnum_1 = require("./PartComputerScalarFieldEnum");
-Object.defineProperty(exports, "PartComputerScalarFieldEnum", { enumerable: true, get: function () { return PartComputerScalarFieldEnum_1.PartComputerScalarFieldEnum; } });
 var ProductScalarFieldEnum_1 = require("./ProductScalarFieldEnum");
 Object.defineProperty(exports, "ProductScalarFieldEnum", { enumerable: true, get: function () { return ProductScalarFieldEnum_1.ProductScalarFieldEnum; } });
 var Product_TypeScalarFieldEnum_1 = require("./Product_TypeScalarFieldEnum");

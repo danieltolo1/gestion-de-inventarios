@@ -11,6 +11,7 @@ export declare class ProductCountAggregate {
     tecnology: number;
     conectivity: number;
     stateId: number;
+    locationId: number;
     historial: number;
     _all: number;
 }

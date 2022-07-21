@@ -19,6 +19,12 @@ let MaintenanceUpdateManyMutationInput = class MaintenanceUpdateManyMutationInpu
     }),
     (0, tslib_1.__metadata)("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
 ], MaintenanceUpdateManyMutationInput.prototype, "jworkerNameFirm", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
+], MaintenanceUpdateManyMutationInput.prototype, "observation", void 0);
 MaintenanceUpdateManyMutationInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("MaintenanceUpdateManyMutationInput", {
         isAbstract: true

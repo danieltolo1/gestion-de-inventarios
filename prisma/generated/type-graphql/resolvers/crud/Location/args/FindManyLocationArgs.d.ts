@@ -7,5 +7,5 @@ export declare class FindManyLocationArgs {
     cursor?: LocationWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id_location" | "city" | "job_name"> | undefined;
+    distinct?: Array<"id_location" | "internal_code" | "city" | "job_name"> | undefined;
 }

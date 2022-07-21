@@ -16,6 +16,7 @@ export declare class ProductGroupBy {
     tecnology: string | null;
     conectivity: string | null;
     stateId: number;
+    locationId: number;
     historial: string;
     _count: ProductCountAggregate | null;
     _avg: ProductAvgAggregate | null;

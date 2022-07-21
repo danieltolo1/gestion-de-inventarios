@@ -3,4 +3,5 @@ export declare class ComputerSumOrderByAggregateInput {
     price?: "asc" | "desc" | undefined;
     stateId?: "asc" | "desc" | undefined;
     softwarecomputerId?: "asc" | "desc" | undefined;
+    locationId?: "asc" | "desc" | undefined;
 }

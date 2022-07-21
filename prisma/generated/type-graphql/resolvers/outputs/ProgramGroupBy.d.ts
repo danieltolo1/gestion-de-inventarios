@@ -8,7 +8,6 @@ export declare class ProgramGroupBy {
     name_program: string;
     version_program: string | null;
     license_program: string | null;
-    softwarecomputerId: number;
     _count: ProgramCountAggregate | null;
     _avg: ProgramAvgAggregate | null;
     _sum: ProgramSumAggregate | null;

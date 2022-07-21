@@ -11,5 +11,6 @@ export declare class ProductMaxOrderByAggregateInput {
     tecnology?: "asc" | "desc" | undefined;
     conectivity?: "asc" | "desc" | undefined;
     stateId?: "asc" | "desc" | undefined;
+    locationId?: "asc" | "desc" | undefined;
     historial?: "asc" | "desc" | undefined;
 }

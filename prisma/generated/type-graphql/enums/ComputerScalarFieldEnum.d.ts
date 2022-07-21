@@ -10,7 +10,17 @@ export declare enum ComputerScalarFieldEnum {
     optical_unit = "optical_unit",
     model = "model",
     stateId = "stateId",
+    ip = "ip",
     softwarecomputerId = "softwarecomputerId",
+    locationId = "locationId",
     observation = "observation",
-    historial = "historial"
+    historial = "historial",
+    user_domain = "user_domain",
+    pass_domain = "pass_domain",
+    user_admin = "user_admin",
+    pass_admin = "pass_admin",
+    user_local = "user_local",
+    pass_local = "pass_local",
+    user_anydesk = "user_anydesk",
+    pass_anydesk = "pass_anydesk"
 }

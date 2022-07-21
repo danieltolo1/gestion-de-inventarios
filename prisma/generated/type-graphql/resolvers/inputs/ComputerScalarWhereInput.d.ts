@@ -19,7 +19,17 @@ export declare class ComputerScalarWhereInput {
     optical_unit?: BoolNullableFilter | undefined;
     model?: StringFilter | undefined;
     stateId?: IntFilter | undefined;
+    ip?: StringNullableFilter | undefined;
     softwarecomputerId?: IntFilter | undefined;
+    locationId?: IntFilter | undefined;
     observation?: StringNullableFilter | undefined;
     historial?: StringNullableFilter | undefined;
+    user_domain?: StringNullableFilter | undefined;
+    pass_domain?: StringNullableFilter | undefined;
+    user_admin?: StringNullableFilter | undefined;
+    pass_admin?: StringNullableFilter | undefined;
+    user_local?: StringNullableFilter | undefined;
+    pass_local?: StringNullableFilter | undefined;
+    user_anydesk?: StringNullableFilter | undefined;
+    pass_anydesk?: StringNullableFilter | undefined;
 }

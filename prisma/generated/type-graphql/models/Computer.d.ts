@@ -1,4 +1,6 @@
-import { PartComputer } from "../models/PartComputer";
+import { Location } from "../models/Location";
+import { Maintenance } from "../models/Maintenance";
+import { Program } from "../models/Program";
 import { SoftwareComputer } from "../models/SoftwareComputer";
 import { State } from "../models/State";
 import { ComputerCount } from "../resolvers/outputs/ComputerCount";
@@ -15,10 +17,22 @@ export declare class Computer {
     model: string;
     state?: State;
     stateId: number;
+    ip?: string | null;
     softwarecomputer?: SoftwareComputer;
     softwarecomputerId: number;
-    partComputer?: PartComputer[];
+    location?: Location;
+    locationId: number;
     observation?: string | null;
     historial?: string | null;
+    user_domain?: string | null;
+    pass_domain?: string | null;
+    user_admin?: string | null;
+    pass_admin?: string | null;
+    user_local?: string | null;
+    pass_local?: string | null;
+    user_anydesk?: string | null;
+    pass_anydesk?: string | null;
+    maintenance?: Maintenance[];
+    program?: Program[];
     _count?: ComputerCount | null;
 }

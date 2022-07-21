@@ -1,4 +1,5 @@
-import { PartComputerCreateNestedOneWithoutProductInput } from "../inputs/PartComputerCreateNestedOneWithoutProductInput";
+import { LocationCreateNestedOneWithoutPorductInput } from "../inputs/LocationCreateNestedOneWithoutPorductInput";
+import { MaintenanceCreateNestedManyWithoutProductInput } from "../inputs/MaintenanceCreateNestedManyWithoutProductInput";
 import { Product_TypeCreateNestedOneWithoutProductInput } from "../inputs/Product_TypeCreateNestedOneWithoutProductInput";
 export declare class ProductCreateWithoutStateInput {
     internal_code: string;
@@ -11,6 +12,7 @@ export declare class ProductCreateWithoutStateInput {
     size?: string | undefined;
     tecnology?: string | undefined;
     conectivity?: string | undefined;
-    partcomputer?: PartComputerCreateNestedOneWithoutProductInput | undefined;
+    location: LocationCreateNestedOneWithoutPorductInput;
     historial: string;
+    maintenance?: MaintenanceCreateNestedManyWithoutProductInput | undefined;
 }

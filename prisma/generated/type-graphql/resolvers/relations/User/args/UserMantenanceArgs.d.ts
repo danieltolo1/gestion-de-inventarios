@@ -7,5 +7,5 @@ export declare class UserMantenanceArgs {
     cursor?: MaintenanceWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id_maintenance" | "date_maintenance" | "jworkerNameFirm" | "userId"> | undefined;
+    distinct?: Array<"id_maintenance" | "date_maintenance" | "jworkerNameFirm" | "userId" | "computerId" | "observation"> | undefined;
 }

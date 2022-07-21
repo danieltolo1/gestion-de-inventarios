@@ -7,5 +7,5 @@ export declare class FindManySoftwareComputerArgs {
     cursor?: SoftwareComputerWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id_softwarecomputer" | "operatingsystem" | "license_so" | "user_anydesk" | "pass_anydesk" | "ip" | "user_domain" | "pass_domain" | "user_admin" | "pass_admin" | "user_local" | "pass_local" | "architecture"> | undefined;
+    distinct?: Array<"id_softwarecomputer" | "operatingsystem" | "license_soA" | "architecture"> | undefined;
 }

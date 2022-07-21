@@ -1,3 +1,4 @@
 export declare class ComputerCount {
-    partComputer: number;
+    maintenance: number;
+    program: number;
 }

@@ -1,5 +1,5 @@
+import { ComputerListRelationFilter } from "../inputs/ComputerListRelationFilter";
 import { IntFilter } from "../inputs/IntFilter";
-import { SoftwareComputerRelationFilter } from "../inputs/SoftwareComputerRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
 export declare class ProgramWhereInput {
@@ -10,6 +10,5 @@ export declare class ProgramWhereInput {
     name_program?: StringFilter | undefined;
     version_program?: StringNullableFilter | undefined;
     license_program?: StringNullableFilter | undefined;
-    softwarecomputer?: SoftwareComputerRelationFilter | undefined;
-    softwarecomputerId?: IntFilter | undefined;
+    computer?: ComputerListRelationFilter | undefined;
 }

@@ -1,3 +1,4 @@
 export declare class LocationCount {
-    partComputer: number;
+    computer: number;
+    porduct: number;
 }

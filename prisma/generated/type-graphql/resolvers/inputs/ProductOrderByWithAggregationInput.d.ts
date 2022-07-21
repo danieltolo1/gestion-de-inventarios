@@ -16,6 +16,7 @@ export declare class ProductOrderByWithAggregationInput {
     tecnology?: "asc" | "desc" | undefined;
     conectivity?: "asc" | "desc" | undefined;
     stateId?: "asc" | "desc" | undefined;
+    locationId?: "asc" | "desc" | undefined;
     historial?: "asc" | "desc" | undefined;
     _count?: ProductCountOrderByAggregateInput | undefined;
     _avg?: ProductAvgOrderByAggregateInput | undefined;

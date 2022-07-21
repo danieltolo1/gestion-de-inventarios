@@ -1,1 +1,1 @@
-export { MaintenancePartComputerArgs } from "./MaintenancePartComputerArgs";
+export { MaintenanceProductArgs } from "./MaintenanceProductArgs";

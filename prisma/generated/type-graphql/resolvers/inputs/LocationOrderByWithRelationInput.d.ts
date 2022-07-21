@@ -1,7 +1,10 @@
-import { PartComputerOrderByRelationAggregateInput } from "../inputs/PartComputerOrderByRelationAggregateInput";
+import { ComputerOrderByRelationAggregateInput } from "../inputs/ComputerOrderByRelationAggregateInput";
+import { ProductOrderByRelationAggregateInput } from "../inputs/ProductOrderByRelationAggregateInput";
 export declare class LocationOrderByWithRelationInput {
     id_location?: "asc" | "desc" | undefined;
+    internal_code?: "asc" | "desc" | undefined;
     city?: "asc" | "desc" | undefined;
     job_name?: "asc" | "desc" | undefined;
-    partComputer?: PartComputerOrderByRelationAggregateInput | undefined;
+    computer?: ComputerOrderByRelationAggregateInput | undefined;
+    porduct?: ProductOrderByRelationAggregateInput | undefined;
 }

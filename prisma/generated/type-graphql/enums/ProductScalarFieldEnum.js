@@ -17,6 +17,7 @@ var ProductScalarFieldEnum;
     ProductScalarFieldEnum["tecnology"] = "tecnology";
     ProductScalarFieldEnum["conectivity"] = "conectivity";
     ProductScalarFieldEnum["stateId"] = "stateId";
+    ProductScalarFieldEnum["locationId"] = "locationId";
     ProductScalarFieldEnum["historial"] = "historial";
 })(ProductScalarFieldEnum = exports.ProductScalarFieldEnum || (exports.ProductScalarFieldEnum = {}));
 TypeGraphQL.registerEnumType(ProductScalarFieldEnum, {

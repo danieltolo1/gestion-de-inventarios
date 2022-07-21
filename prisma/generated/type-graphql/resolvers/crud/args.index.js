@@ -5,7 +5,6 @@ const tslib_1 = require("tslib");
 (0, tslib_1.__exportStar)(require("./Computer/args"), exports);
 (0, tslib_1.__exportStar)(require("./Location/args"), exports);
 (0, tslib_1.__exportStar)(require("./Maintenance/args"), exports);
-(0, tslib_1.__exportStar)(require("./PartComputer/args"), exports);
 (0, tslib_1.__exportStar)(require("./Product/args"), exports);
 (0, tslib_1.__exportStar)(require("./Product_Type/args"), exports);
 (0, tslib_1.__exportStar)(require("./Program/args"), exports);

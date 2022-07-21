@@ -10,5 +10,6 @@ export declare class ProductCreateManyStateInput {
     size?: string | undefined;
     tecnology?: string | undefined;
     conectivity?: string | undefined;
+    locationId: number;
     historial: string;
 }

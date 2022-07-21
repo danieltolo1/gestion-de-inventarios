@@ -4,7 +4,6 @@ exports.SoftwareComputerCreateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
 const ComputerCreateNestedManyWithoutSoftwarecomputerInput_1 = require("../inputs/ComputerCreateNestedManyWithoutSoftwarecomputerInput");
-const ProgramCreateNestedManyWithoutSoftwarecomputerInput_1 = require("../inputs/ProgramCreateNestedManyWithoutSoftwarecomputerInput");
 const Enum_Architecture_1 = require("../../enums/Enum_Architecture");
 const Enum_Operatigsystem_1 = require("../../enums/Enum_Operatigsystem");
 let SoftwareComputerCreateInput = class SoftwareComputerCreateInput {
@@ -26,73 +25,13 @@ let SoftwareComputerCreateInput = class SoftwareComputerCreateInput {
         nullable: false
     }),
     (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCreateInput.prototype, "license_so", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCreateInput.prototype, "user_anydesk", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCreateInput.prototype, "pass_anydesk", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: false
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCreateInput.prototype, "ip", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCreateInput.prototype, "user_domain", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCreateInput.prototype, "pass_domain", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCreateInput.prototype, "user_admin", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCreateInput.prototype, "pass_admin", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCreateInput.prototype, "user_local", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", String)
-], SoftwareComputerCreateInput.prototype, "pass_local", void 0);
+], SoftwareComputerCreateInput.prototype, "license_soA", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => Enum_Architecture_1.Enum_Architecture, {
         nullable: false
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], SoftwareComputerCreateInput.prototype, "architecture", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => ProgramCreateNestedManyWithoutSoftwarecomputerInput_1.ProgramCreateNestedManyWithoutSoftwarecomputerInput, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", ProgramCreateNestedManyWithoutSoftwarecomputerInput_1.ProgramCreateNestedManyWithoutSoftwarecomputerInput)
-], SoftwareComputerCreateInput.prototype, "program", void 0);
 SoftwareComputerCreateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("SoftwareComputerCreateInput", {
         isAbstract: true

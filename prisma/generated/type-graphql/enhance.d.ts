@@ -11,7 +11,6 @@ declare const crudResolversMap: {
     Computer: typeof crudResolvers.ComputerCrudResolver;
     SoftwareComputer: typeof crudResolvers.SoftwareComputerCrudResolver;
     Program: typeof crudResolvers.ProgramCrudResolver;
-    PartComputer: typeof crudResolvers.PartComputerCrudResolver;
     Location: typeof crudResolvers.LocationCrudResolver;
     Maintenance: typeof crudResolvers.MaintenanceCrudResolver;
     Account: typeof crudResolvers.AccountCrudResolver;
@@ -44,7 +43,6 @@ declare const relationResolversMap: {
     Computer: typeof relationResolvers.ComputerRelationsResolver;
     SoftwareComputer: typeof relationResolvers.SoftwareComputerRelationsResolver;
     Program: typeof relationResolvers.ProgramRelationsResolver;
-    PartComputer: typeof relationResolvers.PartComputerRelationsResolver;
     Location: typeof relationResolvers.LocationRelationsResolver;
     Maintenance: typeof relationResolvers.MaintenanceRelationsResolver;
     Account: typeof relationResolvers.AccountRelationsResolver;

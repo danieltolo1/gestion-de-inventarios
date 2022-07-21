@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProgramCreateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
-const SoftwareComputerCreateNestedOneWithoutProgramInput_1 = require("../inputs/SoftwareComputerCreateNestedOneWithoutProgramInput");
+const ComputerCreateNestedManyWithoutProgramInput_1 = require("../inputs/ComputerCreateNestedManyWithoutProgramInput");
 let ProgramCreateInput = class ProgramCreateInput {
 };
 (0, tslib_1.__decorate)([
@@ -25,11 +25,11 @@ let ProgramCreateInput = class ProgramCreateInput {
     (0, tslib_1.__metadata)("design:type", String)
 ], ProgramCreateInput.prototype, "license_program", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => SoftwareComputerCreateNestedOneWithoutProgramInput_1.SoftwareComputerCreateNestedOneWithoutProgramInput, {
-        nullable: false
+    TypeGraphQL.Field(_type => ComputerCreateNestedManyWithoutProgramInput_1.ComputerCreateNestedManyWithoutProgramInput, {
+        nullable: true
     }),
-    (0, tslib_1.__metadata)("design:type", SoftwareComputerCreateNestedOneWithoutProgramInput_1.SoftwareComputerCreateNestedOneWithoutProgramInput)
-], ProgramCreateInput.prototype, "softwarecomputer", void 0);
+    (0, tslib_1.__metadata)("design:type", ComputerCreateNestedManyWithoutProgramInput_1.ComputerCreateNestedManyWithoutProgramInput)
+], ProgramCreateInput.prototype, "computer", void 0);
 ProgramCreateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ProgramCreateInput", {
         isAbstract: true

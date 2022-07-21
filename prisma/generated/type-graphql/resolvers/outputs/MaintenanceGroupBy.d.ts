@@ -8,6 +8,8 @@ export declare class MaintenanceGroupBy {
     date_maintenance: Date | null;
     jworkerNameFirm: string | null;
     userId: string;
+    computerId: number;
+    observation: string | null;
     _count: MaintenanceCountAggregate | null;
     _avg: MaintenanceAvgAggregate | null;
     _sum: MaintenanceSumAggregate | null;

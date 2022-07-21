@@ -10,13 +10,13 @@ import test1 from './manPreventivo'
 
 
 
-const httplink = createHttpLink({
-  uri:"http://localhost:3000/api/graphql/"
+//const httplink = createHttpLink({
+//  uri:"http://192.168.0.4:3000/api/graphql/"
 
-})
+//})
 
 const client = new ApolloClient({
-  uri: httplink,
+  uri:"http://192.168.0.4:3000/api/graphql/",
   cache:new InMemoryCache()
 
 })

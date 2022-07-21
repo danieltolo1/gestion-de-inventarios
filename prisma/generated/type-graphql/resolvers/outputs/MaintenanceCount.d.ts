@@ -1,3 +1,3 @@
 export declare class MaintenanceCount {
-    partComputer: number;
+    product: number;
 }

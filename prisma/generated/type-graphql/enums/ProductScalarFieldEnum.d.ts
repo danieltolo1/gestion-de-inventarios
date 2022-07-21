@@ -11,5 +11,6 @@ export declare enum ProductScalarFieldEnum {
     tecnology = "tecnology",
     conectivity = "conectivity",
     stateId = "stateId",
+    locationId = "locationId",
     historial = "historial"
 }

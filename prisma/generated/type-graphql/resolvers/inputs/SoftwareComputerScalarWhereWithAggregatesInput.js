@@ -7,7 +7,6 @@ const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
 const EnumEnum_ArchitectureWithAggregatesFilter_1 = require("../inputs/EnumEnum_ArchitectureWithAggregatesFilter");
 const EnumEnum_OperatigsystemWithAggregatesFilter_1 = require("../inputs/EnumEnum_OperatigsystemWithAggregatesFilter");
 const IntWithAggregatesFilter_1 = require("../inputs/IntWithAggregatesFilter");
-const StringNullableWithAggregatesFilter_1 = require("../inputs/StringNullableWithAggregatesFilter");
 const StringWithAggregatesFilter_1 = require("../inputs/StringWithAggregatesFilter");
 let SoftwareComputerScalarWhereWithAggregatesInput = SoftwareComputerScalarWhereWithAggregatesInput_1 = class SoftwareComputerScalarWhereWithAggregatesInput {
 };
@@ -46,61 +45,7 @@ let SoftwareComputerScalarWhereWithAggregatesInput = SoftwareComputerScalarWhere
         nullable: true
     }),
     (0, tslib_1.__metadata)("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
-], SoftwareComputerScalarWhereWithAggregatesInput.prototype, "license_so", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
-], SoftwareComputerScalarWhereWithAggregatesInput.prototype, "user_anydesk", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
-], SoftwareComputerScalarWhereWithAggregatesInput.prototype, "pass_anydesk", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringWithAggregatesFilter_1.StringWithAggregatesFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
-], SoftwareComputerScalarWhereWithAggregatesInput.prototype, "ip", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
-], SoftwareComputerScalarWhereWithAggregatesInput.prototype, "user_domain", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
-], SoftwareComputerScalarWhereWithAggregatesInput.prototype, "pass_domain", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
-], SoftwareComputerScalarWhereWithAggregatesInput.prototype, "user_admin", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
-], SoftwareComputerScalarWhereWithAggregatesInput.prototype, "pass_admin", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
-], SoftwareComputerScalarWhereWithAggregatesInput.prototype, "user_local", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
-], SoftwareComputerScalarWhereWithAggregatesInput.prototype, "pass_local", void 0);
+], SoftwareComputerScalarWhereWithAggregatesInput.prototype, "license_soA", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => EnumEnum_ArchitectureWithAggregatesFilter_1.EnumEnum_ArchitectureWithAggregatesFilter, {
         nullable: true

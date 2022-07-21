@@ -34,12 +34,6 @@ let ProgramCountAggregate = class ProgramCountAggregate {
         nullable: false
     }),
     (0, tslib_1.__metadata)("design:type", Number)
-], ProgramCountAggregate.prototype, "softwarecomputerId", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    (0, tslib_1.__metadata)("design:type", Number)
 ], ProgramCountAggregate.prototype, "_all", void 0);
 ProgramCountAggregate = (0, tslib_1.__decorate)([
     TypeGraphQL.ObjectType("ProgramCountAggregate", {

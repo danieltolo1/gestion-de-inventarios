@@ -52,6 +52,18 @@ let MaintenanceScalarWhereWithAggregatesInput = MaintenanceScalarWhereWithAggreg
     }),
     (0, tslib_1.__metadata)("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
 ], MaintenanceScalarWhereWithAggregatesInput.prototype, "userId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => IntWithAggregatesFilter_1.IntWithAggregatesFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", IntWithAggregatesFilter_1.IntWithAggregatesFilter)
+], MaintenanceScalarWhereWithAggregatesInput.prototype, "computerId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
+], MaintenanceScalarWhereWithAggregatesInput.prototype, "observation", void 0);
 MaintenanceScalarWhereWithAggregatesInput = MaintenanceScalarWhereWithAggregatesInput_1 = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("MaintenanceScalarWhereWithAggregatesInput", {
         isAbstract: true

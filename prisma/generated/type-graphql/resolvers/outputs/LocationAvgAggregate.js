@@ -11,6 +11,12 @@ let LocationAvgAggregate = class LocationAvgAggregate {
     }),
     (0, tslib_1.__metadata)("design:type", Number)
 ], LocationAvgAggregate.prototype, "id_location", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Float, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], LocationAvgAggregate.prototype, "internal_code", void 0);
 LocationAvgAggregate = (0, tslib_1.__decorate)([
     TypeGraphQL.ObjectType("LocationAvgAggregate", {
         isAbstract: true

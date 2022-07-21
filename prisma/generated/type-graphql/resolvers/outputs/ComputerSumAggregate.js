@@ -29,6 +29,12 @@ let ComputerSumAggregate = class ComputerSumAggregate {
     }),
     (0, tslib_1.__metadata)("design:type", Number)
 ], ComputerSumAggregate.prototype, "softwarecomputerId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ComputerSumAggregate.prototype, "locationId", void 0);
 ComputerSumAggregate = (0, tslib_1.__decorate)([
     TypeGraphQL.ObjectType("ComputerSumAggregate", {
         isAbstract: true

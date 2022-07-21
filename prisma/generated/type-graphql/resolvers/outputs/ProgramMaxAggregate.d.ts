@@ -3,5 +3,4 @@ export declare class ProgramMaxAggregate {
     name_program: string | null;
     version_program: string | null;
     license_program: string | null;
-    softwarecomputerId: number | null;
 }

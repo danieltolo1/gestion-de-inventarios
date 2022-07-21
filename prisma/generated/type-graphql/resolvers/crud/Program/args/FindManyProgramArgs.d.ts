@@ -7,5 +7,5 @@ export declare class FindManyProgramArgs {
     cursor?: ProgramWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id_program" | "name_program" | "version_program" | "license_program" | "softwarecomputerId"> | undefined;
+    distinct?: Array<"id_program" | "name_program" | "version_program" | "license_program"> | undefined;
 }

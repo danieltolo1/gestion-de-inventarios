@@ -83,6 +83,12 @@ let ProductGroupBy = class ProductGroupBy {
     (0, tslib_1.__metadata)("design:type", Number)
 ], ProductGroupBy.prototype, "stateId", void 0);
 (0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ProductGroupBy.prototype, "locationId", void 0);
+(0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => String, {
         nullable: false
     }),

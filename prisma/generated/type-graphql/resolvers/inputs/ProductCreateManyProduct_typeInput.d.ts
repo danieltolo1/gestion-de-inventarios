@@ -10,5 +10,6 @@ export declare class ProductCreateManyProduct_typeInput {
     tecnology?: string | undefined;
     conectivity?: string | undefined;
     stateId: number;
+    locationId: number;
     historial: string;
 }

@@ -1,4 +1,5 @@
-import { PartComputer } from "../models/PartComputer";
+import { Computer } from "../models/Computer";
+import { Product } from "../models/Product";
 import { User } from "../models/User";
 import { MaintenanceCount } from "../resolvers/outputs/MaintenanceCount";
 export declare class Maintenance {
@@ -7,6 +8,9 @@ export declare class Maintenance {
     jworkerNameFirm?: string | null;
     user?: User;
     userId: string;
-    partComputer?: PartComputer[];
+    computer?: Computer;
+    computerId: number;
+    product?: Product[];
+    observation?: string | null;
     _count?: MaintenanceCount | null;
 }

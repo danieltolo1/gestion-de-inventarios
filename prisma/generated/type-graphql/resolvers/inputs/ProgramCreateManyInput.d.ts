@@ -3,5 +3,4 @@ export declare class ProgramCreateManyInput {
     name_program: string;
     version_program?: string | undefined;
     license_program?: string | undefined;
-    softwarecomputerId: number;
 }

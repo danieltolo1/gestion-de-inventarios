@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserRelationsResolver = exports.StateRelationsResolver = exports.SoftwareComputerRelationsResolver = exports.SessionRelationsResolver = exports.ProgramRelationsResolver = exports.Product_TypeRelationsResolver = exports.ProductRelationsResolver = exports.PartComputerRelationsResolver = exports.MaintenanceRelationsResolver = exports.LocationRelationsResolver = exports.ComputerRelationsResolver = exports.AccountRelationsResolver = void 0;
+exports.UserRelationsResolver = exports.StateRelationsResolver = exports.SoftwareComputerRelationsResolver = exports.SessionRelationsResolver = exports.ProgramRelationsResolver = exports.Product_TypeRelationsResolver = exports.ProductRelationsResolver = exports.MaintenanceRelationsResolver = exports.LocationRelationsResolver = exports.ComputerRelationsResolver = exports.AccountRelationsResolver = void 0;
 var AccountRelationsResolver_1 = require("./Account/AccountRelationsResolver");
 Object.defineProperty(exports, "AccountRelationsResolver", { enumerable: true, get: function () { return AccountRelationsResolver_1.AccountRelationsResolver; } });
 var ComputerRelationsResolver_1 = require("./Computer/ComputerRelationsResolver");
@@ -9,8 +9,6 @@ var LocationRelationsResolver_1 = require("./Location/LocationRelationsResolver"
 Object.defineProperty(exports, "LocationRelationsResolver", { enumerable: true, get: function () { return LocationRelationsResolver_1.LocationRelationsResolver; } });
 var MaintenanceRelationsResolver_1 = require("./Maintenance/MaintenanceRelationsResolver");
 Object.defineProperty(exports, "MaintenanceRelationsResolver", { enumerable: true, get: function () { return MaintenanceRelationsResolver_1.MaintenanceRelationsResolver; } });
-var PartComputerRelationsResolver_1 = require("./PartComputer/PartComputerRelationsResolver");
-Object.defineProperty(exports, "PartComputerRelationsResolver", { enumerable: true, get: function () { return PartComputerRelationsResolver_1.PartComputerRelationsResolver; } });
 var ProductRelationsResolver_1 = require("./Product/ProductRelationsResolver");
 Object.defineProperty(exports, "ProductRelationsResolver", { enumerable: true, get: function () { return ProductRelationsResolver_1.ProductRelationsResolver; } });
 var Product_TypeRelationsResolver_1 = require("./Product_Type/Product_TypeRelationsResolver");

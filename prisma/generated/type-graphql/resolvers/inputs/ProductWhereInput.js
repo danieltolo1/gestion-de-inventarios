@@ -5,7 +5,8 @@ exports.ProductWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
 const IntFilter_1 = require("../inputs/IntFilter");
-const PartComputerRelationFilter_1 = require("../inputs/PartComputerRelationFilter");
+const LocationRelationFilter_1 = require("../inputs/LocationRelationFilter");
+const MaintenanceListRelationFilter_1 = require("../inputs/MaintenanceListRelationFilter");
 const Product_TypeRelationFilter_1 = require("../inputs/Product_TypeRelationFilter");
 const StateRelationFilter_1 = require("../inputs/StateRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
@@ -115,17 +116,29 @@ let ProductWhereInput = ProductWhereInput_1 = class ProductWhereInput {
     (0, tslib_1.__metadata)("design:type", IntFilter_1.IntFilter)
 ], ProductWhereInput.prototype, "stateId", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => PartComputerRelationFilter_1.PartComputerRelationFilter, {
+    TypeGraphQL.Field(_type => LocationRelationFilter_1.LocationRelationFilter, {
         nullable: true
     }),
-    (0, tslib_1.__metadata)("design:type", PartComputerRelationFilter_1.PartComputerRelationFilter)
-], ProductWhereInput.prototype, "partcomputer", void 0);
+    (0, tslib_1.__metadata)("design:type", LocationRelationFilter_1.LocationRelationFilter)
+], ProductWhereInput.prototype, "location", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", IntFilter_1.IntFilter)
+], ProductWhereInput.prototype, "locationId", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
         nullable: true
     }),
     (0, tslib_1.__metadata)("design:type", StringFilter_1.StringFilter)
 ], ProductWhereInput.prototype, "historial", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => MaintenanceListRelationFilter_1.MaintenanceListRelationFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", MaintenanceListRelationFilter_1.MaintenanceListRelationFilter)
+], ProductWhereInput.prototype, "maintenance", void 0);
 ProductWhereInput = ProductWhereInput_1 = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ProductWhereInput", {
         isAbstract: true

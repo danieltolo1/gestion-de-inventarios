@@ -19,7 +19,17 @@ export declare class ComputerScalarWhereWithAggregatesInput {
     optical_unit?: BoolNullableWithAggregatesFilter | undefined;
     model?: StringWithAggregatesFilter | undefined;
     stateId?: IntWithAggregatesFilter | undefined;
+    ip?: StringNullableWithAggregatesFilter | undefined;
     softwarecomputerId?: IntWithAggregatesFilter | undefined;
+    locationId?: IntWithAggregatesFilter | undefined;
     observation?: StringNullableWithAggregatesFilter | undefined;
     historial?: StringNullableWithAggregatesFilter | undefined;
+    user_domain?: StringNullableWithAggregatesFilter | undefined;
+    pass_domain?: StringNullableWithAggregatesFilter | undefined;
+    user_admin?: StringNullableWithAggregatesFilter | undefined;
+    pass_admin?: StringNullableWithAggregatesFilter | undefined;
+    user_local?: StringNullableWithAggregatesFilter | undefined;
+    pass_local?: StringNullableWithAggregatesFilter | undefined;
+    user_anydesk?: StringNullableWithAggregatesFilter | undefined;
+    pass_anydesk?: StringNullableWithAggregatesFilter | undefined;
 }

@@ -3,7 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductCreateWithoutStateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
-const PartComputerCreateNestedOneWithoutProductInput_1 = require("../inputs/PartComputerCreateNestedOneWithoutProductInput");
+const LocationCreateNestedOneWithoutPorductInput_1 = require("../inputs/LocationCreateNestedOneWithoutPorductInput");
+const MaintenanceCreateNestedManyWithoutProductInput_1 = require("../inputs/MaintenanceCreateNestedManyWithoutProductInput");
 const Product_TypeCreateNestedOneWithoutProductInput_1 = require("../inputs/Product_TypeCreateNestedOneWithoutProductInput");
 let ProductCreateWithoutStateInput = class ProductCreateWithoutStateInput {
 };
@@ -68,17 +69,23 @@ let ProductCreateWithoutStateInput = class ProductCreateWithoutStateInput {
     (0, tslib_1.__metadata)("design:type", String)
 ], ProductCreateWithoutStateInput.prototype, "conectivity", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => PartComputerCreateNestedOneWithoutProductInput_1.PartComputerCreateNestedOneWithoutProductInput, {
-        nullable: true
+    TypeGraphQL.Field(_type => LocationCreateNestedOneWithoutPorductInput_1.LocationCreateNestedOneWithoutPorductInput, {
+        nullable: false
     }),
-    (0, tslib_1.__metadata)("design:type", PartComputerCreateNestedOneWithoutProductInput_1.PartComputerCreateNestedOneWithoutProductInput)
-], ProductCreateWithoutStateInput.prototype, "partcomputer", void 0);
+    (0, tslib_1.__metadata)("design:type", LocationCreateNestedOneWithoutPorductInput_1.LocationCreateNestedOneWithoutPorductInput)
+], ProductCreateWithoutStateInput.prototype, "location", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => String, {
         nullable: false
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], ProductCreateWithoutStateInput.prototype, "historial", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => MaintenanceCreateNestedManyWithoutProductInput_1.MaintenanceCreateNestedManyWithoutProductInput, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", MaintenanceCreateNestedManyWithoutProductInput_1.MaintenanceCreateNestedManyWithoutProductInput)
+], ProductCreateWithoutStateInput.prototype, "maintenance", void 0);
 ProductCreateWithoutStateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ProductCreateWithoutStateInput", {
         isAbstract: true

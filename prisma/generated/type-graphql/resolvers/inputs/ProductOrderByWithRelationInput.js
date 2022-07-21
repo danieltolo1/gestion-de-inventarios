@@ -3,7 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductOrderByWithRelationInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
-const PartComputerOrderByWithRelationInput_1 = require("../inputs/PartComputerOrderByWithRelationInput");
+const LocationOrderByWithRelationInput_1 = require("../inputs/LocationOrderByWithRelationInput");
+const MaintenanceOrderByRelationAggregateInput_1 = require("../inputs/MaintenanceOrderByRelationAggregateInput");
 const Product_TypeOrderByWithRelationInput_1 = require("../inputs/Product_TypeOrderByWithRelationInput");
 const StateOrderByWithRelationInput_1 = require("../inputs/StateOrderByWithRelationInput");
 const SortOrder_1 = require("../../enums/SortOrder");
@@ -94,17 +95,29 @@ let ProductOrderByWithRelationInput = class ProductOrderByWithRelationInput {
     (0, tslib_1.__metadata)("design:type", String)
 ], ProductOrderByWithRelationInput.prototype, "stateId", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => PartComputerOrderByWithRelationInput_1.PartComputerOrderByWithRelationInput, {
+    TypeGraphQL.Field(_type => LocationOrderByWithRelationInput_1.LocationOrderByWithRelationInput, {
         nullable: true
     }),
-    (0, tslib_1.__metadata)("design:type", PartComputerOrderByWithRelationInput_1.PartComputerOrderByWithRelationInput)
-], ProductOrderByWithRelationInput.prototype, "partcomputer", void 0);
+    (0, tslib_1.__metadata)("design:type", LocationOrderByWithRelationInput_1.LocationOrderByWithRelationInput)
+], ProductOrderByWithRelationInput.prototype, "location", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], ProductOrderByWithRelationInput.prototype, "locationId", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], ProductOrderByWithRelationInput.prototype, "historial", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => MaintenanceOrderByRelationAggregateInput_1.MaintenanceOrderByRelationAggregateInput, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", MaintenanceOrderByRelationAggregateInput_1.MaintenanceOrderByRelationAggregateInput)
+], ProductOrderByWithRelationInput.prototype, "maintenance", void 0);
 ProductOrderByWithRelationInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ProductOrderByWithRelationInput", {
         isAbstract: true

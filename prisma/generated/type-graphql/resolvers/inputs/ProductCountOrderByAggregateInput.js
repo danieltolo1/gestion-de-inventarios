@@ -83,6 +83,12 @@ let ProductCountOrderByAggregateInput = class ProductCountOrderByAggregateInput 
         nullable: true
     }),
     (0, tslib_1.__metadata)("design:type", String)
+], ProductCountOrderByAggregateInput.prototype, "locationId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
 ], ProductCountOrderByAggregateInput.prototype, "historial", void 0);
 ProductCountOrderByAggregateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ProductCountOrderByAggregateInput", {

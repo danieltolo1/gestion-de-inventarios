@@ -9,5 +9,4 @@ export declare class ProgramScalarWhereInput {
     name_program?: StringFilter | undefined;
     version_program?: StringNullableFilter | undefined;
     license_program?: StringNullableFilter | undefined;
-    softwarecomputerId?: IntFilter | undefined;
 }

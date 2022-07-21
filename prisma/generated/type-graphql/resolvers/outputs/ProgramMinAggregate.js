@@ -29,12 +29,6 @@ let ProgramMinAggregate = class ProgramMinAggregate {
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], ProgramMinAggregate.prototype, "license_program", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], ProgramMinAggregate.prototype, "softwarecomputerId", void 0);
 ProgramMinAggregate = (0, tslib_1.__decorate)([
     TypeGraphQL.ObjectType("ProgramMinAggregate", {
         isAbstract: true

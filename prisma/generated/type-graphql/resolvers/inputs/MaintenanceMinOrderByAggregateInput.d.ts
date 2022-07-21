@@ -3,4 +3,6 @@ export declare class MaintenanceMinOrderByAggregateInput {
     date_maintenance?: "asc" | "desc" | undefined;
     jworkerNameFirm?: "asc" | "desc" | undefined;
     userId?: "asc" | "desc" | undefined;
+    computerId?: "asc" | "desc" | undefined;
+    observation?: "asc" | "desc" | undefined;
 }

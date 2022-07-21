@@ -29,6 +29,12 @@ let ComputerAvgAggregate = class ComputerAvgAggregate {
     }),
     (0, tslib_1.__metadata)("design:type", Number)
 ], ComputerAvgAggregate.prototype, "softwarecomputerId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Float, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ComputerAvgAggregate.prototype, "locationId", void 0);
 ComputerAvgAggregate = (0, tslib_1.__decorate)([
     TypeGraphQL.ObjectType("ComputerAvgAggregate", {
         isAbstract: true

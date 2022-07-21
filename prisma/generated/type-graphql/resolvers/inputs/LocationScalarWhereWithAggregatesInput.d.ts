@@ -5,6 +5,7 @@ export declare class LocationScalarWhereWithAggregatesInput {
     OR?: LocationScalarWhereWithAggregatesInput[] | undefined;
     NOT?: LocationScalarWhereWithAggregatesInput[] | undefined;
     id_location?: IntWithAggregatesFilter | undefined;
+    internal_code?: IntWithAggregatesFilter | undefined;
     city?: StringWithAggregatesFilter | undefined;
     job_name?: StringWithAggregatesFilter | undefined;
 }

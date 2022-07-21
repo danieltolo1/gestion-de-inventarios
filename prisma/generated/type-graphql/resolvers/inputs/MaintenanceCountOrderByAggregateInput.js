@@ -30,6 +30,18 @@ let MaintenanceCountOrderByAggregateInput = class MaintenanceCountOrderByAggrega
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], MaintenanceCountOrderByAggregateInput.prototype, "userId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], MaintenanceCountOrderByAggregateInput.prototype, "computerId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], MaintenanceCountOrderByAggregateInput.prototype, "observation", void 0);
 MaintenanceCountOrderByAggregateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("MaintenanceCountOrderByAggregateInput", {
         isAbstract: true

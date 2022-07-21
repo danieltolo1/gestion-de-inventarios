@@ -10,7 +10,13 @@ let ComputerCount = class ComputerCount {
         nullable: false
     }),
     (0, tslib_1.__metadata)("design:type", Number)
-], ComputerCount.prototype, "partComputer", void 0);
+], ComputerCount.prototype, "maintenance", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], ComputerCount.prototype, "program", void 0);
 ComputerCount = (0, tslib_1.__decorate)([
     TypeGraphQL.ObjectType("ComputerCount", {
         isAbstract: true

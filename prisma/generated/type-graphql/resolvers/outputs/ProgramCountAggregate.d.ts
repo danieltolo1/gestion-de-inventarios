@@ -3,6 +3,5 @@ export declare class ProgramCountAggregate {
     name_program: number;
     version_program: number;
     license_program: number;
-    softwarecomputerId: number;
     _all: number;
 }

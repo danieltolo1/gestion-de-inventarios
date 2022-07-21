@@ -2,7 +2,6 @@ export { Account } from "./Account";
 export { Computer } from "./Computer";
 export { Location } from "./Location";
 export { Maintenance } from "./Maintenance";
-export { PartComputer } from "./PartComputer";
 export { Product } from "./Product";
 export { Product_Type } from "./Product_Type";
 export { Program } from "./Program";

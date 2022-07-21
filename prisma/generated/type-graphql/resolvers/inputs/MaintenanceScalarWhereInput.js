@@ -52,6 +52,18 @@ let MaintenanceScalarWhereInput = MaintenanceScalarWhereInput_1 = class Maintena
     }),
     (0, tslib_1.__metadata)("design:type", StringFilter_1.StringFilter)
 ], MaintenanceScalarWhereInput.prototype, "userId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", IntFilter_1.IntFilter)
+], MaintenanceScalarWhereInput.prototype, "computerId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", StringNullableFilter_1.StringNullableFilter)
+], MaintenanceScalarWhereInput.prototype, "observation", void 0);
 MaintenanceScalarWhereInput = MaintenanceScalarWhereInput_1 = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("MaintenanceScalarWhereInput", {
         isAbstract: true

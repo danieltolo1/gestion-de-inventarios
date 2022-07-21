@@ -3,4 +3,6 @@ export declare class MaintenanceMaxAggregate {
     date_maintenance: Date | null;
     jworkerNameFirm: string | null;
     userId: string | null;
+    computerId: number | null;
+    observation: string | null;
 }

@@ -22,61 +22,7 @@ let SoftwareComputerCountAggregate = class SoftwareComputerCountAggregate {
         nullable: false
     }),
     (0, tslib_1.__metadata)("design:type", Number)
-], SoftwareComputerCountAggregate.prototype, "license_so", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], SoftwareComputerCountAggregate.prototype, "user_anydesk", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], SoftwareComputerCountAggregate.prototype, "pass_anydesk", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], SoftwareComputerCountAggregate.prototype, "ip", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], SoftwareComputerCountAggregate.prototype, "user_domain", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], SoftwareComputerCountAggregate.prototype, "pass_domain", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], SoftwareComputerCountAggregate.prototype, "user_admin", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], SoftwareComputerCountAggregate.prototype, "pass_admin", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], SoftwareComputerCountAggregate.prototype, "user_local", void 0);
-(0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], SoftwareComputerCountAggregate.prototype, "pass_local", void 0);
+], SoftwareComputerCountAggregate.prototype, "license_soA", void 0);
 (0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false

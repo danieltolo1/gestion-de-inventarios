@@ -1,4 +1,6 @@
-import { PartComputerCreateNestedManyWithoutComputerInput } from "../inputs/PartComputerCreateNestedManyWithoutComputerInput";
+import { LocationCreateNestedOneWithoutComputerInput } from "../inputs/LocationCreateNestedOneWithoutComputerInput";
+import { MaintenanceCreateNestedManyWithoutComputerInput } from "../inputs/MaintenanceCreateNestedManyWithoutComputerInput";
+import { ProgramCreateNestedManyWithoutComputerInput } from "../inputs/ProgramCreateNestedManyWithoutComputerInput";
 import { StateCreateNestedOneWithoutComputerInput } from "../inputs/StateCreateNestedOneWithoutComputerInput";
 export declare class ComputerCreateWithoutSoftwarecomputerInput {
     buy_date?: Date | undefined;
@@ -11,7 +13,18 @@ export declare class ComputerCreateWithoutSoftwarecomputerInput {
     optical_unit?: boolean | undefined;
     model: string;
     state: StateCreateNestedOneWithoutComputerInput;
-    partComputer?: PartComputerCreateNestedManyWithoutComputerInput | undefined;
+    ip?: string | undefined;
+    location: LocationCreateNestedOneWithoutComputerInput;
     observation?: string | undefined;
     historial?: string | undefined;
+    user_domain?: string | undefined;
+    pass_domain?: string | undefined;
+    user_admin?: string | undefined;
+    pass_admin?: string | undefined;
+    user_local?: string | undefined;
+    pass_local?: string | undefined;
+    user_anydesk?: string | undefined;
+    pass_anydesk?: string | undefined;
+    maintenance?: MaintenanceCreateNestedManyWithoutComputerInput | undefined;
+    program?: ProgramCreateNestedManyWithoutComputerInput | undefined;
 }

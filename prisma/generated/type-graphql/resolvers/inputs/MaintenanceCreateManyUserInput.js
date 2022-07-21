@@ -23,6 +23,18 @@ let MaintenanceCreateManyUserInput = class MaintenanceCreateManyUserInput {
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], MaintenanceCreateManyUserInput.prototype, "jworkerNameFirm", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], MaintenanceCreateManyUserInput.prototype, "computerId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], MaintenanceCreateManyUserInput.prototype, "observation", void 0);
 MaintenanceCreateManyUserInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("MaintenanceCreateManyUserInput", {
         isAbstract: true

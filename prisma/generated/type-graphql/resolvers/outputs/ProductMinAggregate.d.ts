@@ -11,5 +11,6 @@ export declare class ProductMinAggregate {
     tecnology: string | null;
     conectivity: string | null;
     stateId: number | null;
+    locationId: number | null;
     historial: string | null;
 }

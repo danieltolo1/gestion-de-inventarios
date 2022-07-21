@@ -100,6 +100,12 @@ let ProductScalarWhereInput = ProductScalarWhereInput_1 = class ProductScalarWhe
     (0, tslib_1.__metadata)("design:type", IntFilter_1.IntFilter)
 ], ProductScalarWhereInput.prototype, "stateId", void 0);
 (0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", IntFilter_1.IntFilter)
+], ProductScalarWhereInput.prototype, "locationId", void 0);
+(0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
         nullable: true
     }),

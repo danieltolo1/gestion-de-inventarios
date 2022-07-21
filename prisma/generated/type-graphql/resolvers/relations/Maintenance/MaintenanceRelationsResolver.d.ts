@@ -1,8 +1,10 @@
+import { Computer } from "../../../models/Computer";
 import { Maintenance } from "../../../models/Maintenance";
-import { PartComputer } from "../../../models/PartComputer";
+import { Product } from "../../../models/Product";
 import { User } from "../../../models/User";
-import { MaintenancePartComputerArgs } from "./args/MaintenancePartComputerArgs";
+import { MaintenanceProductArgs } from "./args/MaintenanceProductArgs";
 export declare class MaintenanceRelationsResolver {
     user(maintenance: Maintenance, ctx: any): Promise<User>;
-    partComputer(maintenance: Maintenance, ctx: any, args: MaintenancePartComputerArgs): Promise<PartComputer[]>;
+    computer(maintenance: Maintenance, ctx: any): Promise<Computer>;
+    product(maintenance: Maintenance, ctx: any, args: MaintenanceProductArgs): Promise<Product[]>;
 }

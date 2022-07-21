@@ -1,4 +1,6 @@
-import { PartComputerOrderByRelationAggregateInput } from "../inputs/PartComputerOrderByRelationAggregateInput";
+import { LocationOrderByWithRelationInput } from "../inputs/LocationOrderByWithRelationInput";
+import { MaintenanceOrderByRelationAggregateInput } from "../inputs/MaintenanceOrderByRelationAggregateInput";
+import { ProgramOrderByRelationAggregateInput } from "../inputs/ProgramOrderByRelationAggregateInput";
 import { SoftwareComputerOrderByWithRelationInput } from "../inputs/SoftwareComputerOrderByWithRelationInput";
 import { StateOrderByWithRelationInput } from "../inputs/StateOrderByWithRelationInput";
 export declare class ComputerOrderByWithRelationInput {
@@ -14,9 +16,21 @@ export declare class ComputerOrderByWithRelationInput {
     model?: "asc" | "desc" | undefined;
     state?: StateOrderByWithRelationInput | undefined;
     stateId?: "asc" | "desc" | undefined;
+    ip?: "asc" | "desc" | undefined;
     softwarecomputer?: SoftwareComputerOrderByWithRelationInput | undefined;
     softwarecomputerId?: "asc" | "desc" | undefined;
-    partComputer?: PartComputerOrderByRelationAggregateInput | undefined;
+    location?: LocationOrderByWithRelationInput | undefined;
+    locationId?: "asc" | "desc" | undefined;
     observation?: "asc" | "desc" | undefined;
     historial?: "asc" | "desc" | undefined;
+    user_domain?: "asc" | "desc" | undefined;
+    pass_domain?: "asc" | "desc" | undefined;
+    user_admin?: "asc" | "desc" | undefined;
+    pass_admin?: "asc" | "desc" | undefined;
+    user_local?: "asc" | "desc" | undefined;
+    pass_local?: "asc" | "desc" | undefined;
+    user_anydesk?: "asc" | "desc" | undefined;
+    pass_anydesk?: "asc" | "desc" | undefined;
+    maintenance?: MaintenanceOrderByRelationAggregateInput | undefined;
+    program?: ProgramOrderByRelationAggregateInput | undefined;
 }

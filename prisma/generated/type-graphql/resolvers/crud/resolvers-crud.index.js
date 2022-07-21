@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.VerificationTokenCrudResolver = exports.UserCrudResolver = exports.StateCrudResolver = exports.SoftwareComputerCrudResolver = exports.SessionCrudResolver = exports.ProgramCrudResolver = exports.Product_TypeCrudResolver = exports.ProductCrudResolver = exports.PartComputerCrudResolver = exports.MaintenanceCrudResolver = exports.LocationCrudResolver = exports.ComputerCrudResolver = exports.AccountCrudResolver = void 0;
+exports.VerificationTokenCrudResolver = exports.UserCrudResolver = exports.StateCrudResolver = exports.SoftwareComputerCrudResolver = exports.SessionCrudResolver = exports.ProgramCrudResolver = exports.Product_TypeCrudResolver = exports.ProductCrudResolver = exports.MaintenanceCrudResolver = exports.LocationCrudResolver = exports.ComputerCrudResolver = exports.AccountCrudResolver = void 0;
 var AccountCrudResolver_1 = require("./Account/AccountCrudResolver");
 Object.defineProperty(exports, "AccountCrudResolver", { enumerable: true, get: function () { return AccountCrudResolver_1.AccountCrudResolver; } });
 var ComputerCrudResolver_1 = require("./Computer/ComputerCrudResolver");
@@ -9,8 +9,6 @@ var LocationCrudResolver_1 = require("./Location/LocationCrudResolver");
 Object.defineProperty(exports, "LocationCrudResolver", { enumerable: true, get: function () { return LocationCrudResolver_1.LocationCrudResolver; } });
 var MaintenanceCrudResolver_1 = require("./Maintenance/MaintenanceCrudResolver");
 Object.defineProperty(exports, "MaintenanceCrudResolver", { enumerable: true, get: function () { return MaintenanceCrudResolver_1.MaintenanceCrudResolver; } });
-var PartComputerCrudResolver_1 = require("./PartComputer/PartComputerCrudResolver");
-Object.defineProperty(exports, "PartComputerCrudResolver", { enumerable: true, get: function () { return PartComputerCrudResolver_1.PartComputerCrudResolver; } });
 var ProductCrudResolver_1 = require("./Product/ProductCrudResolver");
 Object.defineProperty(exports, "ProductCrudResolver", { enumerable: true, get: function () { return ProductCrudResolver_1.ProductCrudResolver; } });
 var Product_TypeCrudResolver_1 = require("./Product_Type/Product_TypeCrudResolver");

@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProgramUpdateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
+const ComputerUpdateManyWithoutProgramInput_1 = require("../inputs/ComputerUpdateManyWithoutProgramInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
-const SoftwareComputerUpdateOneRequiredWithoutProgramInput_1 = require("../inputs/SoftwareComputerUpdateOneRequiredWithoutProgramInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
 let ProgramUpdateInput = class ProgramUpdateInput {
 };
@@ -27,11 +27,11 @@ let ProgramUpdateInput = class ProgramUpdateInput {
     (0, tslib_1.__metadata)("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
 ], ProgramUpdateInput.prototype, "license_program", void 0);
 (0, tslib_1.__decorate)([
-    TypeGraphQL.Field(_type => SoftwareComputerUpdateOneRequiredWithoutProgramInput_1.SoftwareComputerUpdateOneRequiredWithoutProgramInput, {
+    TypeGraphQL.Field(_type => ComputerUpdateManyWithoutProgramInput_1.ComputerUpdateManyWithoutProgramInput, {
         nullable: true
     }),
-    (0, tslib_1.__metadata)("design:type", SoftwareComputerUpdateOneRequiredWithoutProgramInput_1.SoftwareComputerUpdateOneRequiredWithoutProgramInput)
-], ProgramUpdateInput.prototype, "softwarecomputer", void 0);
+    (0, tslib_1.__metadata)("design:type", ComputerUpdateManyWithoutProgramInput_1.ComputerUpdateManyWithoutProgramInput)
+], ProgramUpdateInput.prototype, "computer", void 0);
 ProgramUpdateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("ProgramUpdateInput", {
         isAbstract: true

@@ -10,7 +10,7 @@ let MaintenanceCount = class MaintenanceCount {
         nullable: false
     }),
     (0, tslib_1.__metadata)("design:type", Number)
-], MaintenanceCount.prototype, "partComputer", void 0);
+], MaintenanceCount.prototype, "product", void 0);
 MaintenanceCount = (0, tslib_1.__decorate)([
     TypeGraphQL.ObjectType("MaintenanceCount", {
         isAbstract: true

@@ -1,9 +1,10 @@
-import { SoftwareComputer } from "../models/SoftwareComputer";
+import { Computer } from "../models/Computer";
+import { ProgramCount } from "../resolvers/outputs/ProgramCount";
 export declare class Program {
     id_program: number;
     name_program: string;
     version_program?: string | null;
     license_program?: string | null;
-    softwarecomputer?: SoftwareComputer;
-    softwarecomputerId: number;
+    computer?: Computer[];
+    _count?: ProgramCount | null;
 }

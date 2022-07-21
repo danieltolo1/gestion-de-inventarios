@@ -7,5 +7,5 @@ export declare class StateProductArgs {
     cursor?: ProductWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id_product" | "internal_code" | "serial_number" | "imei" | "observation" | "picture" | "model" | "product_typeId" | "size" | "tecnology" | "conectivity" | "stateId" | "historial"> | undefined;
+    distinct?: Array<"id_product" | "internal_code" | "serial_number" | "imei" | "observation" | "picture" | "model" | "product_typeId" | "size" | "tecnology" | "conectivity" | "stateId" | "locationId" | "historial"> | undefined;
 }

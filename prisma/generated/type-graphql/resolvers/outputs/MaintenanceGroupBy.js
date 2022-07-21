@@ -35,6 +35,18 @@ let MaintenanceGroupBy = class MaintenanceGroupBy {
     (0, tslib_1.__metadata)("design:type", String)
 ], MaintenanceGroupBy.prototype, "userId", void 0);
 (0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", Number)
+], MaintenanceGroupBy.prototype, "computerId", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", String)
+], MaintenanceGroupBy.prototype, "observation", void 0);
+(0, tslib_1.__decorate)([
     TypeGraphQL.Field(_type => MaintenanceCountAggregate_1.MaintenanceCountAggregate, {
         nullable: true
     }),

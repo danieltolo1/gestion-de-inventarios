@@ -3,4 +3,5 @@ export declare class ComputerSumAggregate {
     price: number | null;
     stateId: number | null;
     softwarecomputerId: number | null;
+    locationId: number | null;
 }

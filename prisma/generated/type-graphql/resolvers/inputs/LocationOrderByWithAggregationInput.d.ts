@@ -5,6 +5,7 @@ import { LocationMinOrderByAggregateInput } from "../inputs/LocationMinOrderByAg
 import { LocationSumOrderByAggregateInput } from "../inputs/LocationSumOrderByAggregateInput";
 export declare class LocationOrderByWithAggregationInput {
     id_location?: "asc" | "desc" | undefined;
+    internal_code?: "asc" | "desc" | undefined;
     city?: "asc" | "desc" | undefined;
     job_name?: "asc" | "desc" | undefined;
     _count?: LocationCountOrderByAggregateInput | undefined;
