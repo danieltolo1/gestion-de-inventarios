@@ -85,9 +85,8 @@ query Computer {
 
 
   const GET_PRODUCTO = gql`
-  query Products {
-      products {
-      id_product
+  query Query {
+    products {
       internal_code
       serial_number
       imei
@@ -99,22 +98,24 @@ query Computer {
       tecnology
       conectivity
       stateId
+      locationId
       historial
       product_type {
-      description
+        description
       }
       state {
-      description
+        description
       }
-      partcomputer {
       location {
         city
         job_name
-          }
       }
+      maintenance {
+        date_maintenance
       }
+    }
   }
   `;
 
 
-export { GET_PRODUCTOS, GET_COMPUTER };
+export { GET_PRODUCTO, GET_COMPUTER };

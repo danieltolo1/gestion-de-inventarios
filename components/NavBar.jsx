@@ -6,7 +6,6 @@ import PruebaIcon from './PruebaIcon'
 import Corrective from './Corrective'
 import AboutIcon from './AboutIcon'
 import LogoutIcon from './LogoutIcon'
-import ReportIcon from './ReportIcon'
 import { useSession, signIn, signOut } from 'next-auth/react';
 
 
@@ -165,14 +164,15 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                 className="flex text-white/80 items-center space-x-2 hover:bg-white/10 hover:cursor-pointer w-[90%]
                 mx-auto rounded-[15px] p-2 group relative"
             >
-                <ReportIcon
+                <PostIcon
+
                     className= 'w-7 h-7 group-hover:text-white'
                 />
                 <span
                     className="sm:flex hidden text-sm group-hover:text-white font-[600]"
                 >
 
-                            Reportes
+                           Inventario de Torres
                     
                 </span>
                 {/*Heramienta para ver en moviles*/}
@@ -180,7 +180,7 @@ import { useSession, signIn, signOut } from 'next-auth/react';
 
             </li>
             </Link>
-            <Link href="/"  className='w-32 text-white'>
+            <Link href="/InventarioOtros"  className='w-32 text-white'>
             <li
                 className="flex text-white/80 items-center space-x-2 hover:bg-white/10 hover:cursor-pointer w-[90%]
                 mx-auto rounded-[15px] p-2 group relative"
@@ -192,7 +192,7 @@ import { useSession, signIn, signOut } from 'next-auth/react';
                     className="sm:flex hidden text-sm group-hover:text-white font-[600]"
                 >
         
-                            Acerca de  
+                            Inventario de Otros 
                 </span>
                 {/*Heramienta para ver en moviles*/}
                

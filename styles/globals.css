@@ -9,33 +9,81 @@ body{
     background-size: 100%;
   }
 
-
+th{
+  color:#198754;
+}
   
-  .tabla {
-    width: 100%;
-    margin: 10px;
-    overflow-y: scroll;
-  }
-  
-  .tabla td,
-  .tabla th {
-    padding: 8px;
-    border: 1px solid #ddd;
-  }
-  
-  .tabla th {
-    background-color: #04aa46;
-    color: white;
-    padding-top: 12px;
-    padding-bottom: 12px;
+  .App {
     text-align: center;
+    padding: 40px 30px;
+    max-width: 100% !important;
   }
   
-  .tabla tr:nth-child(even) {
-    background-color: #000;
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
   }
   
-  .tabla tr:hover {
-    background-color: #ddd;
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
   }
   
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .inputBuscar{
+    width: 50% !important;
+  }
+  
+  table{
+    min-width: 500px;
+  }
+  
+  .containerInput{
+    align-items: end;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 25px;
+  }
+  
+  @media (max-width: 988px){
+    
+    .inputBuscar{
+      width: 100% !important;
+    }
+  
+    .App{
+      padding: 40px 5px;
+    }
+  
+    
+  .containerInput{
+    padding-bottom: 15px;
+  }
+  
+  }
+

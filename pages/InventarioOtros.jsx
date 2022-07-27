@@ -2,11 +2,8 @@ import Link from "next/link";
 import React,  { useEffect, useState } from "react";
 import '../styles/Home.module.css'
 import '../public/ares1.png'
-import Image from "next/image";
-import styled from "styled-components"
-import DataTable from "react-data-table-component";
 import { useQuery } from '@apollo/client';
-import { GET_PRODUCTOS, GET_COMPUTER } from './graphql/queries';
+import { GET_PRODUCTO, GET_COMPUTER } from './graphql/queries';
 import "bootstrap/dist/css/bootstrap.min.css";
 import SearchIcon from "../components/SearchIcon";
 
@@ -18,17 +15,17 @@ import SearchIcon from "../components/SearchIcon";
 
 
 
-const reportes = () => {
+const InventarioOtros = () => {
 
-    const [usuarios, setUsuarios] = useState([]);
-    const [tablaUsuarios, setTablaUsuarios] = useState([]);
-    const [busqueda, setBusqueda] = useState("");
-    const{data,error,loading} = useQuery(GET_COMPUTER);
+    const [usuarios1, setUsuarios1] = useState([]);
+    const [tablaUsuarios1, setTablaUsuarios1] = useState([]);
+    const [busqueda1, setBusqueda1] = useState("");
+    const{data,error,loading} = useQuery(GET_PRODUCTO);
 
 
     useEffect(() => {
         console.log(data);
-        setTablaUsuarios(data);
+        setTablaUsuarios1(data);
         if (error) {
           //error('Error consultando los usuarios');
         }
@@ -38,26 +35,27 @@ const reportes = () => {
 
         
 
-      const handleChange = e =>{
-        setBusqueda(e.target.value);
+      const handleChange1 = e =>{
+        setBusqueda1(e.target.value);
         //console.log("Busqueda: "+e.target.value);
-        filtrar(e.target.value)
-        
+        filtrar1(e.target.value)
+        console.log("este es usuarios", usuarios1);
       }
 
       
       
 
-      const filtrar = (terminoBusqueda) => {
-        var resultadoBusqueda = tablaUsuarios.computers.filter((elemento) =>{
-            if(elemento.internal_code.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
-            || elemento.location.city.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
-            || elemento.location.job_name.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())){
-                return elemento;
+      const filtrar1 = (terminoBusqueda1) => {
+        var resultadoBusqueda1 = tablaUsuarios1.products.filter((elemento1) =>{
+            if(elemento1.product_type.description.toString().toLowerCase().includes(terminoBusqueda1.toLowerCase())
+            || elemento1.location.city.toString().toLowerCase().includes(terminoBusqueda1.toLowerCase())
+            || elemento1.state.description.toString().toLowerCase().includes(terminoBusqueda1.toLowerCase())
+            || elemento1.internal_code.toString().toLowerCase().includes(terminoBusqueda1.toLowerCase())){
+                return elemento1;
             }
         });
-        setUsuarios(resultadoBusqueda);
-        console.log("este es usuarios", usuarios);
+        setUsuarios1(resultadoBusqueda1);
+        
        
       }
     
@@ -88,7 +86,7 @@ const reportes = () => {
                   <div
                          className="flex  w-[90%] mx-auto text-center sm:flex flex-col text-lg text-white/80 space-y-0 
                          font-bold relative ml-1" > 
-                         INVENTARIO DE TORRES <br></br>
+                         INVENTARIO DE IMPRESORAS, PANTALLAS, TECLADOS Y OTROS <br></br>
                          ________________________
                   </div>
                 
@@ -109,7 +107,7 @@ const reportes = () => {
                             <input className="      md:flex sm:flex lg:flex xl:flex 2xl:flex  
                                                     mr-2 ml-2 md:w-[100%] sm:w-[100%] lg:w-[100%] xl:w-[100%] 2xl:w-[100%] w-[95%]
                                                     md:ml-0 sm:ml-0 lg:ml-0 xl:ml-0 2xl:ml-0 bg-gray-200 appearance-none border-2 border-gray-200 rounded  py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-amber-400"
-                                                    id="inline-full-name" value={busqueda} onChange={handleChange}/> 
+                                                    id="inline-full-name" value={busqueda1} onChange={handleChange1}/> 
                             
                             <div className="flex md:flex sm:flex lg:flex xl:flex 2xl:flex 
                                                justify-center  md:content-end sm:content-end  lg:content-end shadow  xl:content-end 2xl:content-end mt-2 ml-20 ">
@@ -130,25 +128,28 @@ const reportes = () => {
                                 <thead>
                                     <tr>
                                     <th>id</th>
-                                    <th>Ubicacion</th>
-                                    <th>Area Trabajo</th>
-                                    <th>Ult Mantenimiento</th>
-                                    <th>Acciones</th>
+                                    <th>Tipo De Producto</th>
+                                    <th>Modelo</th>
+                                    <th>Ciudad</th>
+                                    <th>Ar. Trabajo</th>
+                                    <th>Estado</th>
+                                    <th>Observaciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                     {usuarios &&  usuarios ? (
+                                     {usuarios1 &&  usuarios1 ? (
                                     <>
-                                        {usuarios.map((usuario) => {
+                                        {usuarios1.map((usuario1) => {
                                         return (
                                            
-                                             <tr key={usuario.internal_code}>
-                                             <td>{usuario.internal_code}</td>
-                                             <td>{usuario.location.city}</td>
-                                             <td>{usuario.location.job_name}</td>
-                                             <td>{usuario.historial}</td>
-                                             <td><button className="btn btn-primary" onClick={()=>seleccionarPais(elemento, 'Editar')}>Editar</button> {"   "} 
-                                             </td>
+                                             <tr key={usuario1.internal_code}>
+                                             <td>{usuario1.internal_code}</td>
+                                             <td>{usuario1.product_type.description}</td>
+                                             <td>{usuario1.model}</td>
+                                             <td>{usuario1.location.city}</td>
+                                             <td>{usuario1.location.job_name}</td>
+                                             <td>{usuario1.state.description}</td>
+                                             <td>{usuario1.observation}</td>
                                              </tr>
                                           );
                                          })}
@@ -172,4 +173,4 @@ const reportes = () => {
     );
 }; 
 
-export default reportes;
+export default InventarioOtros;
