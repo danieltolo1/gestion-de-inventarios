@@ -6,8 +6,11 @@ import Image from "next/image";
 import styled from "styled-components"
 import DataTable from "react-data-table-component";
 import { useQuery } from '@apollo/client';
-import { GET_PRODUCTOS, GET_COMPUTER } from './graphql/queries';
+import { GET_COMPUTER } from './graphql/queries';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Button from 'react-bootstrap/Button'
+import Modal from 'react-bootstrap/Modal';
+import Form from 'react-bootstrap/Form';
 import SearchIcon from "../components/SearchIcon";
 
 
@@ -23,7 +26,26 @@ const reportes = () => {
     const [usuarios, setUsuarios] = useState([]);
     const [tablaUsuarios, setTablaUsuarios] = useState([]);
     const [busqueda, setBusqueda] = useState("");
+    const [modalEditar, setModalEditar] = useState(false);
     const{data,error,loading} = useQuery(GET_COMPUTER);
+  
+
+      
+      const [show, setShow] = useState(false);
+      const handleClose = () => setShow(false);
+      const handleShow = () => setShow(true);
+      const[torreSeleccionada, setTorreSelecccionada] = useState({
+        internal_code: '',
+        location: '',
+        location: '',
+        historial: ''
+      })
+    
+     const seleccionarTorre =(usuario,caso) =>{
+      setTorreSelecccionada(usuario);
+      console.log(torreSeleccionada);
+      (caso === 'Editar') && setShow(true);
+     }
 
 
     useEffect(() => {
@@ -57,7 +79,7 @@ const reportes = () => {
             }
         });
         setUsuarios(resultadoBusqueda);
-        console.log("este es usuarios", usuarios);
+        //console.log("este es usuarios", usuarios);
        
       }
     
@@ -147,7 +169,7 @@ const reportes = () => {
                                              <td>{usuario.location.city}</td>
                                              <td>{usuario.location.job_name}</td>
                                              <td>{usuario.historial}</td>
-                                             <td><button className="btn btn-primary" onClick={()=>seleccionarPais(elemento, 'Editar')}>Editar</button> {"   "} 
+                                             <td><button className="btn btn-primary" onClick={()=>seleccionarTorre(usuario, 'Editar')}>Editar</button> {"   "} 
                                              </td>
                                              </tr>
                                           );
@@ -159,8 +181,56 @@ const reportes = () => {
                                     )} 
                                 </tbody>
                                  </table>  
-                                
-                              
+        <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Editar Torre</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+           <label>Id</label>
+           <input
+           className="form-control"
+           readOnly
+           type="text"
+           name="id"
+           value={torreSeleccionada.internal_code}
+           ></input>
+           <br />
+            <label>Ciudad</label>
+           <input
+           className="form-control"
+           type="text"
+           name="city"
+           value={torreSeleccionada.location.city}
+           ></input>
+           <br />
+           <label>Puesto de Trabajo</label>
+           <input
+           className="form-control"
+           type="text"
+           name="job"
+           value={torreSeleccionada.location.job_name}
+           ></input>
+           <br />
+           <label>Ultimo Mantenimiento</label>
+           <input
+           className="form-control"
+           type="text"
+           name="job"
+           value={torreSeleccionada.historial}
+           ></input>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Cancelar
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Guardar
+          </Button>
+        </Modal.Footer>
+      </Modal>
+  
                     </div>
                  </div>
 
